@@ -1,10 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_sundhedmedalette.652866945.00" t="ExcludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_sundhedmedalette.442485447.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Areas" t="Include">
+        <e p="Manager" t="Include">
+          <e p="Views" t="Include">
+            <e p="Shared" t="Include">
+              <e p="EditorTemplates" t="Include">
+                <e p="HeroImageBlock.cshtml" t="Include" />
+              </e>
+              <e p="Partial" t="Include">
+                <e p="_EditorSetup.cshtml" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="assets" t="Include">
+        <e p="scss" t="Include">
+          <e p="base.scss" t="Include" />
+          <e p="colors.scss" t="Include" />
+          <e p="style.scss" t="Include" />
+          <e p="theme.scss" t="Include" />
+        </e>
+      </e>
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="compilerconfig.json" t="Include" />
+      <e p="compilerconfig.json.defaults" t="Include" />
+      <e p="Controllers" t="Include">
+        <e p="CmsController.cs" t="Include" />
+      </e>
+      <e p="gulpfile.js" t="Include" />
+      <e p="Models" t="Include">
+        <e p="Blocks" t="Include">
+          <e p="HeroImageBlock.cs" t="Include" />
+        </e>
+        <e p="BlogArchive.cs" t="Include" />
+        <e p="BlogPost.cs" t="Include" />
+        <e p="Regions" t="Include">
+          <e p="Heading.cs" t="Include" />
+          <e p="Teaser.cs" t="Include" />
+        </e>
+        <e p="StandardPage.cs" t="Include" />
+        <e p="StartPage.cs" t="Include" />
+      </e>
+      <e p="nidam-corp.csproj" t="IncludeRecursive" />
+      <e p="node_modules" t="ExcludeRecursive">
+        <e p="gulp" t="IncludeRecursive" />
+        <e p="gulp-cssmin" t="IncludeRecursive" />
+        <e p="gulp-rename" t="IncludeRecursive" />
+        <e p="gulp-sass" t="IncludeRecursive" />
+      </e>
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp2.1" t="Include">
+            <e p="nidam-corp.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="package-lock.json" t="Include" />
+      <e p="package.json" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="piranha.db" t="Include" />
+      <e p="Program.cs" t="Include" />
+      <e p="Startup.cs" t="Include" />
       <e p="sundhedmedalette.sln" t="IncludeFlat" />
+      <e p="Views" t="Include">
+        <e p="_ViewImports.cshtml" t="Include" />
+        <e p="_ViewStart.cshtml" t="Include" />
+        <e p="Cms" t="Include">
+          <e p="Archive.cshtml" t="Include" />
+          <e p="DisplayTemplates" t="Include">
+            <e p="HeroImageBlock.cshtml" t="Include" />
+            <e p="HtmlBlock.cshtml" t="Include" />
+            <e p="HtmlColumnBlock.cshtml" t="Include" />
+            <e p="ImageBlock.cshtml" t="Include" />
+            <e p="QuoteBlock.cshtml" t="Include" />
+            <e p="TextBlock.cshtml" t="Include" />
+          </e>
+          <e p="Page.cshtml" t="Include" />
+          <e p="Post.cshtml" t="Include" />
+          <e p="Start.cshtml" t="Include" />
+        </e>
+        <e p="Shared" t="Include">
+          <e p="_Layout.cshtml" t="Include" />
+          <e p="Partial" t="Include">
+            <e p="_Menu.cshtml" t="Include" />
+            <e p="_Meta.cshtml" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="wwwroot" t="Include">
+        <e p="css" t="Include">
+          <e p="style.css" t="Include" />
+          <e p="style.min.css" t="Include" />
+        </e>
+        <e p="uploads" t="Include">
+          <e p="0bd6ea12-2001-458d-8e2f-389d59d1b8ad-Skærmbillede 2018-12-17 kl. 22.31.34.png" t="Include" />
+        </e>
+      </e>
     </e>
   </component>
 </project>
