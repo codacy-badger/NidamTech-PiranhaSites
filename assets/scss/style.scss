@@ -1,4 +1,9 @@
-@import "base/blocks/hero";
+//Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
-@import "themes/sundhedmedalette/sundhedmedalette-theme";
+//Base Styling
+@import "base/style";
 
+//Active Theme
+@import "themes/sundhedmedalette/style";
+//@import "themes/nidam-corp/style";
