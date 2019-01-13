@@ -83,7 +83,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
+            <state relative-caret-position="1075">
               <caret line="518" column="24" selection-start-line="518" selection-start-column="24" selection-end-line="518" selection-end-column="24" />
             </state>
           </provider>
@@ -209,12 +209,6 @@
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
             </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -311,7 +305,7 @@
       <option name="presentableId" value="Default" />
       <updated>1545862879976</updated>
       <workItem from="1545862881439" duration="11825000" />
-      <workItem from="1547383020373" duration="2706000" />
+      <workItem from="1547383020373" duration="3056000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1545864176251</created>
@@ -324,7 +318,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19133000" />
+    <option name="totallyTimeSpent" value="19483000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -339,11 +333,11 @@
     <frame x="64" y="23" width="2496" height="1417" extended-state="6" />
     <layout>
       <window_info id="Azure Explorer" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49324325" visible="true" weight="0.23594132" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4928302" visible="true" weight="0.23594132" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Capture Tool" order="3" />
-      <window_info id="Gulp" order="4" sideWeight="0.5067568" side_tool="true" visible="true" weight="0.23594132" />
+      <window_info id="Gulp" order="4" sideWeight="0.5071698" side_tool="true" visible="true" weight="0.23594132" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Azure Activity Log" weight="0.32981133" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -357,7 +351,7 @@
       <window_info anchor="bottom" id="REST Client" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.27773586" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="NuGet" order="11" visible="true" weight="0.32981133" />
+      <window_info anchor="bottom" id="NuGet" order="11" weight="0.32981133" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -799,7 +793,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
+        <state relative-caret-position="1075">
           <caret line="518" column="24" selection-start-line="518" selection-start-column="24" selection-end-line="518" selection-end-column="24" />
         </state>
       </provider>
