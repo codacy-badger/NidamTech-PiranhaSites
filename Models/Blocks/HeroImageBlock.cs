@@ -8,10 +8,8 @@ namespace sundhedmedalette.Models.Blocks
     public class HeroImageBlock : Block
     {
         public ImageField BackgroundImage { get; set; }
-        public CheckBoxField IsFullscreen { get; set; }
+        public NumberField SizeInPercentage { get; set; }
         public StringField Title { get; set; }
-        public StringField SubTitle { get; set; }
-
-        public StringField ButtonText { get; set; }
+        public StringField Subtitle { get; set; }
     }
 }

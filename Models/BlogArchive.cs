@@ -1,16 +1,16 @@
 using Piranha.AttributeBuilder;
+using Piranha.Extend.Fields;
 using Piranha.Models;
-using sundhedmedalette.Models.Regions;
 
-namespace sundhedmedalette.Models
+namespace nidam_corp.Models
 {
     [PageType(Title = "Blog archive", UseBlocks = false)]
-    public class BlogArchive : ArchivePage<BlogArchive>
+    public class BlogArchive  : ArchivePage<BlogArchive>
     {
         /// <summary>
-        ///     Gets/sets the archive heading.
+        /// Gets/sets the archive heading.
         /// </summary>
         [Region]
-        public Heading Heading { get; set; }
+        public Regions.Heading Heading { get; set; }
     }
 }

@@ -1,15 +1,7 @@
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    watch = require('gulp-watch');
-cssmin = require("gulp-cssmin");
-rename = require("gulp-rename");
-
-gulp.task('default', ['watch']);
-
-gulp.task('watch', function () {
-    gulp.watch('assets/scss/**/*.scss', ['min-css']);
-    gulp.watch('assets/scss/*.scss', ['min-css']);
-});
+    sass = require('gulp-sass')
+    cssmin = require("gulp-cssmin")
+    rename = require("gulp-rename");
 
 gulp.task('min:css', function () {
     return gulp.src('assets/scss/style.scss')
@@ -19,4 +11,4 @@ gulp.task('min:css', function () {
             suffix: ".min"
         }))
         .pipe(gulp.dest('wwwroot/css'));
-});
+    });

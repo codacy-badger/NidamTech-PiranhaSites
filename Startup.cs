@@ -1,17 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Piranha;
 using Piranha.AspNetCore.Identity.SQLite;
-using Piranha.AttributeBuilder;
-using Piranha.Cache;
-using Piranha.Manager.Binders;
-using sundhedmedalette.Models;
+using Piranha.ImageSharp;
+using Piranha.Local;
 using sundhedmedalette.Models.Blocks;
 
-namespace sundhedmedalette
+namespace nidam_corp
 {
     public class Startup
     {
@@ -19,13 +21,15 @@ namespace sundhedmedalette
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc(config => { config.ModelBinderProviders.Insert(0, new AbstractModelBinderProvider()); });
+            services.AddMvc(config => 
+            {
+                config.ModelBinderProviders.Insert(0, new Piranha.Manager.Binders.AbstractModelBinderProvider());
+            });
             services.AddPiranhaApplication();
             services.AddPiranhaFileStorage();
             services.AddPiranhaImageSharp();
             services.AddPiranhaEF(options => options.UseSqlite("Filename=./piranha.db"));
-            services.AddPiranhaIdentityWithSeed<IdentitySQLiteDb>(options =>
-                options.UseSqlite("Filename=./piranha.db"));
+            services.AddPiranhaIdentityWithSeed<IdentitySQLiteDb>(options => options.UseSqlite("Filename=./piranha.db"));
             services.AddPiranhaManager();
             services.AddPiranhaMemCache();
 
@@ -35,26 +39,29 @@ namespace sundhedmedalette
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider services, IApi api)
         {
-            if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
 
             // Initialize Piranha
             App.Init();
 
-            //Register custom blocks
-            App.Blocks.Register<HeroImageBlock>();
-
             // Configure cache level
-            App.CacheLevel = CacheLevel.Basic;
+            App.CacheLevel = Piranha.Cache.CacheLevel.Basic;
 
+            //Add custom blocks
+            App.Blocks.Register<HeroImageBlock>();
+            
             // Build content types
-            var pageTypeBuilder = new PageTypeBuilder(api)
-                .AddType(typeof(BlogArchive))
-                .AddType(typeof(StandardPage))
-                .AddType(typeof(StartPage));
+            var pageTypeBuilder = new Piranha.AttributeBuilder.PageTypeBuilder(api)
+                .AddType(typeof(Models.BlogArchive))
+                .AddType(typeof(Models.StandardPage))
+                .AddType(typeof(Models.StartPage));
             pageTypeBuilder.Build()
                 .DeleteOrphans();
-            var postTypeBuilder = new PostTypeBuilder(api)
-                .AddType(typeof(BlogPost));
+            var postTypeBuilder = new Piranha.AttributeBuilder.PostTypeBuilder(api)
+                .AddType(typeof(Models.BlogPost));
             postTypeBuilder.Build()
                 .DeleteOrphans();
 
@@ -63,15 +70,15 @@ namespace sundhedmedalette
             app.UseAuthentication();
             app.UsePiranha();
             app.UsePiranhaManager();
-            app.UseMvc(routes =>
+            app.UseMvc(routes => 
             {
-                routes.MapRoute("areaRoute",
-                    "{area:exists}/{controller}/{action}/{id?}",
-                    new {controller = "Home", action = "Index"});
+                routes.MapRoute(name: "areaRoute",
+                    template: "{area:exists}/{controller}/{action}/{id?}",
+                    defaults: new { controller = "Home", action = "Index" });
 
                 routes.MapRoute(
-                    "default",
-                    "{controller=home}/{action=index}/{id?}");
+                    name: "default",
+                    template: "{controller=home}/{action=index}/{id?}");
             });
         }
     }

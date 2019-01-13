@@ -1,10 +1,11 @@
 using Piranha.AttributeBuilder;
+using Piranha.Extend.Fields;
 using Piranha.Models;
 
-namespace sundhedmedalette.Models
+namespace nidam_corp.Models
 {
     [PageType(Title = "Standard page")]
-    public class StandardPage : Page<StandardPage>
+    public class StandardPage  : Page<StandardPage>
     {
     }
 }

@@ -1,16 +1,16 @@
 using Piranha.AttributeBuilder;
+using Piranha.Extend.Fields;
 using Piranha.Models;
-using sundhedmedalette.Models.Regions;
 
-namespace sundhedmedalette.Models
+namespace nidam_corp.Models
 {
     [PostType(Title = "Blog post")]
-    public class BlogPost : Post<BlogPost>
+    public class BlogPost  : Post<BlogPost>
     {
         /// <summary>
-        ///     Gets/sets the post heading.
+        /// Gets/sets the post heading.
         /// </summary>
         [Region]
-        public Heading Heading { get; set; }
+        public Regions.Heading Heading { get; set; }
     }
 }

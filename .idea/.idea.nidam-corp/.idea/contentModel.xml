@@ -8,7 +8,6 @@
         <e p="Manager" t="Include">
           <e p="Views" t="Include">
             <e p="Shared" t="Include">
-              <e p="EditorTemplates" t="Include" />
               <e p="Partial" t="Include">
                 <e p="_EditorSetup.cshtml" t="Include" />
               </e>
@@ -18,20 +17,27 @@
       </e>
       <e p="assets" t="Include">
         <e p="scss" t="Include">
-          <e p="base.scss" t="Include" />
-          <e p="Blocks" t="Include">
-            <e p="heroImage.scss" t="Include" />
+          <e p="base" t="Include">
+            <e p="Blocks" t="Include">
+              <e p="hero.scss" t="Include" />
+            </e>
           </e>
-          <e p="colors.scss" t="Include" />
           <e p="style.scss" t="Include" />
-          <e p="theme.scss" t="Include" />
+          <e p="Themes" t="Include">
+            <e p="sundhedmedalette" t="Include">
+              <e p="Blocks" t="Include">
+                <e p="hero.scss" t="Include" />
+              </e>
+              <e p="colors.scss" t="Include" />
+              <e p="sundhedmedalette-theme.scss" t="Include" />
+            </e>
+          </e>
         </e>
       </e>
       <e p="bin" t="ExcludeRecursive" />
-      <e p="compilerconfig.json" t="Include" />
-      <e p="compilerconfig.json.defaults" t="Include" />
       <e p="Controllers" t="Include">
         <e p="CmsController.cs" t="Include" />
+        <e p="SetupController.cs" t="Include" />
       </e>
       <e p="gulpfile.js" t="Include" />
       <e p="Models" t="Include">
@@ -54,7 +60,6 @@
         <e p="gulp-cssmin" t="IncludeRecursive" />
         <e p="gulp-rename" t="IncludeRecursive" />
         <e p="gulp-sass" t="IncludeRecursive" />
-        <e p="gulp-watch" t="IncludeRecursive" />
       </e>
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
@@ -68,6 +73,9 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="piranha.db" t="Include" />
       <e p="Program.cs" t="Include" />
+      <e p="seed" t="Include">
+        <e p="pexels-photo-355423.jpeg" t="Include" />
+      </e>
       <e p="Startup.cs" t="Include" />
       <e p="Views" t="Include">
         <e p="_ViewImports.cshtml" t="Include" />
@@ -86,6 +94,9 @@
           <e p="Post.cshtml" t="Include" />
           <e p="Start.cshtml" t="Include" />
         </e>
+        <e p="setup" t="Include">
+          <e p="Index.cshtml" t="Include" />
+        </e>
         <e p="Shared" t="Include">
           <e p="_Layout.cshtml" t="Include" />
           <e p="Partial" t="Include">
@@ -100,6 +111,7 @@
         </e>
         <e p="uploads" t="Include">
           <e p="0bd6ea12-2001-458d-8e2f-389d59d1b8ad-Skærmbillede 2018-12-17 kl. 22.31.34.png" t="Include" />
+          <e p="9c3cb87c-9c48-4fea-8f8b-d1e6353f031c-bottle-bowl-breakfeast.jpg" t="Include" />
         </e>
       </e>
     </e>
