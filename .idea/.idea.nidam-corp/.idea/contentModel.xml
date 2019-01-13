@@ -30,6 +30,7 @@
               <e p="style.scss" t="Include" />
             </e>
             <e p="sundhedmedalette" t="Include">
+              <e p="base.scss" t="Include" />
               <e p="Blocks" t="Include">
                 <e p="hero.scss" t="Include" />
               </e>
@@ -48,7 +49,7 @@
       <e p="gulpfile.js" t="Include" />
       <e p="Models" t="Include">
         <e p="Blocks" t="Include">
-          <e p="HeroImageBlock.cs" t="Include" />
+          <e p="HeroBlock.cs" t="Include" />
         </e>
         <e p="BlogArchive.cs" t="Include" />
         <e p="BlogPost.cs" t="Include" />
@@ -97,7 +98,7 @@
         <e p="Cms" t="Include">
           <e p="Archive.cshtml" t="Include" />
           <e p="DisplayTemplates" t="Include">
-            <e p="HeroImageBlock.cshtml" t="Include" />
+            <e p="HeroBlock.cshtml" t="Include" />
             <e p="HtmlBlock.cshtml" t="Include" />
             <e p="HtmlColumnBlock.cshtml" t="Include" />
             <e p="ImageBlock.cshtml" t="Include" />
@@ -111,8 +112,8 @@
         <e p="Shared" t="Include">
           <e p="_Layout.cshtml" t="Include" />
           <e p="Partial" t="Include">
-            <e p="_Menu.cshtml" t="Include" />
             <e p="_Meta.cshtml" t="Include" />
+            <e p="_Navbar.cshtml" t="Include" />
           </e>
         </e>
       </e>

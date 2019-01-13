@@ -19,13 +19,7 @@
 </head>
 <body>
 <header class="site-header @(ViewBag.HasImage == null || !ViewBag.HasImage ? "site-header-dark" : "")">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <partial name="Partial/_Menu.cshtml"/>
-            </div>
-        </div>
-    </div>
+    <partial name="Partial/_Navbar.cshtml"/>
 </header>
 
 @RenderBody()

@@ -50,8 +50,9 @@ namespace nidam_corp
             // Configure cache level
             App.CacheLevel = Piranha.Cache.CacheLevel.Basic;
 
-            //Add custom blocks
-            App.Blocks.Register<HeroImageBlock>();
+            registerBlocks();
+            
+            //unregisterBlocks();
             
             // Build content types
             var pageTypeBuilder = new Piranha.AttributeBuilder.PageTypeBuilder(api)
@@ -80,6 +81,16 @@ namespace nidam_corp
                     name: "default",
                     template: "{controller=home}/{action=index}/{id?}");
             });
+        }
+
+        private void registerBlocks()
+        {
+            App.Blocks.Register<HeroBlock>();
+        }
+
+        private void unregisterBlocks()
+        {
+            throw new NotImplementedException();
         }
     }
 }

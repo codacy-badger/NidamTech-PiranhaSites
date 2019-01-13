@@ -5,6 +5,7 @@
 /Users/nikolaidamm/Projects/nidam-corp/bin/Debug/netcoreapp2.1/nidam-corp.pdb
 /Users/nikolaidamm/Projects/nidam-corp/bin/Debug/netcoreapp2.1/nidam-corp.Views.dll
 /Users/nikolaidamm/Projects/nidam-corp/bin/Debug/netcoreapp2.1/nidam-corp.Views.pdb
+/Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/nidam-corp.csprojAssemblyReference.cache
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/nidam-corp.csproj.CoreCompileInputs.cache
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/nidam-corp.RazorAssemblyInfo.cache
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/nidam-corp.RazorAssemblyInfo.cs
@@ -15,7 +16,7 @@
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/nidam-corp.RazorCoreGenerate.cache
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Areas/Manager/Views/Shared/Partial/_EditorSetup.g.cshtml.cs
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Cms/Archive.g.cshtml.cs
-/Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Cms/DisplayTemplates/HeroImageBlock.g.cshtml.cs
+/Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Cms/DisplayTemplates/HeroBlock.g.cshtml.cs
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Cms/DisplayTemplates/HtmlBlock.g.cshtml.cs
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Cms/DisplayTemplates/HtmlColumnBlock.g.cshtml.cs
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Cms/DisplayTemplates/ImageBlock.g.cshtml.cs
@@ -24,9 +25,8 @@
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Cms/Page.g.cshtml.cs
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Cms/Post.g.cshtml.cs
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Cms/Start.g.cshtml.cs
-/Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Setup/Index.g.cshtml.cs
-/Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Partial/_Menu.g.cshtml.cs
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Partial/_Meta.g.cshtml.cs
+/Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Partial/_Navbar.g.cshtml.cs
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/_ViewImports.g.cshtml.cs
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/_ViewStart.g.cshtml.cs

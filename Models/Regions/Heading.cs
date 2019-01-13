@@ -6,16 +6,13 @@ namespace nidam_corp.Models.Regions
 {
     public class Heading
     {
-        /// <summary>
-        /// Gets/sets the optional primary image.
-        /// </summary>
-        [Field(Title = "Primary image")]
-        public ImageField PrimaryImage { get; set; }
+        [Field(Title = "Primary image")] public ImageField PrimaryImage { get; set; }
 
-        /// <summary>
-        /// Gets/sets the optional ingress.
-        /// </summary>
-        [Field]
-        public TextField Ingress { get; set; }
+
+        [Field] public NumberField SizeInPercentage { get; set; }
+
+        [Field] public StringField Title { get; set; }
+
+        [Field] public StringField Subtitle { get; set; }
     }
 }
