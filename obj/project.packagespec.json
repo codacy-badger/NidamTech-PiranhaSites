@@ -27,10 +27,8 @@
     "netcoreapp2.1": {
       "dependencies": {
         "Microsoft.AspNetCore.App": {
-          "suppressParent": "All",
           "target": "Package",
-          "version": "[2.1.1, )",
-          "autoReferenced": true
+          "version": "[2.1.5, )"
         },
         "Microsoft.EntityFrameworkCore.Sqlite": {
           "target": "Package",
@@ -44,11 +42,11 @@
         },
         "Piranha": {
           "target": "Package",
-          "version": "[5.3.1, )"
+          "version": "[5.3.0, )"
         },
         "Piranha.AspNetCore": {
           "target": "Package",
-          "version": "[5.3.1, )"
+          "version": "[5.3.0, )"
         },
         "Piranha.AspNetCore.Identity.SQLite": {
           "target": "Package",
@@ -68,7 +66,7 @@
         },
         "Piranha.Manager": {
           "target": "Package",
-          "version": "[5.3.1, )"
+          "version": "[5.3.0, )"
         }
       },
       "imports": [

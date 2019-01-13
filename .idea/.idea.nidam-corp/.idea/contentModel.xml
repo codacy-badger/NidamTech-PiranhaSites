@@ -42,7 +42,6 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="Controllers" t="Include">
         <e p="CmsController.cs" t="Include" />
-        <e p="SetupController.cs" t="Include" />
       </e>
       <e p="gulpfile.js" t="Include" />
       <e p="Models" t="Include">

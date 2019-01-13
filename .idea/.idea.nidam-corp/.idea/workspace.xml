@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dfbb221-7d8e-4e69-bccf-b681c175b5c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2dfbb221-7d8e-4e69-bccf-b681c175b5c5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,15 +39,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/css/style.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="5" column="135500" selection-start-line="5" selection-start-column="135500" selection-end-line="5" selection-end-column="135500" />
             </state>
           </provider>
         </entry>
@@ -102,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="517" lean-forward="true" selection-start-line="516" selection-start-column="14" selection-end-line="517" />
+            <state relative-caret-position="217">
+              <caret line="518" column="24" lean-forward="true" selection-start-line="518" selection-start-column="24" selection-end-line="518" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -228,6 +215,12 @@
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
             </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -245,7 +238,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Angular Template" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -324,7 +317,7 @@
       <option name="presentableId" value="Default" />
       <updated>1545862879976</updated>
       <workItem from="1545862881439" duration="11825000" />
-      <workItem from="1547383020373" duration="1523000" />
+      <workItem from="1547383020373" duration="2341000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1545864176251</created>
@@ -337,7 +330,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17950000" />
+    <option name="totallyTimeSpent" value="18768000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,14 +343,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="23" width="2496" height="1417" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Azure Explorer" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49213484" visible="true" weight="0.10350448" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49250534" visible="true" weight="0.23594132" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Capture Tool" order="3" />
-      <window_info active="true" id="Gulp" order="4" sideWeight="0.5078652" side_tool="true" visible="true" weight="0.10350448" />
+      <window_info id="Gulp" order="4" sideWeight="0.5074946" side_tool="true" visible="true" weight="0.23594132" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Azure Activity Log" weight="0.32981133" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -369,7 +361,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32920355" />
       <window_info anchor="bottom" id="REST Client" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32830188" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.6475472" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="NuGet" order="11" weight="0.32981133" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
@@ -810,10 +802,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/SetupController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-725">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="517" lean-forward="true" selection-start-line="516" selection-start-column="14" selection-end-line="517" />
+        <state relative-caret-position="217">
+          <caret line="518" column="24" lean-forward="true" selection-start-line="518" selection-start-column="24" selection-end-line="518" selection-end-column="24" />
         </state>
       </provider>
     </entry>
