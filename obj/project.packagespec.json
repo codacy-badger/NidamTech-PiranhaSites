@@ -42,11 +42,11 @@
         },
         "Piranha": {
           "target": "Package",
-          "version": "[5.3.0, )"
+          "version": "[5.3.1, )"
         },
         "Piranha.AspNetCore": {
           "target": "Package",
-          "version": "[5.3.0, )"
+          "version": "[5.3.1, )"
         },
         "Piranha.AspNetCore.Identity.SQLite": {
           "target": "Package",
@@ -55,6 +55,18 @@
         "Piranha.AttributeBuilder": {
           "target": "Package",
           "version": "[5.3.0, )"
+        },
+        "Piranha.Azure.BlobStorage": {
+          "target": "Package",
+          "version": "[5.3.0, )"
+        },
+        "Piranha.BasicWeb.CSharp": {
+          "target": "Package",
+          "version": "[5.3.1, )"
+        },
+        "Piranha.Blog.CSharp": {
+          "target": "Package",
+          "version": "[5.3.1, )"
         },
         "Piranha.ImageSharp": {
           "target": "Package",
@@ -66,7 +78,7 @@
         },
         "Piranha.Manager": {
           "target": "Package",
-          "version": "[5.3.0, )"
+          "version": "[5.3.1, )"
         }
       },
       "imports": [

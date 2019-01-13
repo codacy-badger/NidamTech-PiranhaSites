@@ -2701,7 +2701,7 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Piranha/5.3.0": {
+      "Piranha/5.3.1": {
         "type": "package",
         "dependencies": {
           "AutoMapper": "7.0.1",
@@ -2716,13 +2716,13 @@
           "lib/netstandard2.0/Piranha.dll": {}
         }
       },
-      "Piranha.AspNetCore/5.3.0": {
+      "Piranha.AspNetCore/5.3.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Http": "2.1.1",
           "Microsoft.AspNetCore.Http.Extensions": "2.1.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
-          "Piranha": "[5.3.0, 6.0.0)",
+          "Piranha": "[5.3.1, 6.0.0)",
           "XSitemap": "2.0.5"
         },
         "compile": {
@@ -2773,6 +2773,25 @@
           "lib/netstandard2.0/Piranha.AttributeBuilder.dll": {}
         }
       },
+      "Piranha.Azure.BlobStorage/5.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Piranha": "[5.3.0, 6.0.0)",
+          "WindowsAzure.Storage": "9.3.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Piranha.Azure.BlobStorage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Piranha.Azure.BlobStorage.dll": {}
+        }
+      },
+      "Piranha.BasicWeb.CSharp/5.3.1": {
+        "type": "package"
+      },
+      "Piranha.Blog.CSharp/5.3.1": {
+        "type": "package"
+      },
       "Piranha.ImageSharp/5.3.0-rc1": {
         "type": "package",
         "dependencies": {
@@ -2798,7 +2817,7 @@
           "lib/netstandard2.0/Piranha.Local.FileStorage.dll": {}
         }
       },
-      "Piranha.Manager/5.3.0": {
+      "Piranha.Manager/5.3.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore": "2.1.4",
@@ -2807,8 +2826,8 @@
           "Microsoft.AspNetCore.SignalR": "1.0.4",
           "Microsoft.AspNetCore.StaticFiles": "2.1.1",
           "Microsoft.Extensions.FileProviders.Embedded": "2.1.1",
-          "Piranha": "[5.3.0, 6.0.0)",
-          "Piranha.AspNetCore": "[5.3.0, 6.0.0)"
+          "Piranha": "[5.3.1, 6.0.0)",
+          "Piranha.AspNetCore": "[5.3.1, 6.0.0)"
         },
         "compile": {
           "lib/netstandard2.0/Piranha.Manager.dll": {}
@@ -4653,6 +4672,19 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "WindowsAzure.Storage/9.3.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.2"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
       "xsitemap/2.0.5": {
@@ -7526,27 +7558,27 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "Piranha/5.3.0": {
-      "sha512": "vscBjKvS4AUlioSByQQYwWmYhlHbHW99Z/hHZHknVEk2cJJrgVF3tn6V6qdMmqUq8rKpsZo2JUnRCUnMfxjcNw==",
+    "Piranha/5.3.1": {
+      "sha512": "Huf8k16iIqbje9CDUiKXi1GU0BCQoME8aBiCwYNr/vIi3QfpxM+Ya9I2GYCpQPtekNZXJJRdwvnorobLTTlzdQ==",
       "type": "package",
-      "path": "piranha/5.3.0",
+      "path": "piranha/5.3.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Piranha.dll",
-        "piranha.5.3.0.nupkg.sha512",
+        "piranha.5.3.1.nupkg.sha512",
         "piranha.nuspec"
       ]
     },
-    "Piranha.AspNetCore/5.3.0": {
-      "sha512": "0RNbQAhr2AhSom+FbiJEb5Y/3rd1bDKXuA3W6oMBMxXALqxGVF8iQ5fNDgfrukqUSiezQ1acTYyyAZhtcWMD2A==",
+    "Piranha.AspNetCore/5.3.1": {
+      "sha512": "+jAsmgDSfuwdWaWyn7bRnSLL6c4SjTpAz/FklRFoVooJCMjaBMRP9DlN8DYsipv6qsscJVj3yL0PEjBsexqsXA==",
       "type": "package",
-      "path": "piranha.aspnetcore/5.3.0",
+      "path": "piranha.aspnetcore/5.3.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Piranha.AspNetCore.dll",
-        "piranha.aspnetcore.5.3.0.nupkg.sha512",
+        "piranha.aspnetcore.5.3.1.nupkg.sha512",
         "piranha.aspnetcore.nuspec"
       ]
     },
@@ -7586,6 +7618,119 @@
         "piranha.attributebuilder.nuspec"
       ]
     },
+    "Piranha.Azure.BlobStorage/5.3.0": {
+      "sha512": "zuWt4lPQhcAletq1l00tSs5s0df8Ho390xk+4fCav/ia0IxYvueSvGXL08KZZV0XatA+UtB963DD4/5yEJ3dyg==",
+      "type": "package",
+      "path": "piranha.azure.blobstorage/5.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Piranha.Azure.BlobStorage.dll",
+        "piranha.azure.blobstorage.5.3.0.nupkg.sha512",
+        "piranha.azure.blobstorage.nuspec"
+      ]
+    },
+    "Piranha.BasicWeb.CSharp/5.3.1": {
+      "sha512": "QqWj9dnH1jljSPb9j+7Fu2MBizlHNGISwXon6f0sR44ybFkdKXdRNRMbvGONp1PQJFK6syjAXc9QPOw7aHyKyQ==",
+      "type": "package",
+      "path": "piranha.basicweb.csharp/5.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/.template.config/template.json",
+        "content/BasicWeb.csproj",
+        "content/Controllers/CmsController.cs",
+        "content/Controllers/SetupController.cs",
+        "content/Models/BlogArchive.cs",
+        "content/Models/BlogPost.cs",
+        "content/Models/Regions/Heading.cs",
+        "content/Models/Regions/Teaser.cs",
+        "content/Models/StandardPage.cs",
+        "content/Models/StartPage.cs",
+        "content/Program.cs",
+        "content/Startup.cs",
+        "content/Views/Cms/Archive.cshtml",
+        "content/Views/Cms/DisplayTemplates/HtmlBlock.cshtml",
+        "content/Views/Cms/DisplayTemplates/HtmlColumnBlock.cshtml",
+        "content/Views/Cms/DisplayTemplates/ImageBlock.cshtml",
+        "content/Views/Cms/DisplayTemplates/QuoteBlock.cshtml",
+        "content/Views/Cms/DisplayTemplates/TextBlock.cshtml",
+        "content/Views/Cms/Page.cshtml",
+        "content/Views/Cms/Post.cshtml",
+        "content/Views/Cms/Start.cshtml",
+        "content/Views/Setup/Index.cshtml",
+        "content/Views/Shared/Partial/_Menu.cshtml",
+        "content/Views/Shared/Partial/_Meta.cshtml",
+        "content/Views/Shared/_Layout.cshtml",
+        "content/Views/_ViewImports.cshtml",
+        "content/Views/_ViewStart.cshtml",
+        "content/assets/scss/base.scss",
+        "content/assets/scss/colors.scss",
+        "content/assets/scss/style.scss",
+        "content/assets/scss/theme.scss",
+        "content/compilerconfig.json",
+        "content/compilerconfig.json.defaults",
+        "content/gulpfile.js",
+        "content/package.json",
+        "content/seed/pexels-photo-355423.jpeg",
+        "content/wwwroot/css/style.css",
+        "content/wwwroot/css/style.min.css",
+        "piranha.basicweb.csharp.5.3.1.nupkg.sha512",
+        "piranha.basicweb.csharp.nuspec"
+      ]
+    },
+    "Piranha.Blog.CSharp/5.3.1": {
+      "sha512": "By65WrFz+lgMZFOrtKwjVAOWQNoFOSYqiAaqYV7PcXb77MyQ3qTvqpjinOCDs7DpST7dnBF4kfnueW6jydCA8w==",
+      "type": "package",
+      "path": "piranha.blog.csharp/5.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/.template.config/template.json",
+        "content/BlogTemplate.csproj",
+        "content/Controllers/CmsController.cs",
+        "content/Controllers/SetupController.cs",
+        "content/Models/BlogArchive.cs",
+        "content/Models/BlogPost.cs",
+        "content/Models/BlogSite.cs",
+        "content/Models/Regions/Heading.cs",
+        "content/Models/Regions/SiteInfo.cs",
+        "content/Models/StandardPage.cs",
+        "content/Program.cs",
+        "content/Startup.cs",
+        "content/Views/Cms/Archive.cshtml",
+        "content/Views/Cms/DisplayTemplates/HtmlBlock.cshtml",
+        "content/Views/Cms/DisplayTemplates/HtmlColumnBlock.cshtml",
+        "content/Views/Cms/DisplayTemplates/ImageBlock.cshtml",
+        "content/Views/Cms/DisplayTemplates/QuoteBlock.cshtml",
+        "content/Views/Cms/DisplayTemplates/TextBlock.cshtml",
+        "content/Views/Cms/Page.cshtml",
+        "content/Views/Cms/Post.cshtml",
+        "content/Views/Setup/Index.cshtml",
+        "content/Views/Shared/Partial/_Menu.cshtml",
+        "content/Views/Shared/Partial/_Meta.cshtml",
+        "content/Views/Shared/_Layout.cshtml",
+        "content/Views/_ViewImports.cshtml",
+        "content/Views/_ViewStart.cshtml",
+        "content/assets/scss/base.scss",
+        "content/assets/scss/colors.scss",
+        "content/assets/scss/style.scss",
+        "content/assets/scss/type.scss",
+        "content/compilerconfig.json",
+        "content/compilerconfig.json.defaults",
+        "content/gulpfile.js",
+        "content/package.json",
+        "content/seed/logo.png",
+        "content/seed/pexels-photo-355423.jpeg",
+        "content/wwwroot/assets/css/style.css",
+        "content/wwwroot/assets/css/style.min.css",
+        "content/wwwroot/assets/img/github.png",
+        "content/wwwroot/assets/img/linkedin.png",
+        "content/wwwroot/assets/img/twitter.png",
+        "piranha.blog.csharp.5.3.1.nupkg.sha512",
+        "piranha.blog.csharp.nuspec"
+      ]
+    },
     "Piranha.ImageSharp/5.3.0-rc1": {
       "sha512": "CGIzOK0cnqXfocdT9wuIb50qhQMW5Z53tzY84Y9kMATyRy4274ZF4pbFD8IP630cemBeH9pZsebftePagXgfGQ==",
       "type": "package",
@@ -7610,15 +7755,15 @@
         "piranha.local.filestorage.nuspec"
       ]
     },
-    "Piranha.Manager/5.3.0": {
-      "sha512": "artQR1iilkX5XlfmHotG2D+LEsBmg1MKKyNNOVdSSYrdZVL6Aw26m1cb0rdEa7hOaoU2mpubC4xHtgqp0rUTkA==",
+    "Piranha.Manager/5.3.1": {
+      "sha512": "i9T8p8Ie3b+lXNNaFGw1/+DDd4P3g2deGGzlvsXAfnWsbEk83RgDq7HDkugrNtaOB8PNpD7IMhOJkWrS+93UuA==",
       "type": "package",
-      "path": "piranha.manager/5.3.0",
+      "path": "piranha.manager/5.3.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Piranha.Manager.dll",
-        "piranha.manager.5.3.0.nupkg.sha512",
+        "piranha.manager.5.3.1.nupkg.sha512",
         "piranha.manager.nuspec"
       ]
     },
@@ -12420,6 +12565,30 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "WindowsAzure.Storage/9.3.2": {
+      "sha512": "77ma1/kP2l/HEQLMUub7yF3nuF5Pycal72+IhHPKqxSfX3c/M+Nkjl3DyE1JHcWgdQFICqYg2wwb19sABECmDg==",
+      "type": "package",
+      "path": "windowsazure.storage/9.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.WindowsAzure.Storage.dll",
+        "lib/net45/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/net45/Microsoft.WindowsAzure.Storage.xml",
+        "lib/netstandard1.0/Microsoft.WindowsAzure.Storage.dll",
+        "lib/netstandard1.0/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll",
+        "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/win8/Microsoft.WindowsAzure.Storage.dll",
+        "lib/win8/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/wp8/Microsoft.WindowsAzure.Storage.dll",
+        "lib/wp8/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/wpa/Microsoft.WindowsAzure.Storage.dll",
+        "lib/wpa/Microsoft.WindowsAzure.Storage.pdb",
+        "windowsazure.storage.9.3.2.nupkg.sha512",
+        "windowsazure.storage.nuspec"
+      ]
+    },
     "xsitemap/2.0.5": {
       "sha512": "Pc37HRXYTDevlaa32Oao0B8Dw+CO0P13jHbgWqxnaN79vzgMqSTgbke106ltImb8PKCSzHz7CDXHAzewEj3zbg==",
       "type": "package",
@@ -12439,13 +12608,16 @@
       "Microsoft.AspNetCore.App >= 2.1.5",
       "Microsoft.EntityFrameworkCore.Sqlite >= 2.1.4",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Piranha >= 5.3.0",
-      "Piranha.AspNetCore >= 5.3.0",
+      "Piranha >= 5.3.1",
+      "Piranha.AspNetCore >= 5.3.1",
       "Piranha.AspNetCore.Identity.SQLite >= 5.3.0",
       "Piranha.AttributeBuilder >= 5.3.0",
+      "Piranha.Azure.BlobStorage >= 5.3.0",
+      "Piranha.BasicWeb.CSharp >= 5.3.1",
+      "Piranha.Blog.CSharp >= 5.3.1",
       "Piranha.ImageSharp >= 5.3.0-rc1",
       "Piranha.Local.FileStorage >= 5.3.0",
-      "Piranha.Manager >= 5.3.0"
+      "Piranha.Manager >= 5.3.1"
     ]
   },
   "packageFolders": {
@@ -12503,11 +12675,11 @@
           },
           "Piranha": {
             "target": "Package",
-            "version": "[5.3.0, )"
+            "version": "[5.3.1, )"
           },
           "Piranha.AspNetCore": {
             "target": "Package",
-            "version": "[5.3.0, )"
+            "version": "[5.3.1, )"
           },
           "Piranha.AspNetCore.Identity.SQLite": {
             "target": "Package",
@@ -12516,6 +12688,18 @@
           "Piranha.AttributeBuilder": {
             "target": "Package",
             "version": "[5.3.0, )"
+          },
+          "Piranha.Azure.BlobStorage": {
+            "target": "Package",
+            "version": "[5.3.0, )"
+          },
+          "Piranha.BasicWeb.CSharp": {
+            "target": "Package",
+            "version": "[5.3.1, )"
+          },
+          "Piranha.Blog.CSharp": {
+            "target": "Package",
+            "version": "[5.3.1, )"
           },
           "Piranha.ImageSharp": {
             "target": "Package",
@@ -12527,7 +12711,7 @@
           },
           "Piranha.Manager": {
             "target": "Package",
-            "version": "[5.3.0, )"
+            "version": "[5.3.1, )"
           }
         },
         "imports": [
