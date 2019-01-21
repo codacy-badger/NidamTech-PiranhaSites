@@ -22,6 +22,7 @@
             <e p="Blocks" t="Include">
               <e p="hero.scss" t="Include" />
             </e>
+            <e p="fonts.scss" t="Include" />
             <e p="style.scss" t="Include" />
           </e>
           <e p="style.scss" t="Include" />
