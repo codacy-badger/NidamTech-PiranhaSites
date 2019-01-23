@@ -11,5 +11,9 @@
     "gulp-cssmin": "^0.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niem94/nidam-corp"
   }
 }
