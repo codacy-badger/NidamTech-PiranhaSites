@@ -19,24 +19,28 @@
       <e p="assets" t="Include">
         <e p="scss" t="Include">
           <e p="base" t="Include">
+            <e p="_fonts.scss" t="Include" />
             <e p="Blocks" t="Include">
-              <e p="hero.scss" t="Include" />
+              <e p="_hero.scss" t="Include" />
             </e>
-            <e p="fonts.scss" t="Include" />
             <e p="style.scss" t="Include" />
           </e>
-          <e p="style.scss" t="Include" />
           <e p="Themes" t="Include">
-            <e p="nidam-corp" t="Include">
-              <e p="style.scss" t="Include" />
+            <e p="nidam" t="Include">
+              <e p="_colors.scss" t="Include" />
+              <e p="_fonts.scss" t="Include" />
+              <e p="Blocks" t="Include">
+                <e p="_hero.scss" t="Include" />
+              </e>
+              <e p="nidam-theme.scss" t="Include" />
             </e>
             <e p="sundhedmedalette" t="Include">
-              <e p="base.scss" t="Include" />
+              <e p="_colors.scss" t="Include" />
+              <e p="_fonts.scss" t="Include" />
               <e p="Blocks" t="Include">
-                <e p="hero.scss" t="Include" />
+                <e p="_hero.scss" t="Include" />
               </e>
-              <e p="colors.scss" t="Include" />
-              <e p="style.scss" t="Include" />
+              <e p="sundhedmedalette-theme.scss" t="Include" />
             </e>
           </e>
         </e>
@@ -120,7 +124,13 @@
       </e>
       <e p="wwwroot" t="Include">
         <e p="css" t="Include">
+          <e p="nidam" t="Include">
+            <e p="nidam-theme.min.css" t="Include" />
+          </e>
           <e p="style.min.css" t="Include" />
+          <e p="sundhedmedalette" t="Include">
+            <e p="sundhedmedalette-theme.min.css" t="Include" />
+          </e>
         </e>
         <e p="uploads" t="Include">
           <e p="0bd6ea12-2001-458d-8e2f-389d59d1b8ad-Skærmbillede 2018-12-17 kl. 22.31.34.png" t="Include" />
