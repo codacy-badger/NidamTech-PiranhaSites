@@ -1,19 +1,25 @@
 // Load plugins
+var browserSync = require('browser-sync').create();
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     cssmin = require('gulp-cssmin'),
     rename = require('gulp-rename');
 
-// Tasks
-gulp.task('watch', function () {
-    gulp.watch('assets/scss/base/**/*.scss', minifyBase);
-    gulp.watch('assets/scss/themes/**/**/*.scss', minifyThemes);
-});
-
+//Tasks
 gulp.task('default', function () {
     return minifyBase(), minifyThemes();
 });
 
+gulp.task('watch', function () {
+    browserSync.init({
+        proxy: "localhost:5000"
+    });
+    gulp.watch('assets/scss/base/**/*.scss', minifyBase).on('change', browserSync.reload);
+    gulp.watch('assets/scss/themes/**/**/*.scss', minifyThemes).on('change', browserSync.reload);
+});
+
+
+//Methods
 function minifyBase() {
     return gulp.src('assets/scss/base/style.scss')
         .pipe(sass().on('error', sass.logError))
@@ -21,7 +27,8 @@ function minifyBase() {
         .pipe(rename({
             suffix: ".min"
         }))
-        .pipe(gulp.dest('wwwroot/css'));
+        .pipe(gulp.dest('wwwroot/css'))
+        .pipe(browserSync.stream());
 }
 
 function minifyThemes() {
@@ -31,5 +38,6 @@ function minifyThemes() {
         .pipe(rename({
             suffix: ".min"
         }))
-        .pipe(gulp.dest('wwwroot/css'));
+        .pipe(gulp.dest('wwwroot/css'))
+        .pipe(browserSync.stream());
 };

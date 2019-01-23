@@ -6,6 +6,7 @@
   "author": "Håkan Edling",
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
     "gulp-cssmin": "^0.2.0",
     "gulp-rename": "^1.2.2",

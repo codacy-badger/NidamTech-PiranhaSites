@@ -67,6 +67,7 @@
       <e p="nidam-corp.sln" t="IncludeFlat" />
       <e p="node_modules" t="ExcludeRecursive">
         <e p="bootstrap" t="IncludeRecursive" />
+        <e p="browser-sync" t="IncludeRecursive" />
         <e p="gulp" t="IncludeRecursive" />
         <e p="gulp-cssmin" t="IncludeRecursive" />
         <e p="gulp-rename" t="IncludeRecursive" />
