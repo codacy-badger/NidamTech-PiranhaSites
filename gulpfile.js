@@ -5,11 +5,14 @@ var gulp = require('gulp'),
     rename = require('gulp-rename');
 
 // Styles
-gulp.watch('assets/scss/base/style.scss', baseTask());
-gulp.watch('assets/scss/themes/**/*-theme.scss', themesTask());
+gulp.task('watch', function () {
+    gulp.watch('assets/scss/base/**/*.scss', baseTask());
+    gulp.watch('assets/scss/themes/**/**/*.scss', themesTask());
+});
+
 gulp.task('default', function () {
-    baseTask();
-    themesTask();
+    return baseTask(), themesTask();
+    
 });
 
 function baseTask() {

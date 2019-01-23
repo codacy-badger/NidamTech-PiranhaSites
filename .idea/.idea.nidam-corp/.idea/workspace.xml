@@ -1,33 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dfbb221-7d8e-4e69-bccf-b681c175b5c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/scss/themes/nidam/nidam-theme.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/_colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/_fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/sundhedmedalette-theme.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/css/nidam/nidam-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/css/sundhedmedalette/sundhedmedalette-theme.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="2dfbb221-7d8e-4e69-bccf-b681c175b5c5" name="Default Changelist" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/base/blocks/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/blocks/_hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/base/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/base/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/themes/nidam-corp/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/themes/nidam/blocks/_hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/themes/nidam/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/blocks/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/blocks/_hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/themes/nidam/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compilerconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/compilerconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/Razor/Views/Cms/Start.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/Razor/Views/Cms/Start.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/piranha.db" beforeDir="false" afterPath="$PROJECT_DIR$/piranha.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/style.min.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +16,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/compilerconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/scss/base/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/scss/base/blocks/_hero.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/css/style.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="5" column="88327" selection-start-line="5" selection-start-column="88310" selection-end-line="5" selection-end-column="88327" />
+              <folding>
+                <element signature="e#23411#23645#2" expanded="true" />
+                <element signature="e#24058#24211#1" expanded="true" />
+                <element signature="e#24251#24485#1" expanded="true" />
+                <element signature="e#27749#28025#2" expanded="true" />
+                <element signature="e#28450#28603#1" expanded="true" />
+                <element signature="e#28643#28919#1" expanded="true" />
+                <element signature="e#54993#55180#2" expanded="true" />
+                <element signature="e#55706#55842#2" expanded="true" />
+                <element signature="e#55995#56128#2" expanded="true" />
+                <element signature="e#57124#57277#1" expanded="true" />
+                <element signature="e#67934#68164#2" expanded="true" />
+                <element signature="e#68999#69235#2" expanded="true" />
+                <element signature="e#93903#94080#2" expanded="true" />
+                <element signature="e#94126#94303#2" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/scss/base/_fonts.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="119" column="22" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -66,6 +114,8 @@
       <find>placeholder</find>
       <find>boo</find>
       <find>hero</find>
+      <find>20px</find>
+      <find>text-align:center</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,9 +208,14 @@
         <option value="$PROJECT_DIR$/assets/scss/themes/nidam-corp/nidam-theme.scss" />
         <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/sundhedmedalette-theme.scss" />
         <option value="$PROJECT_DIR$/assets/scss/themes/nidam/blocks/_hero.scss" />
+        <option value="$PROJECT_DIR$/compilerconfig.json" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/assets/scss/base/blocks/_hero.scss" />
       </list>
     </option>
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="SCSS" pattern="file:assets/scss/base/style.scss||file[riderModule]:assets/scss/*||file[riderModule]:assets/scss//*" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="63" />
@@ -168,27 +223,16 @@
     <option name="width" value="1857" />
     <option name="height" value="1177" />
   </component>
+  <component name="ProjectStartupLocalConfiguration">
+    <configurations>
+      <configuration id="Gulp.js.Gulp Watch Task" name="Gulp Watch Task" />
+    </configurations>
+  </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="nidam-corp" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="nidam-corp" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Views" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -228,89 +272,58 @@
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
               <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
               <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="themes" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="themes" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="nidam" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="themes" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="nidam" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="base" type="24d0babc:SolutionExplorerModelNode" />
               <item name="blocks" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="themes" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="sundhedmedalette" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="themes" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="sundhedmedalette" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="blocks" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Models" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Cms" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="css" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="FileSystemExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="nidam-corp" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="nidam-corp" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Views" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wwwroot" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Angular Template" />
+    <property name="settings.editor.selected.configurable" value="preferences.startup.tasks" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -325,7 +338,7 @@
     </option>
   </component>
   <component name="RunManager" selected=".NET Project.Default">
-    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project" singleton="false">
       <option name="EXE_PATH" value="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -346,40 +359,19 @@
       <browser url="http://localhost:5000" name="e5120d43-2c3f-47ef-9f26-65e539e05186" start="true" />
       <method v="2">
         <option name="Build" enabled="true" />
+        <option name="GulpBeforeRunTask" enabled="true">
+          <node-interpreter>project</node-interpreter>
+          <node-options />
+          <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+          <tasks>
+            <task>default</task>
+          </tasks>
+          <arguments />
+          <envs />
+        </option>
       </method>
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="default" type="js.build_tools.gulp" temporary="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
-      <tasks>
-        <task>default</task>
-      </tasks>
-      <arguments />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="min:css" type="js.build_tools.gulp" temporary="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
-      <tasks>
-        <task>min:css</task>
-      </tasks>
-      <arguments />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="watch" type="js.build_tools.gulp" temporary="true">
+    <configuration name="Gulp Watch Task" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
@@ -390,19 +382,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue=".NET Project.Default" />
-      <item itemvalue="Gulp.js.min:css" />
-      <item itemvalue="Gulp.js.default" />
-      <item itemvalue="Gulp.js.watch" />
+      <item itemvalue="Gulp.js.Gulp Watch Task" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gulp.js.default" />
-        <item itemvalue="Gulp.js.watch" />
-        <item itemvalue="Gulp.js.min:css" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -418,7 +410,10 @@
       <workItem from="1547383020373" duration="9120000" />
       <workItem from="1547723197405" duration="897000" />
       <workItem from="1547942400940" duration="2995000" />
-      <workItem from="1548257816111" duration="5385000" />
+      <workItem from="1548257816111" duration="5426000" />
+      <workItem from="1548263675253" duration="3183000" />
+      <workItem from="1548269884710" duration="342000" />
+      <workItem from="1548270229934" duration="909000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1545864176251</created>
@@ -431,7 +426,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34824000" />
+    <option name="totallyTimeSpent" value="39299000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -443,25 +438,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="63" y="23" width="1857" height="1177" extended-state="6" />
+    <frame x="63" y="23" width="1857" height="1177" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48696846" visible="true" weight="0.23581268" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48422498" visible="true" weight="0.23581268" />
       <window_info id="Structure" order="1" sideWeight="0.51303154" side_tool="true" weight="0.23581268" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Capture Tool" order="3" />
-      <window_info id="Gulp" order="4" sideWeight="0.51303154" side_tool="true" visible="true" weight="0.23581268" />
+      <window_info id="Gulp" order="4" sideWeight="0.515775" side_tool="true" visible="true" weight="0.23581268" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Azure Explorer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3281106" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3281106" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.3281106" />
       <window_info anchor="bottom" id="REST Client" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.27773586" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.27741936" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="NuGet" order="11" weight="0.32981133" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
@@ -510,14 +506,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/base.scss" />
     <entry file="file://$PROJECT_DIR$/wwwroot/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/compilerconfig.json" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/Setup/Index.cshtml" />
     <entry file="file://$PROJECT_DIR$/Controllers/SetupController.cs" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -809,13 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/base/blocks/_hero.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Models/StartPage.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -859,29 +840,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/style.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/base/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/base/_fonts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="119" column="22" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/themes/nidam-corp/_base.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/_base.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/style.scss" />
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/nidam-corp/_base.scss" />
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/_base.scss" />
     <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/_colors.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -896,13 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/css/style.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10919">
-          <caret line="5" column="135943" selection-start-line="5" selection-start-column="135943" selection-end-line="5" selection-end-column="135943" />
         </state>
       </provider>
     </entry>
@@ -933,12 +887,89 @@
     <entry file="file://$PROJECT_DIR$/assets/scss/themes/nidam/blocks/_hero.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+    <entry file="file://$PROJECT_DIR$/assets/scss/base/_fonts.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        <state relative-caret-position="850">
+          <caret line="119" column="22" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/compilerconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/base/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/css/style.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="5" column="88327" selection-start-line="5" selection-start-column="88310" selection-end-line="5" selection-end-column="88327" />
+          <folding>
+            <element signature="e#23411#23645#2" expanded="true" />
+            <element signature="e#24058#24211#1" expanded="true" />
+            <element signature="e#24251#24485#1" expanded="true" />
+            <element signature="e#27749#28025#2" expanded="true" />
+            <element signature="e#28450#28603#1" expanded="true" />
+            <element signature="e#28643#28919#1" expanded="true" />
+            <element signature="e#54993#55180#2" expanded="true" />
+            <element signature="e#55706#55842#2" expanded="true" />
+            <element signature="e#55995#56128#2" expanded="true" />
+            <element signature="e#57124#57277#1" expanded="true" />
+            <element signature="e#67934#68164#2" expanded="true" />
+            <element signature="e#68999#69235#2" expanded="true" />
+            <element signature="e#93903#94080#2" expanded="true" />
+            <element signature="e#94126#94303#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/base/blocks/_hero.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>SCSS</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+          <order>
+            <scope name="SCSS" />
+          </order>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
