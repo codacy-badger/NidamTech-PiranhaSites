@@ -46,8 +46,6 @@
         </e>
       </e>
       <e p="bin" t="ExcludeRecursive" />
-      <e p="compilerconfig.json" t="Include" />
-      <e p="compilerconfig.json.defaults" t="Include" />
       <e p="Controllers" t="Include">
         <e p="CmsController.cs" t="Include" />
       </e>

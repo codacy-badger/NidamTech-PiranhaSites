@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dfbb221-7d8e-4e69-bccf-b681c175b5c5" name="Default Changelist" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compilerconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/compilerconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/piranha.db" beforeDir="false" afterPath="$PROJECT_DIR$/piranha.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compilerconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compilerconfig.json.defaults" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,15 +19,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/compilerconfig.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -413,7 +402,7 @@
       <workItem from="1548257816111" duration="5426000" />
       <workItem from="1548263675253" duration="3183000" />
       <workItem from="1548269884710" duration="342000" />
-      <workItem from="1548270229934" duration="909000" />
+      <workItem from="1548270229934" duration="945000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1545864176251</created>
@@ -426,7 +415,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39299000" />
+    <option name="totallyTimeSpent" value="39335000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -439,18 +428,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="23" width="1857" height="1177" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48422498" visible="true" weight="0.23581268" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48479262" visible="true" weight="0.23581268" />
       <window_info id="Structure" order="1" sideWeight="0.51303154" side_tool="true" weight="0.23581268" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Capture Tool" order="3" />
-      <window_info id="Gulp" order="4" sideWeight="0.515775" side_tool="true" visible="true" weight="0.23581268" />
+      <window_info id="Gulp" order="4" sideWeight="0.51520735" side_tool="true" visible="true" weight="0.23581268" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Azure Explorer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3281106" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3281106" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
