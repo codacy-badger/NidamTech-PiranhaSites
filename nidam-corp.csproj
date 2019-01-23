@@ -5,6 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="assets\scss\base\modules" />
+    <Folder Include="assets\scss\base\vendor" />
+    <Folder Include="assets\scss\themes\nidam\modules" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -21,5 +24,9 @@
     <PackageReference Include="Piranha.ImageSharp" Version="5.3.0-rc1" />
     <PackageReference Include="Piranha.Local.FileStorage" Version="5.3.0" />
     <PackageReference Include="Piranha.Manager" Version="5.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\css\nidam\nidam-theme.min.css" />
   </ItemGroup>
 </Project>

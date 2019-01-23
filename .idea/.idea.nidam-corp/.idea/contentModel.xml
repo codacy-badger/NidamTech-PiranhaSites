@@ -19,28 +19,38 @@
       <e p="assets" t="Include">
         <e p="scss" t="Include">
           <e p="base" t="Include">
-            <e p="_fonts.scss" t="Include" />
-            <e p="Blocks" t="Include">
-              <e p="_hero.scss" t="Include" />
+            <e p="modules" t="Include" />
+            <e p="partials" t="Include">
+              <e p="_responsive-font-sizes.scss" t="Include" />
+              <e p="Blocks" t="Include">
+                <e p="_hero.scss" t="Include" />
+              </e>
             </e>
             <e p="style.scss" t="Include" />
+            <e p="vendor" t="Include" />
           </e>
           <e p="Themes" t="Include">
             <e p="nidam" t="Include">
-              <e p="_colors.scss" t="Include" />
-              <e p="_fonts.scss" t="Include" />
-              <e p="Blocks" t="Include">
-                <e p="_hero.scss" t="Include" />
-              </e>
+              <e p="modules" t="Include" />
               <e p="nidam-theme.scss" t="Include" />
             </e>
             <e p="sundhedmedalette" t="Include">
-              <e p="_colors.scss" t="Include" />
-              <e p="_fonts.scss" t="Include" />
-              <e p="Blocks" t="Include">
-                <e p="_hero.scss" t="Include" />
+              <e p="modules" t="Include">
+                <e p="_colors.scss" t="Include" />
+              </e>
+              <e p="partials" t="Include">
+                <e p="_navbar.scss" t="Include" />
+                <e p="Blocks" t="Include">
+                  <e p="_hero.scss" t="Include" />
+                </e>
+                <e p="Regions" t="Include">
+                  <e p="_heading.scss" t="Include" />
+                </e>
               </e>
               <e p="sundhedmedalette-theme.scss" t="Include" />
+              <e p="vendor" t="Include">
+                <e p="_google-fonts.scss" t="Include" />
+              </e>
             </e>
           </e>
         </e>
@@ -66,14 +76,11 @@
       <e p="nidam-corp.csproj" t="IncludeRecursive" />
       <e p="nidam-corp.sln" t="IncludeFlat" />
       <e p="node_modules" t="ExcludeRecursive">
-        <e p="bootstrap" t="IncludeRecursive" />
         <e p="browser-sync" t="IncludeRecursive" />
         <e p="gulp" t="IncludeRecursive" />
         <e p="gulp-cssmin" t="IncludeRecursive" />
         <e p="gulp-rename" t="IncludeRecursive" />
         <e p="gulp-sass" t="IncludeRecursive" />
-        <e p="jquery" t="IncludeRecursive" />
-        <e p="popper.js" t="IncludeRecursive" />
       </e>
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
@@ -91,9 +98,6 @@
         <e p="PublishProfiles" t="Include">
           <e p="nidam-corp - Web Deploy.pubxml" t="Include" />
         </e>
-      </e>
-      <e p="seed" t="Include">
-        <e p="pexels-photo-355423.jpeg" t="Include" />
       </e>
       <e p="Startup.cs" t="Include" />
       <e p="Views" t="Include">
@@ -116,6 +120,7 @@
         <e p="Shared" t="Include">
           <e p="_Layout.cshtml" t="Include" />
           <e p="Partial" t="Include">
+            <e p="_Footer.cshtml" t="Include" />
             <e p="_Meta.cshtml" t="Include" />
             <e p="_Navbar.cshtml" t="Include" />
           </e>
@@ -123,16 +128,18 @@
       </e>
       <e p="wwwroot" t="Include">
         <e p="css" t="Include">
-          <e p="nidam" t="Include">
-            <e p="nidam-theme.min.css" t="Include" />
+          <e p="base" t="Include">
+            <e p="style.min.css" t="Include" />
           </e>
-          <e p="style.min.css" t="Include" />
-          <e p="sundhedmedalette" t="Include">
+          <e p="Themes" t="Include">
+            <e p="nidam-theme.min.css" t="Include" />
             <e p="sundhedmedalette-theme.min.css" t="Include" />
           </e>
         </e>
+        <e p="img" t="Include">
+          <e p="sundhedmedalette-logo.png" t="Include" />
+        </e>
         <e p="uploads" t="Include">
-          <e p="0bd6ea12-2001-458d-8e2f-389d59d1b8ad-Skærmbillede 2018-12-17 kl. 22.31.34.png" t="Include" />
           <e p="9c3cb87c-9c48-4fea-8f8b-d1e6353f031c-bottle-bowl-breakfeast.jpg" t="Include" />
         </e>
       </e>

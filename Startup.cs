@@ -52,7 +52,7 @@ namespace nidam_corp
 
             registerBlocks();
             
-            //unregisterBlocks();
+            //TODO: unregisterBlocks();
             
             // Build content types
             var pageTypeBuilder = new Piranha.AttributeBuilder.PageTypeBuilder(api)

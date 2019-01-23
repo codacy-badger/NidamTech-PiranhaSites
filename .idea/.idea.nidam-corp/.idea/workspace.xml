@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dfbb221-7d8e-4e69-bccf-b681c175b5c5" name="Default Changelist" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/base/blocks/_hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/blocks/_hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/piranha.db" beforeDir="false" afterPath="$PROJECT_DIR$/piranha.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/css/themes/sundhedmedalette-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/themes/sundhedmedalette-theme.min.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,89 +19,158 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+        <entry file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="17" column="97" selection-start-line="17" selection-start-column="97" selection-end-line="17" selection-end-column="97" />
+            <state relative-caret-position="210">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <marker date="1548287510502" expanded="true" signature="16:1571" ph="&lt;html.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="33:37" ph="@..." />
+                <marker date="1548287510502" expanded="true" signature="38:740" ph="&lt;head.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="593:687" ph="@..." />
+                <marker date="1548287510502" expanded="true" signature="628:687" ph="{...}" />
+                <marker date="1548287510502" expanded="true" signature="741:1563" ph="&lt;body.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="748:906" ph="&lt;header.../&gt;" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/scss/base/style.scss">
+        <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/partials/_navbar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            <state relative-caret-position="210">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/scss/base/blocks/_hero.scss">
+        <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/partials/regions/_heading.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            <state relative-caret-position="45">
+              <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/Views/Cms/Start.cshtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+            <state relative-caret-position="525">
+              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
               <folding>
-                <marker date="1547393004953" expanded="true" signature="16:958" ph="&lt;html.../&gt;" />
-                <marker date="1547393004953" expanded="true" signature="33:37" ph="@..." />
-                <marker date="1547393004953" expanded="true" signature="38:503" ph="&lt;head.../&gt;" />
-                <marker date="1547393004953" expanded="true" signature="356:450" ph="@..." />
-                <marker date="1547393004953" expanded="true" signature="391:450" ph="{...}" />
-                <marker date="1547393004953" expanded="true" signature="504:950" ph="&lt;body.../&gt;" />
-                <marker date="1547393004953" expanded="true" signature="511:669" ph="&lt;header.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="60:427" ph="@..." />
+                <marker date="1548287510502" expanded="true" signature="182:424" ph="{...}" />
+                <marker date="1548287510502" expanded="true" signature="237:399" ph="{...}" />
+                <marker date="1548287510502" expanded="true" signature="428:700" ph="&lt;header.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="499:690" ph="&lt;div.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="531:616" ph="&lt;h1.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="625:679" ph="&lt;h3.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="702:2906" ph="&lt;div.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="725:2899" ph="&lt;div.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="757:2710" ph="@..." />
+                <marker date="1548287510502" expanded="true" signature="786:2710" ph="{...}" />
+                <marker date="1548287510502" expanded="true" signature="894:2700" ph="{...}" />
+                <marker date="1548287510502" expanded="true" signature="1024:1120" ph="{...}" />
+                <marker date="1548287510502" expanded="true" signature="1190:1286" ph="{...}" />
+                <marker date="1548287510502" expanded="true" signature="1307:1403" ph="{...}" />
+                <marker date="1548287510502" expanded="true" signature="1421:2657" ph="&lt;div.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="1490:2634" ph="@..." />
+                <marker date="1548287510502" expanded="true" signature="1521:2634" ph="{...}" />
+                <marker date="1548287510502" expanded="true" signature="1630:2612" ph="&lt;div.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="1701:2581" ph="&lt;div.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="1955:2546" ph="@..." />
+                <marker date="1548287510502" expanded="true" signature="1985:2232" ph="{...}" />
+                <marker date="1548287510502" expanded="true" signature="2056:2198" ph="&lt;p.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="2299:2546" ph="{...}" />
+                <marker date="1548287510502" expanded="true" signature="2370:2512" ph="&lt;p.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="2720:2888" ph="&lt;div.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="2773:2873" ph="&lt;div.../&gt;" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/css/style.min.css">
+        <entry file="file://$PROJECT_DIR$/Views/Cms/Post.cshtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1199">
-              <caret line="5" column="88327" selection-start-line="5" selection-start-column="88310" selection-end-line="5" selection-end-column="88327" />
+            <state>
               <folding>
-                <element signature="e#23411#23645#2" expanded="true" />
-                <element signature="e#24058#24211#1" expanded="true" />
-                <element signature="e#24251#24485#1" expanded="true" />
-                <element signature="e#27749#28025#2" expanded="true" />
-                <element signature="e#28450#28603#1" expanded="true" />
-                <element signature="e#28643#28919#1" expanded="true" />
-                <element signature="e#54993#55180#2" expanded="true" />
-                <element signature="e#55706#55842#2" expanded="true" />
-                <element signature="e#55995#56128#2" expanded="true" />
-                <element signature="e#57124#57277#1" expanded="true" />
-                <element signature="e#67934#68164#2" expanded="true" />
-                <element signature="e#68999#69235#2" expanded="true" />
-                <element signature="e#93903#94080#2" expanded="true" />
-                <element signature="e#94126#94303#2" expanded="true" />
+                <marker date="1547385717613" expanded="true" signature="59:96" ph="@..." />
+                <marker date="1547385717613" expanded="true" signature="98:1019" ph="&lt;div.../&gt;" />
+                <marker date="1547385717613" expanded="true" signature="121:1012" ph="&lt;div.../&gt;" />
+                <marker date="1547385717613" expanded="true" signature="153:527" ph="&lt;div.../&gt;" />
+                <marker date="1547385717613" expanded="true" signature="206:512" ph="&lt;div.../&gt;" />
+                <marker date="1547385717613" expanded="true" signature="296:493" ph="@..." />
+                <marker date="1547385717613" expanded="true" signature="323:493" ph="{...}" />
+                <marker date="1547385717613" expanded="true" signature="377:475" ph="{...}" />
+                <marker date="1547385717613" expanded="true" signature="536:824" ph="@..." />
+                <marker date="1547385717613" expanded="true" signature="578:824" ph="{...}" />
+                <marker date="1547385717613" expanded="true" signature="592:814" ph="&lt;div.../&gt;" />
+                <marker date="1547385717613" expanded="true" signature="626:795" ph="&lt;div.../&gt;" />
+                <marker date="1547385717613" expanded="true" signature="833:1001" ph="&lt;div.../&gt;" />
+                <marker date="1547385717613" expanded="true" signature="886:986" ph="&lt;div.../&gt;" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/scss/base/_fonts.scss">
+        <entry file="file://$PROJECT_DIR$/Views/Shared/Partial/_Meta.cshtml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/Shared/Partial/_Navbar.cshtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="94" column="16" lean-forward="true" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+            <state relative-caret-position="105">
+              <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+              <folding>
+                <marker date="1548287510502" expanded="true" signature="0:43" ph="@..." />
+                <marker date="1548287510502" expanded="true" signature="335:350" ph="&lt;a.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="335:1039" ph="&lt;div.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="335:1046" ph="&lt;nav.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="359:846" ph="&lt;div.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="433:831" ph="&lt;ul.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="481:813" ph="@..." />
+                <marker date="1548287510502" expanded="true" signature="511:813" ph="{...}" />
+                <marker date="1548287510502" expanded="true" signature="550:795" ph="&lt;li.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="640:769" ph="&lt;a.../&gt;" />
+                <marker date="1548287510502" expanded="true" signature="855:1028" ph="&lt;button.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="527" column="63" selection-start-line="527" selection-start-column="63" selection-end-line="527" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-93">
+              <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+              <folding>
+                <marker date="1548287510501" expanded="false" signature="6:428" ph="..." />
+                <marker date="1548287510501" expanded="true" signature="450:3452" ph="{...}" />
+                <marker date="1548287510501" expanded="true" signature="477:3450" ph="{...}" />
+                <marker date="1548287510501" expanded="true" signature="492:707" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
+                <marker date="1548287510501" expanded="true" signature="786:1476" ph="{...}" />
+                <marker date="1548287510501" expanded="true" signature="835:977" ph="{...}" />
+                <marker date="1548287510501" expanded="true" signature="1701:3229" ph="{...}" />
+                <marker date="1548287510501" expanded="true" signature="1748:1825" ph="{...}" />
+                <marker date="1548287510501" expanded="true" signature="2040:2115" ph="/* unregisterBlocks(); ... */" />
+                <marker date="1548287510501" expanded="true" signature="2841:3217" ph="{...}" />
+                <marker date="1548287510501" expanded="true" signature="3268:3334" ph="{...}" />
+                <marker date="1548287510501" expanded="true" signature="3375:3444" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,6 +234,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A9A3B6C4-1564-45BC-B237-B53237A1F7E3/c4/11dae760/HtmlColumnBlock.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DA1462E7-5953-44D6-AB47-24511181C773/fb/21b451a2/RazorPage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Cms/Start.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Shared/Partial/_Footer.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Areas/Manager/Views/Shared/Partial/_EditorSetup.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38266413-AF11-4EF6-BF76-0B80D609C7DF/c8/ef779e0e/HtmlHelperDisplayExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" />
@@ -175,18 +243,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/scss/heroImage.scss" />
-        <option value="$PROJECT_DIR$/Areas/Manager/Views/Shared/Partial/_EditorSetup.cshtml" />
-        <option value="$PROJECT_DIR$/Views/_ViewStart.cshtml" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/Areas/Manager/Views/Shared/EditorTemplates/HeroImageBlock.cshtml" />
-        <option value="$PROJECT_DIR$/assets/scss/theme.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/base.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette-theme.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/blocks/hero.scss" />
-        <option value="$PROJECT_DIR$/Models/Blocks/HeroImageBlock.cs" />
         <option value="$PROJECT_DIR$/Views/Cms/DisplayTemplates/HeroImageBlock.cshtml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/assets/scss/base/blocks/hero.scss" />
         <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/fonts.scss" />
         <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/colors.scss" />
@@ -194,10 +251,8 @@
         <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/blocks/hero.scss" />
         <option value="$PROJECT_DIR$/Models/Themes/sundhedmedalette-theme.cs" />
         <option value="$PROJECT_DIR$/Models/Themes/themePicker.cs" />
-        <option value="$PROJECT_DIR$/Startup.cs" />
         <option value="$PROJECT_DIR$/Views/Shared/Partial/_Menu.cshtml" />
         <option value="$PROJECT_DIR$/nidam-corp.csproj" />
-        <option value="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/Views/Cms/Page.cshtml" />
         <option value="$PROJECT_DIR$/Views/Cms/Archive.cshtml" />
         <option value="$PROJECT_DIR$/Models/Regions/Heading.cs" />
@@ -205,26 +260,40 @@
         <option value="$PROJECT_DIR$/Views/Cms/DisplayTemplates/TwoColumnBlock.cshtml" />
         <option value="$PROJECT_DIR$/Models/TwoColumnBlock.cs" />
         <option value="$PROJECT_DIR$/Models/Blocks/TwoColumnBlock.cs" />
-        <option value="$PROJECT_DIR$/Views/Shared/Partial/_Navbar.cshtml" />
         <option value="$PROJECT_DIR$/assets/scss/base/font.scss" />
         <option value="$PROJECT_DIR$/assets/scss/base/fonts.scss" />
-        <option value="$PROJECT_DIR$/Views/Cms/Start.cshtml" />
         <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/style.scss" />
         <option value="$PROJECT_DIR$/assets/scss/themes/nidam-corp/style.scss" />
         <option value="$PROJECT_DIR$/assets/scss/themes/nidam-corp/base.scss" />
         <option value="$PROJECT_DIR$/assets/scss/themes/nidam-corp/blocks/hero.scss" />
         <option value="$PROJECT_DIR$/assets/scss/style.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/base/style.scss" />
         <option value="$PROJECT_DIR$/assets/scss/themes/nidam-corp/nidam-corp-theme.scss" />
         <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/_base.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/_fonts.scss" />
         <option value="$PROJECT_DIR$/assets/scss/themes/nidam-corp/nidam-theme.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/sundhedmedalette-theme.scss" />
         <option value="$PROJECT_DIR$/assets/scss/themes/nidam/blocks/_hero.scss" />
         <option value="$PROJECT_DIR$/compilerconfig.json" />
         <option value="$PROJECT_DIR$/assets/scss/base/_fonts.scss" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/assets/scss/base/blocks/_hero.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/_fonts.scss" />
+        <option value="$PROJECT_DIR$/Views/Cms/Start.cshtml" />
+        <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/Regions/_heading.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/blocks/_hero.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/themes/nidam/nidam-theme.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/partials/blocks/_hero.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/themes/nidam/modules/_colors.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/vendor/_google-fonts.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/partials/navbar.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/sundhedmedalette-theme.scss" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/assets/scss/base/style.scss" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/Views/Shared/Partial/_Footer.cshtml" />
+        <option value="$PROJECT_DIR$/Startup.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Views/Shared/Partial/_Navbar.cshtml" />
+        <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/partials/_navbar.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/partials/regions/_heading.scss" />
       </list>
     </option>
   </component>
@@ -232,16 +301,13 @@
     <scope name="SCSS" pattern="file:assets/scss/base/style.scss||file[riderModule]:assets/scss/*||file[riderModule]:assets/scss//*" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="61" />
+    <option name="x" value="337" />
     <option name="y" value="23" />
-    <option name="width" value="1232" />
+    <option name="width" value="1583" />
     <option name="height" value="1177" />
   </component>
-  <component name="ProjectStartupLocalConfiguration">
-    <configurations>
-      <configuration id="Gulp.js.gulp watch" name="gulp watch" />
-      <configuration id="npm.npm update" name="npm update" />
-    </configurations>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
@@ -255,15 +321,11 @@
               <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
               <item name="nidam-corp" type="34e6ba20:FileSystemExplorerNode" />
             </path>
-            <path>
-              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
-              <item name="nidam-corp" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="Views" type="34e6ba20:FileSystemExplorerNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -295,7 +357,7 @@
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
               <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
               <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="base" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="themes" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -303,14 +365,53 @@
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
               <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
               <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="base" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="themes" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="sundhedmedalette" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="themes" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="sundhedmedalette" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="partials" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="themes" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="sundhedmedalette" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="partials" type="24d0babc:SolutionExplorerModelNode" />
               <item name="blocks" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="themes" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="sundhedmedalette" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="partials" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="regions" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Cms" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -319,12 +420,48 @@
               <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Shared" type="24d0babc:SolutionExplorerModelNode" />
             </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Shared" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Partial" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="css" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="css" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="base" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="css" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="themes" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -333,12 +470,13 @@
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/wwwroot" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/35297834_10215746730197106_6161095470459387904_n-1-1-e1528849910496.png" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.startup.tasks" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -352,8 +490,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.Default">
-    <configuration name="Default" type="DotNetProject" factoryName=".NET Project" singleton="false">
+  <component name="RunManager" selected="Compound.Run">
+    <configuration name="Run" type="CompoundRunConfigurationType">
+      <toRun name="default" type="js.build_tools.gulp" />
+      <toRun name="Default" type="DotNetProject" />
+      <toRun name="gulp watch" type="js.build_tools.gulp" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -371,19 +515,9 @@
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
       <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
-      <browser url="http://localhost:5000" name="e5120d43-2c3f-47ef-9f26-65e539e05186" start="true" />
+      <browser url="http://localhost:5000" name="e5120d43-2c3f-47ef-9f26-65e539e05186" />
       <method v="2">
         <option name="Build" enabled="true" />
-        <option name="GulpBeforeRunTask" enabled="true">
-          <node-interpreter>project</node-interpreter>
-          <node-options />
-          <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
-          <tasks>
-            <task>default</task>
-          </tasks>
-          <arguments />
-          <envs />
-        </option>
       </method>
     </configuration>
     <configuration default="true" type="js.build_tools.gulp">
@@ -395,12 +529,12 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="browser-sync" type="js.build_tools.gulp" temporary="true">
+    <configuration name="default" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
       <tasks>
-        <task>browser-sync</task>
+        <task>default</task>
       </tasks>
       <arguments />
       <envs />
@@ -433,15 +567,11 @@
     </configuration>
     <list>
       <item itemvalue=".NET Project.Default" />
+      <item itemvalue="Compound.Run" />
       <item itemvalue="Gulp.js.gulp watch" />
+      <item itemvalue="Gulp.js.default" />
       <item itemvalue="npm.npm update" />
-      <item itemvalue="Gulp.js.browser-sync" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gulp.js.browser-sync" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -461,7 +591,8 @@
       <workItem from="1548263675253" duration="3183000" />
       <workItem from="1548269884710" duration="342000" />
       <workItem from="1548270229934" duration="945000" />
-      <workItem from="1548271247358" duration="2237000" />
+      <workItem from="1548271247358" duration="4048000" />
+      <workItem from="1548275867826" duration="10624000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1545864176251</created>
@@ -474,7 +605,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41572000" />
+    <option name="totallyTimeSpent" value="54152000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -486,23 +617,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="23" width="1232" height="1177" extended-state="0" />
+    <frame x="337" y="23" width="1583" height="1177" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48285323" visible="true" weight="0.35966387" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4807418" visible="true" weight="0.28228423" />
       <window_info id="Structure" order="1" sideWeight="0.51303154" side_tool="true" weight="0.23581268" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Capture Tool" order="3" />
-      <window_info id="Gulp" order="4" sideWeight="0.51714677" side_tool="true" visible="true" weight="0.35966387" />
+      <window_info id="Gulp" order="4" sideWeight="0.5192582" side_tool="true" visible="true" weight="0.28228423" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Azure Explorer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3281106" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35391706" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3299539" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.3281106" />
       <window_info anchor="bottom" id="REST Client" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.27741936" />
@@ -545,84 +676,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/75C0DE08-F0F9-4EC7-8D2A-9B2402BE6BF1/f8/127b1b8b/TextField.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/base.scss" />
-    <entry file="file://$PROJECT_DIR$/wwwroot/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/Views/Setup/Index.cshtml" />
-    <entry file="file://$PROJECT_DIR$/Controllers/SetupController.cs" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1075">
-          <caret line="518" column="24" selection-start-line="518" selection-start-column="24" selection-end-line="518" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/fonts.scss" />
-    <entry file="file://$PROJECT_DIR$/Views/Cms/DisplayTemplates/HtmlBlock.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1547385717605" expanded="true" signature="40:133" ph="&lt;div.../&gt;" />
-            <marker date="1547385717605" expanded="true" signature="62:126" ph="&lt;div.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Shared/Partial/_Meta.cshtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/BlogArchive.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <marker date="1547385717584" expanded="false" signature="6:82" ph="..." />
-            <marker date="1547385717584" expanded="true" signature="111:400" ph="{...}" />
-            <marker date="1547385717584" expanded="true" signature="228:398" ph="{...}" />
-            <marker date="1547385717584" expanded="true" signature="243:322" ph="/// Gets/sets the archive heading. ... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/Regions/Teaser.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <marker date="1547385717583" expanded="false" signature="6:82" ph="..." />
-            <marker date="1547385717583" expanded="true" signature="119:1233" ph="{...}" />
-            <marker date="1547385717583" expanded="true" signature="126:194" ph="/// Simple region for a teaser. ... " />
-            <marker date="1547385717583" expanded="true" signature="218:1231" ph="{...}" />
-            <marker date="1547385717583" expanded="true" signature="233:307" ph="/// Gets/sets the main title. ... " />
-            <marker date="1547385717583" expanded="true" signature="413:494" ph="/// Gets/sets the optional subtitle. ... " />
-            <marker date="1547385717583" expanded="true" signature="603:685" ph="/// Gets/sets the optional page link. ... " />
-            <marker date="1547385717583" expanded="true" signature="789:871" ph="/// Gets/sets the optional post link. ... " />
-            <marker date="1547385717583" expanded="true" signature="975:1048" ph="/// Gets/sets the main body. ... " />
-            <marker date="1547385717583" expanded="true" signature="1134:1225" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/Themes/ThemePicker.cs" />
-    <entry file="file://$PROJECT_DIR$/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <marker date="1547385717654" expanded="false" signature="6:255" ph="..." />
-            <marker date="1547385717654" expanded="true" signature="277:598" ph="{...}" />
-            <marker date="1547385717654" expanded="true" signature="304:596" ph="{...}" />
-            <marker date="1547385717654" expanded="true" signature="357:415" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/_ViewImports.cshtml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -632,27 +685,6 @@
           <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding>
             <marker date="1547385717625" expanded="true" signature="0:28" ph="@..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
-          <folding>
-            <marker date="1547389370226" expanded="false" signature="6:428" ph="..." />
-            <marker date="1547389370226" expanded="true" signature="450:3446" ph="{...}" />
-            <marker date="1547389370226" expanded="true" signature="477:3444" ph="{...}" />
-            <marker date="1547389370226" expanded="true" signature="492:707" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
-            <marker date="1547389370226" expanded="true" signature="786:1476" ph="{...}" />
-            <marker date="1547389370226" expanded="true" signature="835:977" ph="{...}" />
-            <marker date="1547389370226" expanded="true" signature="1701:3223" ph="{...}" />
-            <marker date="1547389370226" expanded="true" signature="1748:1825" ph="{...}" />
-            <marker date="1547389370226" expanded="true" signature="2040:2109" ph="/* unregisterBlocks(); ... */" />
-            <marker date="1547389370226" expanded="true" signature="2835:3211" ph="{...}" />
-            <marker date="1547389370226" expanded="true" signature="3262:3328" ph="{...}" />
-            <marker date="1547389370226" expanded="true" signature="3369:3438" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -679,28 +711,6 @@
             <marker date="1547393004942" expanded="false" signature="6:82" ph="..." />
             <marker date="1547393004942" expanded="true" signature="119:429" ph="{...}" />
             <marker date="1547393004942" expanded="true" signature="146:427" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Cms/Post.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1547385717613" expanded="true" signature="59:96" ph="@..." />
-            <marker date="1547385717613" expanded="true" signature="98:1019" ph="&lt;div.../&gt;" />
-            <marker date="1547385717613" expanded="true" signature="121:1012" ph="&lt;div.../&gt;" />
-            <marker date="1547385717613" expanded="true" signature="153:527" ph="&lt;div.../&gt;" />
-            <marker date="1547385717613" expanded="true" signature="206:512" ph="&lt;div.../&gt;" />
-            <marker date="1547385717613" expanded="true" signature="296:493" ph="@..." />
-            <marker date="1547385717613" expanded="true" signature="323:493" ph="{...}" />
-            <marker date="1547385717613" expanded="true" signature="377:475" ph="{...}" />
-            <marker date="1547385717613" expanded="true" signature="536:824" ph="@..." />
-            <marker date="1547385717613" expanded="true" signature="578:824" ph="{...}" />
-            <marker date="1547385717613" expanded="true" signature="592:814" ph="&lt;div.../&gt;" />
-            <marker date="1547385717613" expanded="true" signature="626:795" ph="&lt;div.../&gt;" />
-            <marker date="1547385717613" expanded="true" signature="833:1001" ph="&lt;div.../&gt;" />
-            <marker date="1547385717613" expanded="true" signature="886:986" ph="&lt;div.../&gt;" />
           </folding>
         </state>
       </provider>
@@ -809,26 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Shared/Partial/_Navbar.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding>
-            <marker date="1547942494215" expanded="true" signature="0:43" ph="@..." />
-            <marker date="1547942494215" expanded="true" signature="45:955" ph="&lt;nav.../&gt;" />
-            <marker date="1547942494215" expanded="true" signature="119:948" ph="&lt;div.../&gt;" />
-            <marker date="1547942494215" expanded="true" signature="157:259" ph="&lt;a.../&gt;" />
-            <marker date="1547942494215" expanded="true" signature="268:755" ph="&lt;div.../&gt;" />
-            <marker date="1547942494215" expanded="true" signature="342:740" ph="&lt;ul.../&gt;" />
-            <marker date="1547942494215" expanded="true" signature="390:722" ph="@..." />
-            <marker date="1547942494215" expanded="true" signature="420:722" ph="{...}" />
-            <marker date="1547942494215" expanded="true" signature="459:704" ph="&lt;li.../&gt;" />
-            <marker date="1547942494215" expanded="true" signature="549:678" ph="&lt;a.../&gt;" />
-            <marker date="1547942494215" expanded="true" signature="764:937" ph="&lt;button.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Models/StartPage.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -836,161 +826,249 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Cms/Start.cshtml">
+    <entry file="file://$PROJECT_DIR$/assets/scss/style.scss" />
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/nidam-corp/_base.scss" />
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/_base.scss" />
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/nidam/_colors.scss" />
+    <entry file="file://$PROJECT_DIR$/wwwroot/css/nidam/nidam-theme.min.css" />
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/nidam/blocks/_hero.scss" />
+    <entry file="file://$PROJECT_DIR$/compilerconfig.json" />
+    <entry file="file://$PROJECT_DIR$/wwwroot/css/style.min.css" />
+    <entry file="file://$PROJECT_DIR$/Models/Regions/Teaser.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="-27">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding>
-            <marker date="1548258593054" expanded="true" signature="60:427" ph="@..." />
-            <marker date="1548258593054" expanded="true" signature="182:424" ph="{...}" />
-            <marker date="1548258593054" expanded="true" signature="237:399" ph="{...}" />
-            <marker date="1548258593054" expanded="true" signature="428:697" ph="&lt;header.../&gt;" />
-            <marker date="1548258593054" expanded="true" signature="496:687" ph="&lt;div.../&gt;" />
-            <marker date="1548258593054" expanded="true" signature="528:613" ph="&lt;h1.../&gt;" />
-            <marker date="1548258593054" expanded="true" signature="622:676" ph="&lt;h3.../&gt;" />
-            <marker date="1548258593054" expanded="true" signature="699:2903" ph="&lt;div.../&gt;" />
-            <marker date="1548258593054" expanded="true" signature="722:2896" ph="&lt;div.../&gt;" />
-            <marker date="1548258593054" expanded="true" signature="754:2707" ph="@..." />
-            <marker date="1548258593054" expanded="true" signature="783:2707" ph="{...}" />
-            <marker date="1548258593054" expanded="true" signature="891:2697" ph="{...}" />
-            <marker date="1548258593054" expanded="true" signature="1021:1117" ph="{...}" />
-            <marker date="1548258593054" expanded="true" signature="1187:1283" ph="{...}" />
-            <marker date="1548258593054" expanded="true" signature="1304:1400" ph="{...}" />
-            <marker date="1548258593054" expanded="true" signature="1418:2654" ph="&lt;div.../&gt;" />
-            <marker date="1548258593054" expanded="true" signature="1487:2631" ph="@..." />
-            <marker date="1548258593054" expanded="true" signature="1518:2631" ph="{...}" />
-            <marker date="1548258593054" expanded="true" signature="1627:2609" ph="&lt;div.../&gt;" />
-            <marker date="1548258593054" expanded="true" signature="1698:2578" ph="&lt;div.../&gt;" />
-            <marker date="1548258593054" expanded="true" signature="1952:2543" ph="@..." />
-            <marker date="1548258593054" expanded="true" signature="1982:2229" ph="{...}" />
-            <marker date="1548258593054" expanded="true" signature="2053:2195" ph="&lt;p.../&gt;" />
-            <marker date="1548258593054" expanded="true" signature="2296:2543" ph="{...}" />
-            <marker date="1548258593054" expanded="true" signature="2367:2509" ph="&lt;p.../&gt;" />
-            <marker date="1548258593054" expanded="true" signature="2717:2885" ph="&lt;div.../&gt;" />
-            <marker date="1548258593054" expanded="true" signature="2770:2870" ph="&lt;div.../&gt;" />
+            <marker date="1547385717583" expanded="false" signature="6:82" ph="..." />
+            <marker date="1547385717583" expanded="true" signature="119:1233" ph="{...}" />
+            <marker date="1547385717583" expanded="true" signature="126:194" ph="/// Simple region for a teaser. ... " />
+            <marker date="1547385717583" expanded="true" signature="218:1231" ph="{...}" />
+            <marker date="1547385717583" expanded="true" signature="233:307" ph="/// Gets/sets the main title. ... " />
+            <marker date="1547385717583" expanded="true" signature="413:494" ph="/// Gets/sets the optional subtitle. ... " />
+            <marker date="1547385717583" expanded="true" signature="603:685" ph="/// Gets/sets the optional page link. ... " />
+            <marker date="1547385717583" expanded="true" signature="789:871" ph="/// Gets/sets the optional post link. ... " />
+            <marker date="1547385717583" expanded="true" signature="975:1048" ph="/// Gets/sets the main body. ... " />
+            <marker date="1547385717583" expanded="true" signature="1134:1225" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/style.scss" />
-    <entry file="file://$PROJECT_DIR$/assets/scss/themes/nidam-corp/_base.scss" />
-    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/_base.scss" />
-    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/_colors.scss">
+    <entry file="file://$PROJECT_DIR$/assets/scss/base/modules/_colors.scss" />
+    <entry file="file://$PROJECT_DIR$/assets/scss/base/vendor/_google-fonts.scss" />
+    <entry file="file://$PROJECT_DIR$/assets/scss/base/partials/blocks/_hero.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/modules/_colors.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/themes/nidam/_colors.scss">
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/partials/blocks/_hero.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/_fonts.scss">
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/nidam/modules/_colors.scss" />
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/vendor/_google-fonts.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/themes/nidam/nidam-theme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/sundhedmedalette-theme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/css/nidam/nidam-theme.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/blocks/_hero.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/themes/nidam/blocks/_hero.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compilerconfig.json" />
-    <entry file="file://$PROJECT_DIR$/wwwroot/css/style.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1199">
-          <caret line="5" column="88327" selection-start-line="5" selection-start-column="88310" selection-end-line="5" selection-end-column="88327" />
-          <folding>
-            <element signature="e#23411#23645#2" expanded="true" />
-            <element signature="e#24058#24211#1" expanded="true" />
-            <element signature="e#24251#24485#1" expanded="true" />
-            <element signature="e#27749#28025#2" expanded="true" />
-            <element signature="e#28450#28603#1" expanded="true" />
-            <element signature="e#28643#28919#1" expanded="true" />
-            <element signature="e#54993#55180#2" expanded="true" />
-            <element signature="e#55706#55842#2" expanded="true" />
-            <element signature="e#55995#56128#2" expanded="true" />
-            <element signature="e#57124#57277#1" expanded="true" />
-            <element signature="e#67934#68164#2" expanded="true" />
-            <element signature="e#68999#69235#2" expanded="true" />
-            <element signature="e#93903#94080#2" expanded="true" />
-            <element signature="e#94126#94303#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/wwwroot/uploads/0bd6ea12-2001-458d-8e2f-389d59d1b8ad-Skærmbillede 2018-12-17 kl. 22.31.34.png" />
+    <entry file="file://$PROJECT_DIR$/wwwroot/uploads/9c3cb87c-9c48-4fea-8f8b-d1e6353f031c-bottle-bowl-breakfeast.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml">
+    <entry file="file://$PROJECT_DIR$/assets/scss/base/partials/_responsive-font-sizes.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding>
-            <marker date="1547393004953" expanded="true" signature="16:958" ph="&lt;html.../&gt;" />
-            <marker date="1547393004953" expanded="true" signature="33:37" ph="@..." />
-            <marker date="1547393004953" expanded="true" signature="38:503" ph="&lt;head.../&gt;" />
-            <marker date="1547393004953" expanded="true" signature="356:450" ph="@..." />
-            <marker date="1547393004953" expanded="true" signature="391:450" ph="{...}" />
-            <marker date="1547393004953" expanded="true" signature="504:950" ph="&lt;body.../&gt;" />
-            <marker date="1547393004953" expanded="true" signature="511:669" ph="&lt;header.../&gt;" />
-          </folding>
+        <state relative-caret-position="729">
+          <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/base/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        <state>
+          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/base/_fonts.scss">
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/nidam/nidam-theme.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/sundhedmedalette-theme.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="94" column="16" lean-forward="true" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+        <state relative-caret-position="75">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="17" column="97" selection-start-line="17" selection-start-column="97" selection-end-line="17" selection-end-column="97" />
+        <state relative-caret-position="690">
+          <caret line="46" column="2" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/base/blocks/_hero.scss">
+    <entry file="file://$PROJECT_DIR$/seed/pexels-photo-355423.jpeg" />
+    <entry file="file://$PROJECT_DIR$/Views/Shared/Partial/_Footer.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Shared/Partial/_Meta.cshtml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Cms/Post.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1547385717613" expanded="true" signature="59:96" ph="@..." />
+            <marker date="1547385717613" expanded="true" signature="98:1019" ph="&lt;div.../&gt;" />
+            <marker date="1547385717613" expanded="true" signature="121:1012" ph="&lt;div.../&gt;" />
+            <marker date="1547385717613" expanded="true" signature="153:527" ph="&lt;div.../&gt;" />
+            <marker date="1547385717613" expanded="true" signature="206:512" ph="&lt;div.../&gt;" />
+            <marker date="1547385717613" expanded="true" signature="296:493" ph="@..." />
+            <marker date="1547385717613" expanded="true" signature="323:493" ph="{...}" />
+            <marker date="1547385717613" expanded="true" signature="377:475" ph="{...}" />
+            <marker date="1547385717613" expanded="true" signature="536:824" ph="@..." />
+            <marker date="1547385717613" expanded="true" signature="578:824" ph="{...}" />
+            <marker date="1547385717613" expanded="true" signature="592:814" ph="&lt;div.../&gt;" />
+            <marker date="1547385717613" expanded="true" signature="626:795" ph="&lt;div.../&gt;" />
+            <marker date="1547385717613" expanded="true" signature="833:1001" ph="&lt;div.../&gt;" />
+            <marker date="1547385717613" expanded="true" signature="886:986" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Cms/Start.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding>
+            <marker date="1548287510502" expanded="true" signature="60:427" ph="@..." />
+            <marker date="1548287510502" expanded="true" signature="182:424" ph="{...}" />
+            <marker date="1548287510502" expanded="true" signature="237:399" ph="{...}" />
+            <marker date="1548287510502" expanded="true" signature="428:700" ph="&lt;header.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="499:690" ph="&lt;div.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="531:616" ph="&lt;h1.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="625:679" ph="&lt;h3.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="702:2906" ph="&lt;div.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="725:2899" ph="&lt;div.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="757:2710" ph="@..." />
+            <marker date="1548287510502" expanded="true" signature="786:2710" ph="{...}" />
+            <marker date="1548287510502" expanded="true" signature="894:2700" ph="{...}" />
+            <marker date="1548287510502" expanded="true" signature="1024:1120" ph="{...}" />
+            <marker date="1548287510502" expanded="true" signature="1190:1286" ph="{...}" />
+            <marker date="1548287510502" expanded="true" signature="1307:1403" ph="{...}" />
+            <marker date="1548287510502" expanded="true" signature="1421:2657" ph="&lt;div.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="1490:2634" ph="@..." />
+            <marker date="1548287510502" expanded="true" signature="1521:2634" ph="{...}" />
+            <marker date="1548287510502" expanded="true" signature="1630:2612" ph="&lt;div.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="1701:2581" ph="&lt;div.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="1955:2546" ph="@..." />
+            <marker date="1548287510502" expanded="true" signature="1985:2232" ph="{...}" />
+            <marker date="1548287510502" expanded="true" signature="2056:2198" ph="&lt;p.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="2299:2546" ph="{...}" />
+            <marker date="1548287510502" expanded="true" signature="2370:2512" ph="&lt;p.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="2720:2888" ph="&lt;div.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="2773:2873" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-93">
+          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+          <folding>
+            <marker date="1548287510501" expanded="false" signature="6:428" ph="..." />
+            <marker date="1548287510501" expanded="true" signature="450:3452" ph="{...}" />
+            <marker date="1548287510501" expanded="true" signature="477:3450" ph="{...}" />
+            <marker date="1548287510501" expanded="true" signature="492:707" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
+            <marker date="1548287510501" expanded="true" signature="786:1476" ph="{...}" />
+            <marker date="1548287510501" expanded="true" signature="835:977" ph="{...}" />
+            <marker date="1548287510501" expanded="true" signature="1701:3229" ph="{...}" />
+            <marker date="1548287510501" expanded="true" signature="1748:1825" ph="{...}" />
+            <marker date="1548287510501" expanded="true" signature="2040:2115" ph="/* unregisterBlocks(); ... */" />
+            <marker date="1548287510501" expanded="true" signature="2841:3217" ph="{...}" />
+            <marker date="1548287510501" expanded="true" signature="3268:3334" ph="{...}" />
+            <marker date="1548287510501" expanded="true" signature="3375:3444" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/img/sundhedmedalette-logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="527" column="63" selection-start-line="527" selection-start-column="63" selection-end-line="527" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <marker date="1548287510502" expanded="true" signature="16:1571" ph="&lt;html.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="33:37" ph="@..." />
+            <marker date="1548287510502" expanded="true" signature="38:740" ph="&lt;head.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="593:687" ph="@..." />
+            <marker date="1548287510502" expanded="true" signature="628:687" ph="{...}" />
+            <marker date="1548287510502" expanded="true" signature="741:1563" ph="&lt;body.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="748:906" ph="&lt;header.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Shared/Partial/_Navbar.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+          <folding>
+            <marker date="1548287510502" expanded="true" signature="0:43" ph="@..." />
+            <marker date="1548287510502" expanded="true" signature="335:350" ph="&lt;a.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="335:1039" ph="&lt;div.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="335:1046" ph="&lt;nav.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="359:846" ph="&lt;div.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="433:831" ph="&lt;ul.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="481:813" ph="@..." />
+            <marker date="1548287510502" expanded="true" signature="511:813" ph="{...}" />
+            <marker date="1548287510502" expanded="true" signature="550:795" ph="&lt;li.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="640:769" ph="&lt;a.../&gt;" />
+            <marker date="1548287510502" expanded="true" signature="855:1028" ph="&lt;button.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/partials/_navbar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/partials/regions/_heading.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
         </state>
       </provider>
     </entry>

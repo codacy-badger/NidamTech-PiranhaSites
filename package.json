@@ -11,10 +11,5 @@
     "gulp-cssmin": "^0.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0"
-  },
-  "dependencies": {
-    "bootstrap": "^4.2.1",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.6"
   }
 }

@@ -11,11 +11,13 @@ gulp.task('default', function () {
 });
 
 gulp.task('watch', function () {
-    browserSync.init({
-        proxy: "localhost:5000"
-    });
-    gulp.watch('assets/scss/base/**/*.scss', minifyBase).on('change', browserSync.reload);
-    gulp.watch('assets/scss/themes/**/**/*.scss', minifyThemes).on('change', browserSync.reload);
+    setTimeout(function() {
+        browserSync.init({
+            proxy: "localhost:5000",
+        });
+    }, 10000);
+    gulp.watch('assets/scss/base/**/**/*.scss', minifyBase).on('change', browserSync.reload);
+    gulp.watch('assets/scss/themes/**/**/**/*.scss', minifyThemes).on('change', browserSync.reload);
 });
 
 
@@ -25,6 +27,7 @@ function minifyBase() {
         .pipe(sass().on('error', sass.logError))
         .pipe(cssmin())
         .pipe(rename({
+            dirname: "base",
             suffix: ".min"
         }))
         .pipe(gulp.dest('wwwroot/css'))
@@ -36,6 +39,7 @@ function minifyThemes() {
         .pipe(sass().on('error', sass.logError))
         .pipe(cssmin())
         .pipe(rename({
+            dirname: "themes",
             suffix: ".min"
         }))
         .pipe(gulp.dest('wwwroot/css'))
