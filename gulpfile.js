@@ -4,18 +4,17 @@ var gulp = require('gulp'),
     cssmin = require('gulp-cssmin'),
     rename = require('gulp-rename');
 
-// Styles
+// Tasks
 gulp.task('watch', function () {
-    gulp.watch('assets/scss/base/**/*.scss', baseTask());
-    gulp.watch('assets/scss/themes/**/**/*.scss', themesTask());
+    gulp.watch('assets/scss/base/**/*.scss', minifyBase);
+    gulp.watch('assets/scss/themes/**/**/*.scss', minifyThemes);
 });
 
 gulp.task('default', function () {
-    return baseTask(), themesTask();
-    
+    return minifyBase(), minifyThemes();
 });
 
-function baseTask() {
+function minifyBase() {
     return gulp.src('assets/scss/base/style.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(cssmin())
@@ -25,7 +24,7 @@ function baseTask() {
         .pipe(gulp.dest('wwwroot/css'));
 }
 
-function themesTask() {
+function minifyThemes() {
     return gulp.src('assets/scss/themes/**/*-theme.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(cssmin())
