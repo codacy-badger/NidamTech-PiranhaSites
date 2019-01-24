@@ -19,15 +19,14 @@
       <e p="assets" t="Include">
         <e p="scss" t="Include">
           <e p="base" t="Include">
-            <e p="modules" t="Include" />
             <e p="partials" t="Include">
+              <e p="_navbar.scss" t="Include" />
               <e p="_responsive-font-sizes.scss" t="Include" />
               <e p="Blocks" t="Include">
                 <e p="_hero.scss" t="Include" />
               </e>
             </e>
             <e p="style.scss" t="Include" />
-            <e p="vendor" t="Include" />
           </e>
           <e p="Themes" t="Include">
             <e p="nidam" t="Include">
@@ -48,10 +47,11 @@
                 </e>
               </e>
               <e p="sundhedmedalette-theme.scss" t="Include" />
-              <e p="vendor" t="Include">
-                <e p="_google-fonts.scss" t="Include" />
-              </e>
             </e>
+          </e>
+          <e p="vendor" t="Include">
+            <e p="_bootstrap.scss" t="Include" />
+            <e p="_google-fonts.scss" t="Include" />
           </e>
         </e>
       </e>
@@ -76,11 +76,16 @@
       <e p="nidam-corp.csproj" t="IncludeRecursive" />
       <e p="nidam-corp.sln" t="IncludeFlat" />
       <e p="node_modules" t="ExcludeRecursive">
+        <e p="bootstrap" t="IncludeRecursive" />
         <e p="browser-sync" t="IncludeRecursive" />
         <e p="gulp" t="IncludeRecursive" />
+        <e p="gulp-concat" t="IncludeRecursive" />
         <e p="gulp-cssmin" t="IncludeRecursive" />
         <e p="gulp-rename" t="IncludeRecursive" />
         <e p="gulp-sass" t="IncludeRecursive" />
+        <e p="gulp-uglify" t="IncludeRecursive" />
+        <e p="jquery" t="IncludeRecursive" />
+        <e p="popper.js" t="IncludeRecursive" />
       </e>
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
@@ -138,6 +143,9 @@
         </e>
         <e p="img" t="Include">
           <e p="sundhedmedalette-logo.png" t="Include" />
+        </e>
+        <e p="js" t="Include">
+          <e p="main.min.js" t="Include" />
         </e>
         <e p="uploads" t="Include">
           <e p="9c3cb87c-9c48-4fea-8f8b-d1e6353f031c-bottle-bowl-breakfeast.jpg" t="Include" />

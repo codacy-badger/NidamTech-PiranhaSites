@@ -1,0 +1,13 @@
+.navbar {
+  @include media-breakpoint-down(md) {
+    .container {
+      width: 100%;
+      max-width: unset;
+      padding: 0;
+      @include media-breakpoint-down(sm) {
+        text-align: center;
+        justify-content: center;
+      }
+    }
+  }
+}

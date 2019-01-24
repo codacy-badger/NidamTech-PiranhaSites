@@ -1,17 +1,29 @@
 // Load plugins
-var browserSync = require('browser-sync').create();
+
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    cssmin = require('gulp-cssmin'),
-    rename = require('gulp-rename');
+    cssmin = require("gulp-cssmin"),
+    rename = require("gulp-rename"),
+    uglify = require("gulp-uglify"),
+    concat = require("gulp-concat"),
+    browserSync = require('browser-sync').create();
+
+//JS input
+var inputjs = {
+    js: [
+        "node_modules/jquery/dist/jquery.js",
+        "node_modules/popper.js/dist/umd/popper.js",
+        "node_modules/bootstrap/dist/js/bootstrap.js",
+    ]
+};
 
 //Tasks
 gulp.task('default', function () {
-    return minifyBase(), minifyThemes();
+    return minifyBase(), minifyThemes(), minifyScript();
 });
 
 gulp.task('watch', function () {
-    setTimeout(function() {
+    setTimeout(function () {
         browserSync.init({
             proxy: "localhost:5000",
         });
@@ -45,3 +57,16 @@ function minifyThemes() {
         .pipe(gulp.dest('wwwroot/css'))
         .pipe(browserSync.stream());
 };
+
+function minifyScript() {
+    return gulp.src(inputjs.js, {base: "."})
+        .pipe(uglify())
+        .pipe(concat('main.js'))
+        .pipe(rename({
+            dirname: "",
+            suffix: ".min"
+        }))
+        .pipe(gulp.dest('wwwroot/js'))
+        .pipe(browserSync.stream());
+};
+

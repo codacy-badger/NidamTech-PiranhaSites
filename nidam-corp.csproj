@@ -5,8 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="assets\scss\base\modules" />
-    <Folder Include="assets\scss\base\vendor" />
     <Folder Include="assets\scss\themes\nidam\modules" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
