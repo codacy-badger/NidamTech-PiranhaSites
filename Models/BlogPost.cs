@@ -1,11 +1,10 @@
 using Piranha.AttributeBuilder;
-using Piranha.Extend.Fields;
 using Piranha.Models;
 
 namespace nidam_corp.Models
 {
     [PostType(Title = "Blog post")]
-    public class BlogPost  : Post<BlogPost>
+    public class BlogPost : Post<BlogPost>
     {
         /// <summary>
         /// Gets/sets the post heading.

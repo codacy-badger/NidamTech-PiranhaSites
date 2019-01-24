@@ -1,7 +1,6 @@
-using Piranha.AttributeBuilder;
-using Piranha.Extend.Fields;
-using Piranha.Models;
 using System.Collections.Generic;
+using Piranha.AttributeBuilder;
+using Piranha.Models;
 
 namespace nidam_corp.Models
 {
@@ -9,6 +8,14 @@ namespace nidam_corp.Models
     [PageTypeRoute(Title = "Default", Route = "/start")]
     public class StartPage : Page<StartPage>
     {
+        /// <summary>
+        /// Default constructor.
+        /// </summary>
+        public StartPage()
+        {
+            Teasers = new List<Regions.Teaser>();
+        }
+
         /// <summary>
         /// Gets/sets the page heading.
         /// </summary>
@@ -20,12 +27,5 @@ namespace nidam_corp.Models
         /// </summary>
         [Region(ListTitle = "Title")]
         public IList<Regions.Teaser> Teasers { get; set; }
-
-        /// <summary>
-        /// Default constructor.
-        /// </summary>
-        public StartPage() {
-            Teasers = new List<Regions.Teaser>();
-        }
     }
 }

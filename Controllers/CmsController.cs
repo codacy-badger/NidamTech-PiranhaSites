@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
 using Piranha;
-using System;
 
 namespace nidam_corp.Controllers
 {
@@ -12,7 +12,8 @@ namespace nidam_corp.Controllers
         /// Default constructor.
         /// </summary>
         /// <param name="api">The current api</param>
-        public CmsController(IApi api) {
+        public CmsController(IApi api)
+        {
             this.api = api;
         }
 
@@ -26,8 +27,8 @@ namespace nidam_corp.Controllers
         /// <param name="category">The optional category</param>
         /// <param name="tag">The optional tag</param>
         [Route("archive")]
-        public IActionResult Archive(Guid id, int? year = null, int? month = null, int? page = null, 
-            Guid? category = null, Guid? tag = null) 
+        public IActionResult Archive(Guid id, int? year = null, int? month = null, int? page = null,
+            Guid? category = null, Guid? tag = null)
         {
             Models.BlogArchive model;
 
@@ -45,7 +46,8 @@ namespace nidam_corp.Controllers
         /// </summary>
         /// <param name="id">The unique page id</param>
         [Route("page")]
-        public IActionResult Page(Guid id) {
+        public IActionResult Page(Guid id)
+        {
             var model = api.Pages.GetById<Models.StandardPage>(id);
 
             return View(model);
@@ -56,7 +58,8 @@ namespace nidam_corp.Controllers
         /// </summary>
         /// <param name="id">The unique post id</param>
         [Route("post")]
-        public IActionResult Post(Guid id) {
+        public IActionResult Post(Guid id)
+        {
             var model = api.Posts.GetById<Models.BlogPost>(id);
 
             return View(model);
@@ -67,7 +70,8 @@ namespace nidam_corp.Controllers
         /// </summary>
         /// <param name="id">The unique page id</param>
         [Route("start")]
-        public IActionResult Start(Guid id) {
+        public IActionResult Start(Guid id)
+        {
             var model = api.Pages.GetById<Models.StartPage>(id);
 
             return View(model);

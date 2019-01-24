@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Piranha;
 using Piranha.AspNetCore.Identity.SQLite;
-using Piranha.ImageSharp;
-using Piranha.Local;
 using sundhedmedalette.Models.Blocks;
 
 namespace nidam_corp
@@ -21,7 +15,7 @@ namespace nidam_corp
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc(config => 
+            services.AddMvc(config =>
             {
                 config.ModelBinderProviders.Insert(0, new Piranha.Manager.Binders.AbstractModelBinderProvider());
             });
@@ -29,7 +23,8 @@ namespace nidam_corp
             services.AddPiranhaFileStorage();
             services.AddPiranhaImageSharp();
             services.AddPiranhaEF(options => options.UseSqlite("Filename=./piranha.db"));
-            services.AddPiranhaIdentityWithSeed<IdentitySQLiteDb>(options => options.UseSqlite("Filename=./piranha.db"));
+            services.AddPiranhaIdentityWithSeed<IdentitySQLiteDb>(options =>
+                options.UseSqlite("Filename=./piranha.db"));
             services.AddPiranhaManager();
             services.AddPiranhaMemCache();
 
@@ -51,9 +46,9 @@ namespace nidam_corp
             App.CacheLevel = Piranha.Cache.CacheLevel.Basic;
 
             registerBlocks();
-            
+
             //TODO: unregisterBlocks();
-            
+
             // Build content types
             var pageTypeBuilder = new Piranha.AttributeBuilder.PageTypeBuilder(api)
                 .AddType(typeof(Models.BlogArchive))
@@ -71,11 +66,11 @@ namespace nidam_corp
             app.UseAuthentication();
             app.UsePiranha();
             app.UsePiranhaManager();
-            app.UseMvc(routes => 
+            app.UseMvc(routes =>
             {
                 routes.MapRoute(name: "areaRoute",
                     template: "{area:exists}/{controller}/{action}/{id?}",
-                    defaults: new { controller = "Home", action = "Index" });
+                    defaults: new {controller = "Home", action = "Index"});
 
                 routes.MapRoute(
                     name: "default",

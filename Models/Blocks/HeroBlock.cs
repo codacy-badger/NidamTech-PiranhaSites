@@ -1,4 +1,3 @@
-using System;
 using Piranha.Extend;
 using Piranha.Extend.Fields;
 

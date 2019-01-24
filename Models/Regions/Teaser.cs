@@ -9,6 +9,12 @@ namespace nidam_corp.Models.Regions
     /// </summary>
     public class Teaser
     {
+        public Teaser()
+        {
+            PageLink = new PageField();
+            PostLink = new PostField();
+        }
+
         /// <summary>
         /// Gets/sets the main title.
         /// </summary>
@@ -38,10 +44,5 @@ namespace nidam_corp.Models.Regions
         /// </summary>
         [Field]
         public HtmlField Body { get; set; }
-
-        public Teaser() {
-            PageLink = new PageField();
-            PostLink = new PostField();
-        }
     }
 }
