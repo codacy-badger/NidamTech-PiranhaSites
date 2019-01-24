@@ -37,3 +37,5 @@
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/nidam-corp.pdb
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/nidam-corp.csproj.CopyComplete
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Partial/_Footer.g.cshtml.cs
+/Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Partial/_Head.g.cshtml.cs
+/Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Partial/_Script.g.cshtml.cs

@@ -1,5 +1,4 @@
-// Load plugins
-
+//Plugins - Must be installed with NPM
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     cssmin = require("gulp-cssmin"),
@@ -8,18 +7,19 @@ var gulp = require('gulp'),
     concat = require("gulp-concat"),
     browserSync = require('browser-sync').create();
 
-//JS input
-var inputjs = {
+//Inputs
+var inputJS = {
     js: [
-        "node_modules/jquery/dist/jquery.js",
-        "node_modules/popper.js/dist/umd/popper.js",
-        "node_modules/bootstrap/dist/js/bootstrap.js",
+        //Path to js here
     ]
 };
+var inputSCSS_all = 'assets/scss/**/**/*.scss';
+var inputSCSS_base = 'assets/scss/base/style.scss';
+var inputSCSS_themes = 'assets/scss/themes/**/*-theme.scss';
 
 //Tasks
 gulp.task('default', function () {
-    return minifyBase(), minifyThemes(), minifyScript();
+    return minifyBase(), minifyThemes()/*,minifyScripts()*/;
 });
 
 gulp.task('watch', function () {
@@ -28,14 +28,14 @@ gulp.task('watch', function () {
             proxy: "localhost:5000",
         });
     }, 10000);
-    gulp.watch('assets/scss/base/**/**/*.scss', minifyBase).on('change', browserSync.reload);
-    gulp.watch('assets/scss/themes/**/**/**/*.scss', minifyThemes).on('change', browserSync.reload);
+    gulp.watch(inputSCSS_all, minifyBase, minifyThemes).on('change', browserSync.reload);
+    //gulp.watch(inputJS, minifyScript()).on('change', browserSync.reload);
 });
 
 
 //Methods
 function minifyBase() {
-    return gulp.src('assets/scss/base/style.scss')
+    return gulp.src(inputSCSS_base)
         .pipe(sass().on('error', sass.logError))
         .pipe(cssmin())
         .pipe(rename({
@@ -47,7 +47,7 @@ function minifyBase() {
 }
 
 function minifyThemes() {
-    return gulp.src('assets/scss/themes/**/*-theme.scss')
+    return gulp.src(inputSCSS_themes)
         .pipe(sass().on('error', sass.logError))
         .pipe(cssmin())
         .pipe(rename({
@@ -56,10 +56,10 @@ function minifyThemes() {
         }))
         .pipe(gulp.dest('wwwroot/css'))
         .pipe(browserSync.stream());
-};
+}
 
-function minifyScript() {
-    return gulp.src(inputjs.js, {base: "."})
+function minifyScripts() {
+    return gulp.src(inputJS.js, {base: "."})
         .pipe(uglify())
         .pipe(concat('main.js'))
         .pipe(rename({
@@ -68,5 +68,5 @@ function minifyScript() {
         }))
         .pipe(gulp.dest('wwwroot/js'))
         .pipe(browserSync.stream());
-};
+}
 

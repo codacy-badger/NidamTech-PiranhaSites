@@ -26,5 +26,6 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\css\nidam\nidam-theme.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\main.min.js"/>
   </ItemGroup>
 </Project>

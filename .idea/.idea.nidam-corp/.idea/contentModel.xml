@@ -20,6 +20,7 @@
         <e p="scss" t="Include">
           <e p="base" t="Include">
             <e p="partials" t="Include">
+              <e p="_footer.scss" t="Include" />
               <e p="_navbar.scss" t="Include" />
               <e p="_responsive-font-sizes.scss" t="Include" />
               <e p="Blocks" t="Include">
@@ -50,7 +51,7 @@
             </e>
           </e>
           <e p="vendor" t="Include">
-            <e p="_bootstrap.scss" t="Include" />
+            <e p="_bootstrap-mixins.scss" t="Include" />
             <e p="_google-fonts.scss" t="Include" />
           </e>
         </e>
@@ -126,8 +127,10 @@
           <e p="_Layout.cshtml" t="Include" />
           <e p="Partial" t="Include">
             <e p="_Footer.cshtml" t="Include" />
+            <e p="_Head.cshtml" t="Include" />
             <e p="_Meta.cshtml" t="Include" />
             <e p="_Navbar.cshtml" t="Include" />
+            <e p="_Script.cshtml" t="Include" />
           </e>
         </e>
       </e>
@@ -143,9 +146,6 @@
         </e>
         <e p="img" t="Include">
           <e p="sundhedmedalette-logo.png" t="Include" />
-        </e>
-        <e p="js" t="Include">
-          <e p="main.min.js" t="Include" />
         </e>
         <e p="uploads" t="Include">
           <e p="9c3cb87c-9c48-4fea-8f8b-d1e6353f031c-bottle-bowl-breakfeast.jpg" t="Include" />

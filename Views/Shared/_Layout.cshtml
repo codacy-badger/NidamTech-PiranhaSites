@@ -1,31 +1,19 @@
+@using Piranha.Models
 <!doctype html>
 <html lang="en">
-@{
-}
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="~/css/base/style.min.css">
-    @* TODO: @selectedSiteTheme *@
-    <link rel="stylesheet" href="~/css/themes/sundhedmedalette-theme.min.css"/>
-    <title>@ViewBag.Title</title>
-
-    @if (Model is Piranha.Models.IMeta)
+    <partial name="Partial/_Head.cshtml"/>
+    @if (Model is IMeta)
     {
         <partial name="Partial/_Meta.cshtml"/>
     }
-
-    @RenderSection("head", required: false)
 </head>
 <body>
 <header class="site-header @(ViewBag.HasImage == null || !ViewBag.HasImage ? "site-header-dark" : "")">
     <partial name="Partial/_Navbar.cshtml"/>
 </header>
-
 @RenderBody()
-
-<script src="~/js/main.min.js"></script>
-
-@RenderSection("script", required: false)
+<partial name="Partial/_Footer.cshtml"/>
+<partial name="Partial/_Script.cshtml"/>
 </body>
 </html>
