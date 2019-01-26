@@ -5,10 +5,15 @@
   "main": "index.js",
   "author": "Håkan Edling",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niem94/nidam-corp"
+  },
   "devDependencies": {
     "bootstrap": "^4.2.1",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-rename": "^1.2.2",
@@ -16,9 +21,5 @@
     "gulp-uglify": "^3.0.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.6"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/niem94/nidam-corp"
   }
 }

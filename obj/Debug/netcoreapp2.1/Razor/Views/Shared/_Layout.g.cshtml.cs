@@ -55,12 +55,12 @@ using Piranha.Models;
             WriteLiteral("<!doctype html>\n<html lang=\"en\">\n");
             EndContext();
             BeginContext(55, 141, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6d64d11ce4b6484aa4a84a524cc1a0f8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2820a4d25f6d470bb9ac6bc5135d666a", async() => {
                 BeginContext(61, 5, true);
                 WriteLiteral("\n    ");
                 EndContext();
                 BeginContext(66, 38, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "001e00fefbe545a998e10c087c14a59d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "babc5a79956b45268a55b02636b8c6c5", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -88,7 +88,7 @@ using Piranha.Models;
                 WriteLiteral("        ");
                 EndContext();
                 BeginContext(144, 38, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d8305c1c5bba4b22ab016a9e24c93f49", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a5393d3d7c34475f98ee27c21151d2ac", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -127,7 +127,7 @@ using Piranha.Models;
             WriteLiteral("\n");
             EndContext();
             BeginContext(197, 269, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9264004a8bbc4c72ad85e29cccbc1b78", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "910272f82d984964852ed0d25695a427", async() => {
                 BeginContext(203, 8, true);
                 WriteLiteral("\n<header");
                 EndContext();
@@ -143,7 +143,7 @@ WriteAttributeValue(" ", 230, ViewBag.HasImage == null || !ViewBag.HasImage ? "s
                 WriteLiteral(">\n    ");
                 EndContext();
                 BeginContext(312, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3982715859d64db6b27b6523160b5af5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "690124112cb44e4492527a411bee1af6", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -172,7 +172,7 @@ Write(RenderBody());
                 WriteLiteral("\n");
                 EndContext();
                 BeginContext(377, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "13737390dd124d688b1d3b755afcce3f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "95e764d0709c4131b758a52d91846561", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -191,7 +191,7 @@ Write(RenderBody());
                 WriteLiteral("\n");
                 EndContext();
                 BeginContext(418, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e3952d81032143d7b0f216f876200db0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "86585bd5f1864299ab95e4b4b5eebd6c", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

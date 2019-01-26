@@ -2,6 +2,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     cssmin = require("gulp-cssmin"),
+    autoprefixer = require("gulp-autoprefixer"),
     rename = require("gulp-rename"),
     uglify = require("gulp-uglify"),
     concat = require("gulp-concat"),
@@ -21,7 +22,7 @@ var inputSCSS_themes = 'assets/scss/themes/**/*-theme.scss';
 var outputCSS = 'wwwroot/css';
 
 //Tasks
-gulp.task('default', function () {
+gulp.task('min:css+js', function () {
     return minifyBase(), minifyThemes()/*,minifyScripts()*/;
 });
 
@@ -43,6 +44,7 @@ function minifyBase() {
     return gulp.src(inputSCSS_base)
         .pipe(sass().on('error', sass.logError))
         .pipe(cssmin())
+        .pipe(autoprefixer())
         .pipe(rename({
             dirname: "base",
             suffix: ".min"
@@ -55,6 +57,10 @@ function minifyThemes() {
     return gulp.src(inputSCSS_themes)
         .pipe(sass().on('error', sass.logError))
         .pipe(cssmin())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(rename({
             dirname: "themes",
             suffix: ".min"
