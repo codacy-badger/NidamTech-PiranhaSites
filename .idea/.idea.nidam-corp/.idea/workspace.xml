@@ -259,12 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Compound.Run">
-    <configuration name="Run" type="CompoundRunConfigurationType">
-      <toRun name="watch" type="js.build_tools.gulp" />
-      <toRun name="Default" type="DotNetProject" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gulp.js.watch">
     <configuration default="true" type="CompoundRunConfigurationType">
       <toRun name="watch" type="js.build_tools.gulp" />
       <toRun name="Default" type="DotNetProject" />
@@ -312,23 +307,12 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="default" type="js.build_tools.gulp" temporary="true">
+    <configuration name="default" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
       <tasks>
         <task>min:css+js</task>
-      </tasks>
-      <arguments />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="watch" type="js.build_tools.gulp">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
-      <tasks>
-        <task>watch</task>
       </tasks>
       <arguments />
       <envs />
@@ -348,11 +332,6 @@
       <item itemvalue="Gulp.js.default" />
       <item itemvalue="npm.update" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gulp.js.default" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
