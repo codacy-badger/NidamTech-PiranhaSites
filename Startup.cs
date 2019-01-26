@@ -45,7 +45,7 @@ namespace nidam_corp
             // Configure cache level
             App.CacheLevel = Piranha.Cache.CacheLevel.Basic;
 
-            registerBlocks();
+            RegisterBlocks();
 
             //TODO: unregisterBlocks();
 
@@ -78,12 +78,12 @@ namespace nidam_corp
             });
         }
 
-        private void registerBlocks()
+        private void RegisterBlocks()
         {
             App.Blocks.Register<HeroBlock>();
         }
 
-        private void unregisterBlocks()
+        private void UnregisterBlocks()
         {
             throw new NotImplementedException();
         }

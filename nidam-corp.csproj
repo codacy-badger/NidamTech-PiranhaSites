@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\css\nidam\nidam-theme.min.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\js\main.min.js"/>
+      <_ContentIncludedByDefault Remove="wwwroot\js\main.min.js" />
+      <_ContentIncludedByDefault Remove="Areas\Manager\Views\Shared\Partial\_EditorSetup.cshtml" />
   </ItemGroup>
 </Project>

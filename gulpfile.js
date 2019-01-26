@@ -14,7 +14,7 @@ var inputJS = {
         //Path to js here
     ]
 };
-var outputJS = 'wwwroot/js'
+var outputJS = 'wwwroot/js';
 
 var inputSCSS_all = 'assets/scss/**/**/*.scss';
 var inputSCSS_base = 'assets/scss/base/style.scss';

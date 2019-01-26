@@ -6,7 +6,7 @@ namespace nidam_corp.Controllers
 {
     public class CmsController : Controller
     {
-        private readonly IApi api;
+        private readonly IApi _api;
 
         /// <summary>
         /// Default constructor.
@@ -14,7 +14,7 @@ namespace nidam_corp.Controllers
         /// <param name="api">The current api</param>
         public CmsController(IApi api)
         {
-            this.api = api;
+            _api = api;
         }
 
         /// <summary>
@@ -33,10 +33,10 @@ namespace nidam_corp.Controllers
             Models.BlogArchive model;
 
             if (category.HasValue)
-                model = api.Archives.GetByCategoryId<Models.BlogArchive>(id, category.Value, page, year, month);
+                model = _api.Archives.GetByCategoryId<Models.BlogArchive>(id, category.Value, page, year, month);
             else if (tag.HasValue)
-                model = api.Archives.GetByTagId<Models.BlogArchive>(id, tag.Value, page, year, month);
-            else model = api.Archives.GetById<Models.BlogArchive>(id, page, year, month);
+                model = _api.Archives.GetByTagId<Models.BlogArchive>(id, tag.Value, page, year, month);
+            else model = _api.Archives.GetById<Models.BlogArchive>(id, page, year, month);
 
             return View(model);
         }
@@ -48,7 +48,7 @@ namespace nidam_corp.Controllers
         [Route("page")]
         public IActionResult Page(Guid id)
         {
-            var model = api.Pages.GetById<Models.StandardPage>(id);
+            var model = _api.Pages.GetById<Models.StandardPage>(id);
 
             return View(model);
         }
@@ -60,7 +60,7 @@ namespace nidam_corp.Controllers
         [Route("post")]
         public IActionResult Post(Guid id)
         {
-            var model = api.Posts.GetById<Models.BlogPost>(id);
+            var model = _api.Posts.GetById<Models.BlogPost>(id);
 
             return View(model);
         }
@@ -72,7 +72,7 @@ namespace nidam_corp.Controllers
         [Route("start")]
         public IActionResult Start(Guid id)
         {
-            var model = api.Pages.GetById<Models.StartPage>(id);
+            var model = _api.Pages.GetById<Models.StartPage>(id);
 
             return View(model);
         }

@@ -5,17 +5,6 @@
     <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_nidam-corp.1581711105.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
-      <e p="Areas" t="Include">
-        <e p="Manager" t="Include">
-          <e p="Views" t="Include">
-            <e p="Shared" t="Include">
-              <e p="Partial" t="Include">
-                <e p="_EditorSetup.cshtml" t="Include" />
-              </e>
-            </e>
-          </e>
-        </e>
-      </e>
       <e p="assets" t="Include">
         <e p="scss" t="Include">
           <e p="base" t="Include">
@@ -65,14 +54,16 @@
         <e p="Blocks" t="Include">
           <e p="HeroBlock.cs" t="Include" />
         </e>
-        <e p="BlogArchive.cs" t="Include" />
-        <e p="BlogPost.cs" t="Include" />
+        <e p="Pages" t="Include">
+          <e p="BlogArchive.cs" t="Include" />
+          <e p="BlogPost.cs" t="Include" />
+          <e p="StandardPage.cs" t="Include" />
+          <e p="StartPage.cs" t="Include" />
+        </e>
         <e p="Regions" t="Include">
           <e p="Heading.cs" t="Include" />
           <e p="Teaser.cs" t="Include" />
         </e>
-        <e p="StandardPage.cs" t="Include" />
-        <e p="StartPage.cs" t="Include" />
       </e>
       <e p="nidam-corp.csproj" t="IncludeRecursive" />
       <e p="nidam-corp.sln" t="IncludeFlat" />
@@ -80,6 +71,7 @@
         <e p="bootstrap" t="IncludeRecursive" />
         <e p="browser-sync" t="IncludeRecursive" />
         <e p="gulp" t="IncludeRecursive" />
+        <e p="gulp-autoprefixer" t="IncludeRecursive" />
         <e p="gulp-concat" t="IncludeRecursive" />
         <e p="gulp-cssmin" t="IncludeRecursive" />
         <e p="gulp-rename" t="IncludeRecursive" />

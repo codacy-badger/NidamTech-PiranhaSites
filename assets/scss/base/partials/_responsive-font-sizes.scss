@@ -1,139 +1,28 @@
-/*@include media-breakpoint-down(xs) { ... }
-@include media-breakpoint-down(sm) { ... }
-@include media-breakpoint-down(md) { ... }
-@include media-breakpoint-down(lg) { ... }
-
-@include media-breakpoint-only(xs) { ... }
-@include media-breakpoint-only(sm) { ... }
-@include media-breakpoint-only(md) { ... }
-@include media-breakpoint-only(lg) { ... }
-@include media-breakpoint-only(xl) { ... }*/
-
-/* Xtra-Small devices (576px and down) */
-h3 {
-  font-size: 1rem;
-}
-
-h2 {
-  font-size: 1.25rem;
-}
-
-h1 {
-  font-size: 1.50rem;
-}
-
-.display-4 {
-  font-size: 1.75rem;
-}
-
-.display-3 {
-  font-size: 2rem;
-}
-
-.display-2 {
-  font-size: 2.5rem;
-}
-
-.display-1 {
-  font-size: 3.5rem;
-}
-
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  h3 {
-    font-size: 1.25rem;
-  }
-  h2 {
-    font-size: 1.50rem;
-  }
-  h1 {
-    font-size: 1.75rem;
-  }
-  .display-4 {
-    font-size: 2rem;
-  }
-  .display-3 {
-    font-size: 2.5rem;
-  }
-  .display-2 {
-    font-size: 3.5rem;
-  }
-  .display-1 {
-    font-size: 4.5rem;
+@include media-breakpoint-up(sm) {
+  h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
+    font-size: 125%;
   }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {
-  h3 {
-    font-size: 1.50rem;
-  }
-  h2 {
-    font-size: 1.75rem;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  .display-4 {
-    font-size: 2.5rem;
-  }
-  .display-3 {
-    font-size: 3.5rem;
-  }
-  .display-2 {
-    font-size: 4.5rem;
-  }
-  .display-1 {
-    font-size: 5.5rem;
+@include media-breakpoint-up(md) {
+  h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
+    font-size: 150%;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  h3 {
-    font-size: 1.75rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  h1 {
-    font-size: 2.5rem;
-  }
-  .display-4 {
-    font-size: 3.5rem;
-  }
-  .display-3 {
-    font-size: 4.5rem;
-  }
-  .display-2 {
-    font-size: 5.5rem;
-  }
-  .display-1 {
-    font-size: 6rem;
+@include media-breakpoint-up(lg) {
+  h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
+    font-size: 175%;
   }
 }
 
+
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  h3 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h1 {
-    font-size: 3.5rem;
-  }
-  .display-4 {
-    font-size: 4.5rem;
-  }
-  .display-3 {
-    font-size: 5.5rem;
-  }
-  .display-2 {
-    font-size: 6rem;
-  }
-  .display-1 {
-    font-size: 6.5rem;
+@include media-breakpoint-up(xl) {
+  h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
+    font-size: 200%;
   }
 }
