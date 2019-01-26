@@ -7,15 +7,18 @@ var gulp = require('gulp'),
     concat = require("gulp-concat"),
     browserSync = require('browser-sync').create();
 
-//Inputs
+//Input & output paths
 var inputJS = {
     js: [
         //Path to js here
     ]
 };
+var outputJS = 'wwwroot/js'
+
 var inputSCSS_all = 'assets/scss/**/**/*.scss';
 var inputSCSS_base = 'assets/scss/base/style.scss';
 var inputSCSS_themes = 'assets/scss/themes/**/*-theme.scss';
+var outputCSS = 'wwwroot/css';
 
 //Tasks
 gulp.task('default', function () {
@@ -26,8 +29,10 @@ gulp.task('watch', function () {
     setTimeout(function () {
         browserSync.init({
             proxy: "localhost:5000",
+            port: 5000
         });
     }, 10000);
+    gulp.watch("Views/**/**/*.cshtml").on('change', browserSync.reload);
     gulp.watch(inputSCSS_all, minifyBase, minifyThemes).on('change', browserSync.reload);
     //gulp.watch(inputJS, minifyScript()).on('change', browserSync.reload);
 });
@@ -42,7 +47,7 @@ function minifyBase() {
             dirname: "base",
             suffix: ".min"
         }))
-        .pipe(gulp.dest('wwwroot/css'))
+        .pipe(gulp.dest(outputCSS))
         .pipe(browserSync.stream());
 }
 
@@ -54,7 +59,7 @@ function minifyThemes() {
             dirname: "themes",
             suffix: ".min"
         }))
-        .pipe(gulp.dest('wwwroot/css'))
+        .pipe(gulp.dest(outputCSS))
         .pipe(browserSync.stream());
 }
 
@@ -66,7 +71,7 @@ function minifyScripts() {
             dirname: "",
             suffix: ".min"
         }))
-        .pipe(gulp.dest('wwwroot/js'))
+        .pipe(gulp.dest(outputJS))
         .pipe(browserSync.stream());
 }
 
