@@ -128,9 +128,7 @@
       </e>
       <e p="wwwroot" t="Include">
         <e p="css" t="Include">
-          <e p="base" t="Include">
-            <e p="style.min.css" t="Include" />
-          </e>
+          <e p="style.min.css" t="Include" />
           <e p="Themes" t="Include">
             <e p="nidam-theme.min.css" t="Include" />
             <e p="sundhedmedalette-theme.min.css" t="Include" />

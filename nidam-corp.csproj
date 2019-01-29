@@ -28,5 +28,8 @@
     <_ContentIncludedByDefault Remove="wwwroot\css\nidam\nidam-theme.min.css" />
       <_ContentIncludedByDefault Remove="wwwroot\js\main.min.js" />
       <_ContentIncludedByDefault Remove="Areas\Manager\Views\Shared\Partial\_EditorSetup.cshtml" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\base\style.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\themes\nidam-theme.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\themes\sundhedmedalette-theme.min.css" />
   </ItemGroup>
 </Project>

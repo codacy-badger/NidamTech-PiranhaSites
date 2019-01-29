@@ -14,7 +14,6 @@
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/nidam-corp.TagHelpers.input.cache
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/nidam-corp.TagHelpers.output.cache
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/nidam-corp.RazorCoreGenerate.cache
-/Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Areas/Manager/Views/Shared/Partial/_EditorSetup.g.cshtml.cs
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Cms/Archive.g.cshtml.cs
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Cms/DisplayTemplates/HeroBlock.g.cshtml.cs
 /Users/nikolaidamm/Projects/nidam-corp/obj/Debug/netcoreapp2.1/Razor/Views/Cms/DisplayTemplates/HtmlBlock.g.cshtml.cs
