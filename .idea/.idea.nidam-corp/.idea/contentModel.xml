@@ -11,7 +11,7 @@
             <e p="partials" t="Include">
               <e p="_footer.scss" t="Include" />
               <e p="_navbar.scss" t="Include" />
-              <e p="_responsive-font-sizes.scss" t="Include" />
+              <e p="_text-responsive.scss" t="Include" />
               <e p="Blocks" t="Include">
                 <e p="_hero.scss" t="Include" />
               </e>

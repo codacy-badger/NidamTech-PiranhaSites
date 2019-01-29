@@ -33,7 +33,7 @@ gulp.task('watch', function () {
         });
     }, 10000);
     gulp.watch("Views/**/**/*.cshtml").on('change', browserSync.reload);
-    gulp.watch(inputSCSS.scss, minifySCSS_base, minifySCSS_themes).on('change', browserSync.reload);
+    gulp.watch(inputSCSS, gulp.series('default')).on('change', browserSync.reload);
     //gulp.watch(inputJS, minifyScript()).on('change', browserSync.reload);
 });
 

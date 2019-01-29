@@ -7,27 +7,18 @@
     <list default="true" id="bf58d147-3aa0-44dd-a464-6d9ebc6c3851" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Shared/Partial/_Head.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/Partial/_Head.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Shared/Partial/_Footer.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/Partial/_Footer.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/base/partials/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/partials/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/base/partials/_responsive-font-sizes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/partials/_text-responsive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/base/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/base/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.1/nidam-corp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nidam-corp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/nidam-corp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/Razor/Areas/Manager/Views/Shared/Partial/_EditorSetup.g.cshtml.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.RazorCoreGenerate.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.1/nidam-corp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/css/base/style.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/css/themes/nidam-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/css/themes/sundhedmedalette-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/piranha.db" beforeDir="false" afterPath="$PROJECT_DIR$/piranha.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/style.min.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,45 +32,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+            <state relative-caret-position="384">
+              <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/Cms/Start.cshtml">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1548288068571" expanded="true" signature="60:427" ph="@..." />
-                <marker date="1548288068571" expanded="true" signature="182:424" ph="{...}" />
-                <marker date="1548288068571" expanded="true" signature="237:399" ph="{...}" />
-                <marker date="1548288068571" expanded="true" signature="428:700" ph="&lt;header.../&gt;" />
-                <marker date="1548288068571" expanded="true" signature="499:690" ph="&lt;div.../&gt;" />
-                <marker date="1548288068571" expanded="true" signature="531:616" ph="&lt;h1.../&gt;" />
-                <marker date="1548288068571" expanded="true" signature="625:679" ph="&lt;h3.../&gt;" />
-                <marker date="1548288068571" expanded="true" signature="702:2906" ph="&lt;div.../&gt;" />
-                <marker date="1548288068571" expanded="true" signature="725:2899" ph="&lt;div.../&gt;" />
-                <marker date="1548288068571" expanded="true" signature="757:2710" ph="@..." />
-                <marker date="1548288068571" expanded="true" signature="786:2710" ph="{...}" />
-                <marker date="1548288068571" expanded="true" signature="894:2700" ph="{...}" />
-                <marker date="1548288068571" expanded="true" signature="1024:1120" ph="{...}" />
-                <marker date="1548288068571" expanded="true" signature="1190:1286" ph="{...}" />
-                <marker date="1548288068571" expanded="true" signature="1307:1403" ph="{...}" />
-                <marker date="1548288068571" expanded="true" signature="1421:2657" ph="&lt;div.../&gt;" />
-                <marker date="1548288068571" expanded="true" signature="1490:2634" ph="@..." />
-                <marker date="1548288068571" expanded="true" signature="1521:2634" ph="{...}" />
-                <marker date="1548288068571" expanded="true" signature="1630:2612" ph="&lt;div.../&gt;" />
-                <marker date="1548288068571" expanded="true" signature="1701:2581" ph="&lt;div.../&gt;" />
-                <marker date="1548288068571" expanded="true" signature="1955:2546" ph="@..." />
-                <marker date="1548288068571" expanded="true" signature="1985:2232" ph="{...}" />
-                <marker date="1548288068571" expanded="true" signature="2056:2198" ph="&lt;p.../&gt;" />
-                <marker date="1548288068571" expanded="true" signature="2299:2546" ph="{...}" />
-                <marker date="1548288068571" expanded="true" signature="2370:2512" ph="&lt;p.../&gt;" />
-                <marker date="1548288068571" expanded="true" signature="2720:2888" ph="&lt;div.../&gt;" />
-                <marker date="1548288068571" expanded="true" signature="2773:2873" ph="&lt;div.../&gt;" />
-              </folding>
+            <state relative-caret-position="345">
+              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -87,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="42" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="42" />
+            <state relative-caret-position="270">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
               <folding>
                 <marker date="1548362474806" expanded="true" signature="38:474" ph="&lt;html.../&gt;" />
                 <marker date="1548362474806" expanded="true" signature="55:196" ph="&lt;head.../&gt;" />
@@ -101,7 +64,45 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/Cms/Start.cshtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" selection-end-column="9" />
+              <folding>
+                <marker date="1548797791484" expanded="true" signature="60:427" ph="@..." />
+                <marker date="1548797791484" expanded="true" signature="182:424" ph="{...}" />
+                <marker date="1548797791484" expanded="true" signature="237:399" ph="{...}" />
+                <marker date="1548797791484" expanded="true" signature="428:700" ph="&lt;header.../&gt;" />
+                <marker date="1548797791484" expanded="true" signature="499:690" ph="&lt;div.../&gt;" />
+                <marker date="1548797791484" expanded="true" signature="531:616" ph="&lt;h1.../&gt;" />
+                <marker date="1548797791484" expanded="true" signature="625:679" ph="&lt;h3.../&gt;" />
+                <marker date="1548797791484" expanded="true" signature="702:2906" ph="&lt;div.../&gt;" />
+                <marker date="1548797791484" expanded="true" signature="725:2899" ph="&lt;div.../&gt;" />
+                <marker date="1548797791484" expanded="true" signature="757:2710" ph="@..." />
+                <marker date="1548797791484" expanded="true" signature="786:2710" ph="{...}" />
+                <marker date="1548797791484" expanded="true" signature="894:2700" ph="{...}" />
+                <marker date="1548797791484" expanded="true" signature="1024:1120" ph="{...}" />
+                <marker date="1548797791484" expanded="true" signature="1190:1286" ph="{...}" />
+                <marker date="1548797791484" expanded="true" signature="1307:1403" ph="{...}" />
+                <marker date="1548797791484" expanded="true" signature="1421:2657" ph="&lt;div.../&gt;" />
+                <marker date="1548797791484" expanded="true" signature="1490:2634" ph="@..." />
+                <marker date="1548797791484" expanded="true" signature="1521:2634" ph="{...}" />
+                <marker date="1548797791484" expanded="true" signature="1630:2612" ph="&lt;div.../&gt;" />
+                <marker date="1548797791484" expanded="true" signature="1701:2581" ph="&lt;div.../&gt;" />
+                <marker date="1548797791484" expanded="true" signature="1955:2546" ph="@..." />
+                <marker date="1548797791484" expanded="true" signature="1985:2232" ph="{...}" />
+                <marker date="1548797791484" expanded="true" signature="2056:2198" ph="&lt;p.../&gt;" />
+                <marker date="1548797791484" expanded="true" signature="2299:2546" ph="{...}" />
+                <marker date="1548797791484" expanded="true" signature="2370:2512" ph="&lt;p.../&gt;" />
+                <marker date="1548797791484" expanded="true" signature="2720:2888" ph="&lt;div.../&gt;" />
+                <marker date="1548797791484" expanded="true" signature="2773:2873" ph="&lt;div.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/Shared/Partial/_Head.cshtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -110,7 +111,68 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/Shared/Partial/_Footer.cshtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="613">
+              <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+              <folding>
+                <marker date="1548798026464" expanded="true" signature="0:1610" ph="&lt;footer.../&gt;" />
+                <marker date="1548798026464" expanded="true" signature="37:1600" ph="&lt;div.../&gt;" />
+                <marker date="1548798026464" expanded="true" signature="59:452" ph="&lt;div.../&gt;" />
+                <marker date="1548798026464" expanded="true" signature="132:373" ph="&lt;p.../&gt;" />
+                <marker date="1548798026464" expanded="true" signature="457:915" ph="&lt;div.../&gt;" />
+                <marker date="1548798026464" expanded="true" signature="488:620" ph="&lt;div.../&gt;" />
+                <marker date="1548798026464" expanded="true" signature="629:722" ph="&lt;div.../&gt;" />
+                <marker date="1548798026464" expanded="true" signature="731:904" ph="&lt;div.../&gt;" />
+                <marker date="1548798026464" expanded="true" signature="792:889" ph="&lt;p.../&gt;" />
+                <marker date="1548798026464" expanded="true" signature="920:1589" ph="&lt;div.../&gt;" />
+                <marker date="1548798026464" expanded="true" signature="951:1175" ph="&lt;p.../&gt;" />
+                <marker date="1548798026464" expanded="true" signature="1184:1578" ph="&lt;div.../&gt;" />
+                <marker date="1548798026464" expanded="true" signature="1223:1299" ph="&lt;a.../&gt;" />
+                <marker date="1548798026464" expanded="true" signature="1312:1387" ph="&lt;a.../&gt;" />
+                <marker date="1548798026464" expanded="true" signature="1400:1476" ph="&lt;a.../&gt;" />
+                <marker date="1548798026464" expanded="true" signature="1489:1563" ph="&lt;a.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/scss/base/partials/_text-responsive.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2055">
+              <caret line="137" column="3" lean-forward="true" selection-start-line="137" selection-start-column="3" selection-end-line="137" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/scss/base/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/sundhedmedalette-theme.scss">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/scss/base/partials/_footer.scss">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>webkit</find>
+      <find>keyframes</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -123,6 +185,7 @@
     <setting file="file://$PROJECT_DIR$/Models/Pages/BlogPost.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Cms/Start.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Shared/Partial/_Head.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Shared/Partial/_Footer.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" />
@@ -139,14 +202,19 @@
         <option value="$PROJECT_DIR$/Controllers/CmsController.cs" />
         <option value="$PROJECT_DIR$/assets/scss/base/partials/_responsive-font-sizes.scss" />
         <option value="$PROJECT_DIR$/.idea/.idea.nidam-corp/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/Views/Shared/Partial/_Head.cshtml" />
+        <option value="$PROJECT_DIR$/assets/scss/base/partials/_footer.scss" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/Views/Cms/Start.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Shared/Partial/_Footer.cshtml" />
+        <option value="$PROJECT_DIR$/assets/scss/base/style.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/base/partials/_text-responsive.scss" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1920" />
+    <option name="width" value="960" />
     <option name="height" value="1177" />
   </component>
   <component name="ProjectStartupLocalConfiguration">
@@ -176,6 +244,63 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="base" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="base" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="partials" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="themes" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="themes" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="sundhedmedalette" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="assets" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="scss" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="themes" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="sundhedmedalette" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="partials" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
@@ -184,14 +309,6 @@
               <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Cms" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Cms" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="DisplayTemplates" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -207,19 +324,6 @@
               <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Shared" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Partial" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="nidam-corp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="css" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -286,16 +390,7 @@
       <browser url="http://localhost:5000" />
       <method v="2">
         <option name="Build" enabled="true" />
-        <option name="GulpBeforeRunTask" enabled="true">
-          <node-interpreter>project</node-interpreter>
-          <node-options />
-          <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
-          <tasks>
-            <task>min:css+js</task>
-          </tasks>
-          <arguments />
-          <envs />
-        </option>
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="default" run_configuration_type="js.build_tools.gulp" />
       </method>
     </configuration>
     <configuration default="true" type="js.build_tools.gulp">
@@ -307,23 +402,12 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="default (1)" type="js.build_tools.gulp" temporary="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
-      <tasks>
-        <task>default</task>
-      </tasks>
-      <arguments />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="default" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
       <tasks>
-        <task>min:css+js</task>
+        <task>default</task>
       </tasks>
       <arguments />
       <envs />
@@ -342,13 +426,7 @@
       <item itemvalue="Gulp.js.watch" />
       <item itemvalue="Gulp.js.default" />
       <item itemvalue="npm.update" />
-      <item itemvalue="Gulp.js.default (1)" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gulp.js.default (1)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -361,12 +439,12 @@
       <option name="presentableId" value="Default" />
       <updated>1548465439144</updated>
       <workItem from="1548465440556" duration="4156000" />
-      <workItem from="1548794669578" duration="924000" />
+      <workItem from="1548794669578" duration="5154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5080000" />
+    <option name="totallyTimeSpent" value="9310000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -378,24 +456,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="960" height="1177" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49725273" visible="true" weight="0.30990416" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49769586" visible="true" weight="0.5294118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Azure Explorer" order="5" />
-      <window_info id="Gulp" order="6" sideWeight="0.50274724" side_tool="true" visible="true" weight="0.30990416" />
+      <window_info active="true" id="Gulp" order="6" sideWeight="0.50230414" side_tool="true" visible="true" weight="0.5294118" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32903227" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32903227" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32920355" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32903227" />
       <window_info anchor="bottom" id="REST Client" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32920355" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -430,13 +507,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Areas/Manager/Views/Shared/Partial/_EditorSetup.cshtml" />
     <entry file="file://$PROJECT_DIR$/Models/Pages/BlogPost.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -505,23 +575,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/base/partials/_responsive-font-sizes.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/base/partials/_navbar.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/base/partials/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1854" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/Shared/Partial/_Script.cshtml">
@@ -532,9 +590,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/_ViewImports.cshtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/base/style.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/Shared/Partial/_Navbar.cshtml">
@@ -579,52 +634,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+    <entry file="file://$PROJECT_DIR$/wwwroot/css/style.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+        <state>
+          <caret column="612" selection-start-column="612" selection-end-column="612" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Cms/Start.cshtml">
+    <entry file="file://$PROJECT_DIR$/wwwroot/css/themes/sundhedmedalette-theme.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <folding>
-            <marker date="1548288068571" expanded="true" signature="60:427" ph="@..." />
-            <marker date="1548288068571" expanded="true" signature="182:424" ph="{...}" />
-            <marker date="1548288068571" expanded="true" signature="237:399" ph="{...}" />
-            <marker date="1548288068571" expanded="true" signature="428:700" ph="&lt;header.../&gt;" />
-            <marker date="1548288068571" expanded="true" signature="499:690" ph="&lt;div.../&gt;" />
-            <marker date="1548288068571" expanded="true" signature="531:616" ph="&lt;h1.../&gt;" />
-            <marker date="1548288068571" expanded="true" signature="625:679" ph="&lt;h3.../&gt;" />
-            <marker date="1548288068571" expanded="true" signature="702:2906" ph="&lt;div.../&gt;" />
-            <marker date="1548288068571" expanded="true" signature="725:2899" ph="&lt;div.../&gt;" />
-            <marker date="1548288068571" expanded="true" signature="757:2710" ph="@..." />
-            <marker date="1548288068571" expanded="true" signature="786:2710" ph="{...}" />
-            <marker date="1548288068571" expanded="true" signature="894:2700" ph="{...}" />
-            <marker date="1548288068571" expanded="true" signature="1024:1120" ph="{...}" />
-            <marker date="1548288068571" expanded="true" signature="1190:1286" ph="{...}" />
-            <marker date="1548288068571" expanded="true" signature="1307:1403" ph="{...}" />
-            <marker date="1548288068571" expanded="true" signature="1421:2657" ph="&lt;div.../&gt;" />
-            <marker date="1548288068571" expanded="true" signature="1490:2634" ph="@..." />
-            <marker date="1548288068571" expanded="true" signature="1521:2634" ph="{...}" />
-            <marker date="1548288068571" expanded="true" signature="1630:2612" ph="&lt;div.../&gt;" />
-            <marker date="1548288068571" expanded="true" signature="1701:2581" ph="&lt;div.../&gt;" />
-            <marker date="1548288068571" expanded="true" signature="1955:2546" ph="@..." />
-            <marker date="1548288068571" expanded="true" signature="1985:2232" ph="{...}" />
-            <marker date="1548288068571" expanded="true" signature="2056:2198" ph="&lt;p.../&gt;" />
-            <marker date="1548288068571" expanded="true" signature="2299:2546" ph="{...}" />
-            <marker date="1548288068571" expanded="true" signature="2370:2512" ph="&lt;p.../&gt;" />
-            <marker date="1548288068571" expanded="true" signature="2720:2888" ph="&lt;div.../&gt;" />
-            <marker date="1548288068571" expanded="true" signature="2773:2873" ph="&lt;div.../&gt;" />
-          </folding>
+          <caret column="353" selection-start-column="344" selection-end-column="353" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/partials/_navbar.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/themes/sundhedmedalette/sundhedmedalette-theme.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/base/partials/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Shared/Partial/_Head.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="42" />
+        <state relative-caret-position="270">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
           <folding>
             <marker date="1548362474806" expanded="true" signature="38:474" ph="&lt;html.../&gt;" />
             <marker date="1548362474806" expanded="true" signature="55:196" ph="&lt;head.../&gt;" />
@@ -636,10 +693,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/Shared/Partial/_Head.cshtml">
+    <entry file="file://$PROJECT_DIR$/Views/Cms/Start.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <marker date="1548797791484" expanded="true" signature="60:427" ph="@..." />
+            <marker date="1548797791484" expanded="true" signature="182:424" ph="{...}" />
+            <marker date="1548797791484" expanded="true" signature="237:399" ph="{...}" />
+            <marker date="1548797791484" expanded="true" signature="428:700" ph="&lt;header.../&gt;" />
+            <marker date="1548797791484" expanded="true" signature="499:690" ph="&lt;div.../&gt;" />
+            <marker date="1548797791484" expanded="true" signature="531:616" ph="&lt;h1.../&gt;" />
+            <marker date="1548797791484" expanded="true" signature="625:679" ph="&lt;h3.../&gt;" />
+            <marker date="1548797791484" expanded="true" signature="702:2906" ph="&lt;div.../&gt;" />
+            <marker date="1548797791484" expanded="true" signature="725:2899" ph="&lt;div.../&gt;" />
+            <marker date="1548797791484" expanded="true" signature="757:2710" ph="@..." />
+            <marker date="1548797791484" expanded="true" signature="786:2710" ph="{...}" />
+            <marker date="1548797791484" expanded="true" signature="894:2700" ph="{...}" />
+            <marker date="1548797791484" expanded="true" signature="1024:1120" ph="{...}" />
+            <marker date="1548797791484" expanded="true" signature="1190:1286" ph="{...}" />
+            <marker date="1548797791484" expanded="true" signature="1307:1403" ph="{...}" />
+            <marker date="1548797791484" expanded="true" signature="1421:2657" ph="&lt;div.../&gt;" />
+            <marker date="1548797791484" expanded="true" signature="1490:2634" ph="@..." />
+            <marker date="1548797791484" expanded="true" signature="1521:2634" ph="{...}" />
+            <marker date="1548797791484" expanded="true" signature="1630:2612" ph="&lt;div.../&gt;" />
+            <marker date="1548797791484" expanded="true" signature="1701:2581" ph="&lt;div.../&gt;" />
+            <marker date="1548797791484" expanded="true" signature="1955:2546" ph="@..." />
+            <marker date="1548797791484" expanded="true" signature="1985:2232" ph="{...}" />
+            <marker date="1548797791484" expanded="true" signature="2056:2198" ph="&lt;p.../&gt;" />
+            <marker date="1548797791484" expanded="true" signature="2299:2546" ph="{...}" />
+            <marker date="1548797791484" expanded="true" signature="2370:2512" ph="&lt;p.../&gt;" />
+            <marker date="1548797791484" expanded="true" signature="2720:2888" ph="&lt;div.../&gt;" />
+            <marker date="1548797791484" expanded="true" signature="2773:2873" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Shared/Partial/_Footer.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+          <folding>
+            <marker date="1548798026464" expanded="true" signature="0:1610" ph="&lt;footer.../&gt;" />
+            <marker date="1548798026464" expanded="true" signature="37:1600" ph="&lt;div.../&gt;" />
+            <marker date="1548798026464" expanded="true" signature="59:452" ph="&lt;div.../&gt;" />
+            <marker date="1548798026464" expanded="true" signature="132:373" ph="&lt;p.../&gt;" />
+            <marker date="1548798026464" expanded="true" signature="457:915" ph="&lt;div.../&gt;" />
+            <marker date="1548798026464" expanded="true" signature="488:620" ph="&lt;div.../&gt;" />
+            <marker date="1548798026464" expanded="true" signature="629:722" ph="&lt;div.../&gt;" />
+            <marker date="1548798026464" expanded="true" signature="731:904" ph="&lt;div.../&gt;" />
+            <marker date="1548798026464" expanded="true" signature="792:889" ph="&lt;p.../&gt;" />
+            <marker date="1548798026464" expanded="true" signature="920:1589" ph="&lt;div.../&gt;" />
+            <marker date="1548798026464" expanded="true" signature="951:1175" ph="&lt;p.../&gt;" />
+            <marker date="1548798026464" expanded="true" signature="1184:1578" ph="&lt;div.../&gt;" />
+            <marker date="1548798026464" expanded="true" signature="1223:1299" ph="&lt;a.../&gt;" />
+            <marker date="1548798026464" expanded="true" signature="1312:1387" ph="&lt;a.../&gt;" />
+            <marker date="1548798026464" expanded="true" signature="1400:1476" ph="&lt;a.../&gt;" />
+            <marker date="1548798026464" expanded="true" signature="1489:1563" ph="&lt;a.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/base/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/base/partials/_text-responsive.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2055">
+          <caret line="137" column="3" lean-forward="true" selection-start-line="137" selection-start-column="3" selection-end-line="137" selection-end-column="3" />
         </state>
       </provider>
     </entry>
