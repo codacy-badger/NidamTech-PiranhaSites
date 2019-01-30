@@ -31,5 +31,7 @@
       <_ContentIncludedByDefault Remove="wwwroot\css\base\style.min.css" />
       <_ContentIncludedByDefault Remove="wwwroot\css\themes\nidam-theme.min.css" />
       <_ContentIncludedByDefault Remove="wwwroot\css\themes\sundhedmedalette-theme.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\site.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\style.min.css" />
   </ItemGroup>
 </Project>

@@ -1,79 +1,88 @@
-//Plugins - Must be installed with NPM
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    cssmin = require("gulp-cssmin"),
-    autoprefixer = require("gulp-autoprefixer"),
-    rename = require("gulp-rename"),
-    uglify = require("gulp-uglify"),
-    concat = require("gulp-concat"),
-    browserSync = require('browser-sync').create();
+    plumber = require('gulp-plumber'),
+    rename = require('gulp-rename');
+var autoprefixer = require('gulp-autoprefixer');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var minifycss = require('gulp-cssmin');
+var sass = require('gulp-sass');
+var browserSync = require('browser-sync');
 
-//Input & output paths
-var inputJS = {
-    js: [
-        //Path to js here
-    ]
-};
-var outputJS = 'wwwroot/js';
-var inputSCSS = 'assets/scss/**/*.scss';
-var inputSCSS_themes = 'assets/scss/themes/**/*.scss';
-var inputSCSS_base = 'assets/scss/base/**/*.scss';
-var outputCSS = 'wwwroot/css';
+var bs1 = browserSync.create("proxy1");
+var bs2 = browserSync.create("proxy2");
+var bs3 = browserSync.create("proxy3");
 
-//Tasks
-gulp.task('default', function () {
-    return minifySCSS_base(), minifySCSS_themes() /*,minifyScripts()*/;
+
+gulp.task('browser-sync', function () {
+    bs1.init({
+        proxy: "http://sundhedmedalette:5000",
+        port: 2000,
+        ui: {
+            port: 2001
+        }
+    });
+    bs2.init({
+        proxy: "http://localhost:5000",
+        port: 3000,
+        ui: {
+            port: 3001
+        }
+    });
+    bs3.init({
+        proxy: "http://nidam-corp:5000",
+        port: 4000,
+        ui: {
+            port: 4001
+        }
+    });
 });
 
-gulp.task('watch', function () {
-    setTimeout(function () {
-        browserSync.init({
-            proxy: "localhost:5000",
-            port: 5000
-        });
-    }, 10000);
-    gulp.watch("Views/**/**/*.cshtml").on('change', browserSync.reload);
-    gulp.watch(inputSCSS, gulp.series('default')).on('change', browserSync.reload);
-    //gulp.watch(inputJS, minifyScript()).on('change', browserSync.reload);
+gulp.task('bs-reload', function () {
+    browserSync.reload();
 });
 
-
-//Methods
-function minifySCSS_base() {
-    return gulp.src(inputSCSS_base)
-        .pipe(sass().on('error', sass.logError))
-        .pipe(cssmin())
-        .pipe(autoprefixer())
-        .pipe(rename({
-            suffix: ".min"
+gulp.task('styles', function (done) {
+    gulp.src(['assets/scss/**/*.scss'])
+        .pipe(plumber({
+            errorHandler: function (error) {
+                console.log(error.message);
+                this.emit('end');
+            }
         }))
-        .pipe(gulp.dest(outputCSS))
-        .pipe(browserSync.stream());
-}
+        .pipe(sass())
+        .pipe(autoprefixer('last 2 versions'))
+        .pipe(rename({dirname: "", suffix: '.min', }))
+        .pipe(minifycss())
+        .pipe(gulp.dest('wwwroot/css/'))
+        .pipe(browserSync.reload({stream: true}))
+    done();
+});
 
-function minifySCSS_themes() {
-    return gulp.src(inputSCSS_themes)
-        .pipe(sass().on('error', sass.logError))
-        .pipe(cssmin())
-        .pipe(autoprefixer())
-        .pipe(rename({
-            dirname: "themes",
-            suffix: ".min"
+gulp.task('scripts', function (done) {
+    return gulp.src('assets/js/**/*.js')
+        .pipe(plumber({
+            errorHandler: function (error) {
+                console.log(error.message);
+                this.emit('end');
+            }
         }))
-        .pipe(gulp.dest(outputCSS))
-        .pipe(browserSync.stream());
-}
-
-function minifyScripts() {
-    return gulp.src(inputJS.js, {base: "."})
-        .pipe(uglify())
         .pipe(concat('main.js'))
-        .pipe(rename(path)({
-            suffix: ".min"
-        }))
-        .pipe(gulp.dest(outputJS))
-        .pipe(browserSync.stream());
-}
+        .pipe(rename({suffix: '.min'}))
+        .pipe(uglify())
+        .pipe(gulp.dest('wwwroot/js/'))
+        .pipe(browserSync.reload({stream: true}))
+    done();
+});
+
+gulp.task('default', gulp.series('browser-sync', function () {
+    gulp.watch("assets/scss/**/*.scss", ['styles']);
+    gulp.watch("assets/js/**/*.js", ['scripts']);
+    gulp.watch("Views//**/*.cshtml", ['bs-reload']);
+}));
+
+
+
+
 
 
 

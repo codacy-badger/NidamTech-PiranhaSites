@@ -74,6 +74,7 @@
         <e p="gulp-autoprefixer" t="IncludeRecursive" />
         <e p="gulp-concat" t="IncludeRecursive" />
         <e p="gulp-cssmin" t="IncludeRecursive" />
+        <e p="gulp-plumber" t="IncludeRecursive" />
         <e p="gulp-rename" t="IncludeRecursive" />
         <e p="gulp-sass" t="IncludeRecursive" />
         <e p="gulp-uglify" t="IncludeRecursive" />
@@ -92,6 +93,7 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="piranha.db" t="Include" />
       <e p="Program.cs" t="Include" />
+      <e p="project.json" t="Include" />
       <e p="Properties" t="Include">
         <e p="PublishProfiles" t="Include">
           <e p="nidam-corp - Web Deploy.pubxml" t="Include" />
@@ -128,11 +130,9 @@
       </e>
       <e p="wwwroot" t="Include">
         <e p="css" t="Include">
+          <e p="nidam-theme.min.css" t="Include" />
           <e p="style.min.css" t="Include" />
-          <e p="Themes" t="Include">
-            <e p="nidam-theme.min.css" t="Include" />
-            <e p="sundhedmedalette-theme.min.css" t="Include" />
-          </e>
+          <e p="sundhedmedalette-theme.min.css" t="Include" />
         </e>
         <e p="img" t="Include">
           <e p="sundhedmedalette-logo.png" t="Include" />
