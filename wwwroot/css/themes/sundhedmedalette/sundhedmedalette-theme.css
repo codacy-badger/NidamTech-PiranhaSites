@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
+.navbar {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  background-color: white;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
+  .navbar .navbar-brand {
+    width: 60px; }
+  .navbar .nav-item.active span {
+    padding-bottom: 5px;
+    border-bottom: 2px solid black; }
+
+@-webkit-keyframes fadeInFromTop {
+  0% {
+    top: 0%;
+    opacity: 0; }
+  100% {
+    top: 20%;
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out; } }
+
+@keyframes fadeInFromTop {
+  0% {
+    top: 0%;
+    opacity: 0; }
+  100% {
+    top: 20%;
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out; } }
+
+.heading {
+  min-height: 500px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  background-position: center center; }
+  .heading .container {
+    text-align: center;
+    position: relative;
+    -webkit-animation-name: fadeInFromTop;
+            animation-name: fadeInFromTop;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s; }
+    .heading .container h1 {
+      font-weight: 100; }
