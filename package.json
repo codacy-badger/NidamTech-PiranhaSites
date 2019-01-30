@@ -1,9 +1,9 @@
 {
   "name": "nidam_corp",
   "version": "4.2.0",
-  "description": "Basic Web Template for Piranha CMS",
+  "description": "nidam-corp sites",
   "main": "index.js",
-  "author": "Håkan Edling",
+  "author": "Nikolai Emil Damm",
   "license": "MIT",
   "repository": {
     "type": "git",
