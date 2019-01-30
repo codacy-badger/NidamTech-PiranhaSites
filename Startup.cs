@@ -65,6 +65,7 @@ namespace nidam_corp
             app.UseStaticFiles();
             app.UseAuthentication();
             app.UsePiranha();
+            app.UsePiranhaApplication();
             app.UsePiranhaManager();
             app.UseMvc(routes =>
             {
