@@ -46,7 +46,7 @@ namespace nidam_corp
             //Create/Add Menu Groups and Items
             //CreateMenuGroups();
             AddMenuItems();
-           
+
             // Configure cache level
             App.CacheLevel = Piranha.Cache.CacheLevel.Basic;
 
@@ -98,11 +98,11 @@ namespace nidam_corp
         {
             Menu.Items["Settings"].Items.Add(new Menu.MenuItem
             {
-                InternalId = "Themes",
-                Name = "Themes",
-                Controller = "Theme",
-                Action = "Show",
-                Css = "fas fa-paint-brush",
+                InternalId = "Themes", 
+                Name = "Themes", 
+                Controller = "Theme", 
+                Action = "ListSite",
+                Css = "fas fa-paint-brush"
             });
         }
 
