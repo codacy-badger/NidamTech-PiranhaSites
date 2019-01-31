@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Piranha;
 using Piranha.AspNetCore.Identity.SQLite;
+using Piranha.Manager;
 using sundhedmedalette.Models.Blocks;
 
 namespace nidam_corp
@@ -42,6 +43,10 @@ namespace nidam_corp
             // Initialize Piranha
             App.Init();
 
+            //Create/Add Menu Groups and Items
+            //CreateMenuGroups();
+            AddMenuItems();
+           
             // Configure cache level
             App.CacheLevel = Piranha.Cache.CacheLevel.Basic;
 
@@ -76,6 +81,28 @@ namespace nidam_corp
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=home}/{action=index}/{id?}");
+            });
+        }
+
+        private void CreateMenuGroups()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void AddMenuItems()
+        {
+            AddThemesMenuItem();
+        }
+
+        private void AddThemesMenuItem()
+        {
+            Menu.Items["Settings"].Items.Add(new Menu.MenuItem
+            {
+                InternalId = "Themes",
+                Name = "Themes",
+                Controller = "Theme",
+                Action = "Show",
+                Css = "fas fa-paint-brush",
             });
         }
 
