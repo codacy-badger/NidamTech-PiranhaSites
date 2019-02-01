@@ -1,43 +1,17 @@
 var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
-    rename = require('gulp-rename');
-var autoprefixer = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var minifycss = require('gulp-cssmin');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync');
+    rename = require('gulp-rename'),
+    autoprefixer = require('gulp-autoprefixer'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
+    minifycss = require('gulp-cssmin'),
+    sass = require('gulp-sass');
+var bs1 = require('browser-sync').create("proxy1");
+var bs2 = require('browser-sync').create("proxy2");
 
-var bs1 = browserSync.create("proxy1");
-var bs2 = browserSync.create("proxy2");
-
-
-gulp.task('browser-sync', function () {
-        setTimeout(function () {
-            bs1.init({
-                proxy: "http://localhost:5000",
-                port: 3000,
-                ui: {
-                    port: 3001
-                }
-            });
-            bs2.init({
-                proxy: "http://sundhedmedalette:5000",
-                port: 4000,
-                ui: {
-                    port: 4000
-                }
-            });
-        }, 5000);
-    }
-);
-
-gulp.task('bs-reload', function () {
-    browserSync.reload();
-});
 
 gulp.task('styles', function (done) {
-    gulp.src(['assets/scss/**/*.scss'])
+    return gulp.src(['assets/scss/**/*.scss'])
         .pipe(plumber({
             errorHandler: function (error) {
                 console.log(error.message);
@@ -49,7 +23,8 @@ gulp.task('styles', function (done) {
         .pipe(rename({dirname: "", suffix: '.min',}))
         .pipe(minifycss())
         .pipe(gulp.dest('wwwroot/css/'))
-        .pipe(browserSync.reload({stream: true}))
+        .pipe(bs1.stream())
+        .pipe(bs2.stream())
     done();
 });
 
@@ -65,19 +40,47 @@ gulp.task('scripts', function (done) {
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(gulp.dest('wwwroot/js/'))
-        .pipe(browserSync.reload({stream: true}))
+        .pipe(bs1.reload({stream: true}))
+        .pipe(bs2.reload({stream: true}))
     done();
 });
 
-gulp.task('default', gulp.series('browser-sync', function () {
-    gulp.watch("assets/scss/**/*.scss", ['styles']);
-    gulp.watch("assets/js/**/*.js", ['scripts']);
-    gulp.watch("Views/**/*.cshtml", ['bs-reload']);
-    gulp.watch("Areas/Manager/Views/**/*.cshtml", ['bs-reload']);
+gulp.task('bs-reload', function (done) {
+    bs1.reload();
+    bs2.reload();
+    done();
+});
+
+gulp.task('serve', gulp.series(gulp.parallel('styles', 'scripts'), function (done) {
+    setTimeout(function () {
+        bs1.init({
+            proxy: "http://localhost:5000",
+            port: 3000,
+            ui: {
+                port: 3001
+            }
+        }, function () {
+            bs1.reload('**/*.css');
+        });
+        bs2.init({
+            proxy: "http://sundhedmedalette:5000",
+            port: 4000,
+            ui: {
+                port: 4000
+            }
+        }, function () {
+            bs2.reload('**/*.css');
+        });
+        done();
+    }, 7000);
 }));
 
-
-
+gulp.task('default', gulp.series('serve', function () {
+    gulp.watch("assets/scss/**/*.scss", gulp.series('styles'));
+    gulp.watch("assets/js/**/*.js", gulp.series('scripts'))
+    gulp.watch("Views/**/*.cshtml", gulp.series('bs-reload'));
+    gulp.watch("Areas/Manager/Views/**/*.cshtml", gulp.series('bs-reload'));
+}));
 
 
 

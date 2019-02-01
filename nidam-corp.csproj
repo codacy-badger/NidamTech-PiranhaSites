@@ -8,6 +8,7 @@
     <Folder Include="assets\scss\themes\nidam\modules" />
     <Folder Include="Properties" />
     <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\css" />
   </ItemGroup>
 
   <ItemGroup>
