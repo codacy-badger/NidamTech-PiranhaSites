@@ -59,20 +59,16 @@ gulp.task('serve', gulp.series(gulp.parallel('styles', 'scripts'), function (don
             ui: {
                 port: 3001
             }
-        }, function () {
-            bs1.reload('**/*.css');
-        });
+        }
         bs2.init({
             proxy: "http://sundhedmedalette:5000",
             port: 4000,
             ui: {
                 port: 4000
             }
-        }, function () {
-            bs2.reload('**/*.css');
-        });
+        }
         done();
-    }, 7000);
+    }, 10000);
 }));
 
 gulp.task('default', gulp.series('serve', function () {
