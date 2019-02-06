@@ -7,17 +7,19 @@ using Piranha.Areas.Manager.Controllers;
 namespace nidam_corp.Areas.Manager.Controllers
 {
     [Area("Manager")]
-    public class ThemeController : ManagerAreaControllerBase
+    public class ThemeController : ConfigController
     {
+        private readonly IApi _api;
         private const string COOKIE_SELECTEDSITE = "PiranhaManager_SelectedSite";
 
         public ThemeController(IApi api) : base(api)
         {
+            _api = api;
         }
 
-        public ViewResult ListSite(Guid? siteId, string pageId = null)
+        public ViewResult Edit(Guid? siteId, string pageId = null)
         {
-            var model = Models.ThemeListModel.Get(api, siteId, pageId);
+            var model = Models.ThemeEditModel.Get(api, siteId);
 
             // Store a cookie on our currently selected site
             if (siteId.HasValue)
@@ -30,11 +32,6 @@ namespace nidam_corp.Areas.Manager.Controllers
             }
 
             return View("Edit", model);
-        }
-
-        public IActionResult Save()
-        {
-            throw new NotImplementedException();
         }
     }
 }

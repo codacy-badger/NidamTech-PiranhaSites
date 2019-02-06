@@ -52,6 +52,7 @@ gulp.task('bs-reload', function (done) {
 });
 
 gulp.task('serve', gulp.series(gulp.parallel('styles', 'scripts'), function (done) {
+   //TODO: Find a better solution, so it waits for .NET Core build to be done, or pings the server. 
     setTimeout(function () {
         bs1.init({
             proxy: "http://localhost:5000",
@@ -74,8 +75,7 @@ gulp.task('serve', gulp.series(gulp.parallel('styles', 'scripts'), function (don
 gulp.task('default', gulp.series('serve', function () {
     gulp.watch("assets/scss/**/*.scss", gulp.series('styles'));
     gulp.watch("assets/js/**/*.js", gulp.series('scripts'))
-    gulp.watch("Views/**/*.cshtml", gulp.series('bs-reload'));
-    gulp.watch("Areas/Manager/Views/**/*.cshtml", gulp.series('bs-reload'));
+    gulp.watch("**/*.cshtml", gulp.series('bs-reload'));
 }));
 
 
