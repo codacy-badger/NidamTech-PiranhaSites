@@ -1,4 +1,4 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     rename = require('gulp-rename'),
     autoprefixer = require('gulp-autoprefixer'),
@@ -6,9 +6,10 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     minifycss = require('gulp-cssmin'),
     sass = require('gulp-sass');
-var bs1 = require('browser-sync').create("proxy1");
-var bs2 = require('browser-sync').create("proxy2");
+const bs1 = require('browser-sync').create("proxy1");
+const bs2 = require('browser-sync').create("proxy2");
 
+const libraries = ['node_modules/jquery/dist/jquery.slim.min.js', 'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'];
 
 gulp.task('styles', function (done) {
     return gulp.src(['assets/scss/**/*.scss'])
@@ -40,8 +41,16 @@ gulp.task('scripts', function (done) {
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(gulp.dest('wwwroot/js/'))
-        .pipe(bs1.reload({stream: true}))
-        .pipe(bs2.reload({stream: true}))
+    done();
+});
+
+gulp.task('libraries', function (done) {
+    return gulp.src(libraries)
+        .pipe(rename(
+            {dirname: "lib"}
+        ))
+        .pipe(uglify())
+        .pipe(gulp.dest('wwwroot/js/'))
     done();
 });
 
@@ -51,8 +60,12 @@ gulp.task('bs-reload', function (done) {
     done();
 });
 
-gulp.task('serve', gulp.series(gulp.parallel('styles', 'scripts'), function (done) {
-   //TODO: Find a better solution, so it waits for .NET Core build to be done, or pings the server. 
+gulp.task('default', gulp.series(gulp.parallel('styles', 'scripts', 'libraries'), function (done) {
+    done();
+}));
+
+gulp.task('serve', gulp.series('default', function (done) {
+    //TODO: Find a better solution, so it waits for .NET Core build to be done, or pings the server. 
     setTimeout(function () {
         bs1.init({
             proxy: "http://localhost:5000",
@@ -72,9 +85,10 @@ gulp.task('serve', gulp.series(gulp.parallel('styles', 'scripts'), function (don
     }, 9000);
 }));
 
-gulp.task('default', gulp.series('serve', function () {
+
+gulp.task('watch', gulp.series('serve', function () {
     gulp.watch("assets/scss/**/*.scss", gulp.series('styles'));
-    gulp.watch("assets/js/**/*.js", gulp.series('scripts'))
+    gulp.watch("assets/js/**/*.js", gulp.series('scripts', 'bs-reload'))
     gulp.watch("**/*.cshtml", gulp.series('bs-reload'));
 }));
 
