@@ -6,6 +6,7 @@ const gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     minifycss = require('gulp-cssmin'),
     sass = require('gulp-sass');
+
 const bs1 = require('browser-sync').create("proxy1");
 const bs2 = require('browser-sync').create("proxy2");
 

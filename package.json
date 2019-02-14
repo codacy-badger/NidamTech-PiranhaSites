@@ -10,10 +10,10 @@
     "url": "https://github.com/niem94/nidam-corp"
   },
   "dependencies": {
-    "bootstrap": "^4.3.0",
+    "@fortawesome/fontawesome-free": "^5.7.2",
+    "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.7",
-    "@fortawesome/fontawesome-free": "^5.7.2"
+    "popper.js": "^1.14.7"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
@@ -24,6 +24,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.1",
+    "require-dir": "^1.2.0"
   }
 }
