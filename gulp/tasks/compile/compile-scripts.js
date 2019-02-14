@@ -4,7 +4,7 @@ const gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify');
 
-gulp.task('scripts', function (done) {
+gulp.task('compile-scripts', function (done) {
     gulp.src('assets/js/**/*.js')
         .pipe(plumber({
             errorHandler: function (error) {
