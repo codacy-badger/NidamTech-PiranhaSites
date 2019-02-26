@@ -1,7 +1,7 @@
 const gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     rename = require('gulp-rename'),
-    cssmin = require('gulp-cssmin'),
+    cleancss = require('gulp-clean-css'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer');
 
@@ -16,7 +16,7 @@ gulp.task('compile-scss', function (done) {
         .pipe(sass())
         .pipe(autoprefixer('last 2 versions'))
         .pipe(rename({dirname: "", suffix: '.min',}))
-        .pipe(cssmin())
+        .pipe(cleancss())
         .pipe(gulp.dest('wwwroot/css/'))
     done();
 });
