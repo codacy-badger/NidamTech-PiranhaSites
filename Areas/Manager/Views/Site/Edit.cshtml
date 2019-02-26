@@ -1,8 +1,12 @@
+@using System.IO
+@using nidam_corp.Models
+@using Piranha
 @model Piranha.Areas.Manager.Models.SiteEditModel
 @{
     ViewBag.Title = "Edit site";
     ViewBag.Controller = "Site";
 }
+@inject IApi Api
 
 @using (var form = Html.BeginForm("Save", "Site", FormMethod.Post, new {@class = "form", @role = "form"}))
 {
@@ -117,11 +121,18 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label>Selected Theme</label>
-                        <select class="form-control" id="sel1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
+                        <select name="Theme.SelectedTheme" class="form-control small">
+                            @{
+                                string selectedThemeUrl = Api.Sites.GetContentById<DefaultSite>(Model.Site.Id).Footer.FooterText.Value;
+                                <option @(string.IsNullOrEmpty(selectedThemeUrl) ? "selected=selected" : "")></option>
+                                string targetDirectory = "./wwwroot/css";
+                                string[] entryFiles = Directory.GetFiles(targetDirectory);
+                                
+                                foreach (var fileName in entryFiles)
+                                {
+                                    <option value="@fileName" @(selectedThemeUrl.Equals(fileName) ? "selected=selected" : "")>@fileName</option>
+                                }
+                            }
                         </select>
                     </div>
                 </div>

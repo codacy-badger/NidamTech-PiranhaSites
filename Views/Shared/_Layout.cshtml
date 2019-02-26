@@ -1,19 +1,14 @@
-@using Piranha.Models
 <!doctype html>
 <html lang="en">
 <head>
     <partial name="Partial/_Head.cshtml"/>
-    @if (Model is IMeta)
-    {
-        <partial name="Partial/_Meta.cshtml"/>
-    }
 </head>
 <body>
 <header class="site-header @(ViewBag.HasImage == null || !ViewBag.HasImage ? "site-header-dark" : "")">
-    <partial name="Partial/_Navbar.cshtml"/>
-</header>
+    <vc:navbar></vc:navbar>
+</header> 
 @RenderBody()
-<partial name="Partial/_Footer.cshtml"/>
+<vc:footer></vc:footer>
 <partial name="Partial/_Scripts.cshtml"/>
 </body>
 </html>

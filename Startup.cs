@@ -3,17 +3,16 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using nidam_corp.Controllers;
 using Piranha;
 using Piranha.AspNetCore.Identity.SQLite;
-using Piranha.Manager;
+using Piranha.AttributeBuilder;
 using sundhedmedalette.Models.Blocks;
 
 namespace nidam_corp
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(config =>
@@ -32,7 +31,6 @@ namespace nidam_corp
             return services.BuildServiceProvider();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider services, IApi api)
         {
             if (env.IsDevelopment())
@@ -40,33 +38,26 @@ namespace nidam_corp
                 app.UseDeveloperExceptionPage();
             }
 
-            // Initialize Piranha
             App.Init();
 
-            //Create/Add Menu Groups and Items
-            //CreateMenuGroups();
+            CreateMenuGroups();
             AddMenuItems();
 
-            // Configure cache level
             App.CacheLevel = Piranha.Cache.CacheLevel.Basic;
 
             RegisterBlocks();
+            UnregisterBlocks();
 
-            //TODO: unregisterBlocks();
+            BuildSiteTypes(api);
+            BuildPageTypes(api);
+            BuildPostTypes(api);
 
-            // Build content types
-            var pageTypeBuilder = new Piranha.AttributeBuilder.PageTypeBuilder(api)
-                .AddType(typeof(Models.BlogArchive))
-                .AddType(typeof(Models.StandardPage))
-                .AddType(typeof(Models.StartPage));
-            pageTypeBuilder.Build()
-                .DeleteOrphans();
-            var postTypeBuilder = new Piranha.AttributeBuilder.PostTypeBuilder(api)
-                .AddType(typeof(Models.BlogPost));
-            postTypeBuilder.Build()
-                .DeleteOrphans();
+            RegisterMiddleware(app);
+        }
 
-            // Register middleware
+
+        private void RegisterMiddleware(IApplicationBuilder app)
+        {
             app.UseStaticFiles();
             app.UseAuthentication();
             app.UsePiranha();
@@ -84,26 +75,37 @@ namespace nidam_corp
             });
         }
 
+        private void BuildSiteTypes(IApi api)
+        {
+            var siteTypeBuilder = new SiteTypeBuilder(api)
+                .AddType(typeof(Models.DefaultSite));
+            siteTypeBuilder.Build();
+        }
+
+        private void BuildPostTypes(IApi api)
+        {
+            var postTypeBuilder = new PostTypeBuilder(api)
+                .AddType(typeof(Models.BlogPost));
+            postTypeBuilder.Build()
+                .DeleteOrphans();
+        }
+
+        private void BuildPageTypes(IApi api)
+        {
+            var pageTypeBuilder = new PageTypeBuilder(api)
+                .AddType(typeof(Models.BlogArchive))
+                .AddType(typeof(Models.StandardPage))
+                .AddType(typeof(Models.StartPage));
+            pageTypeBuilder.Build()
+                .DeleteOrphans();
+        }
+
         private void CreateMenuGroups()
         {
-            throw new NotImplementedException();
         }
 
         private void AddMenuItems()
         {
-            AddThemesMenuItem();
-        }
-
-        private void AddThemesMenuItem()
-        {
-            Menu.Items["Settings"].Items.Add(new Menu.MenuItem
-            {
-                InternalId = "Themes", 
-                Name = "Themes", 
-                Controller = "Theme", 
-                Action = "ListSite",
-                Css = "fas fa-paint-brush"
-            });
         }
 
         private void RegisterBlocks()
@@ -113,7 +115,6 @@ namespace nidam_corp
 
         private void UnregisterBlocks()
         {
-            throw new NotImplementedException();
         }
     }
 }

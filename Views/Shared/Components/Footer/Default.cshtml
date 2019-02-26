@@ -1,0 +1,45 @@
+@using nidam_corp.Models
+@inject Piranha.IApi Api;
+
+@{
+    var site = Api.Sites.GetContentById<DefaultSite>(WebApp.Site.Id);
+}
+
+<footer class="footer-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2 text-center">
+                <span class="icon-handle-streamline-vector logo"></span>
+
+                <h2>@(!string.IsNullOrEmpty(site.Footer.FooterText.Value) ? site.Footer.FooterText.Value : "FooterText Missing")</h2>
+
+                @if (!string.IsNullOrEmpty(site.Footer.TwitterLink.Value))
+                {
+                    <a href=@site.Footer.TwitterLink.Value>
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                }
+
+                @if (!string.IsNullOrEmpty(site.Footer.FacebookLink.Value))
+                {
+                    <a href=@site.Footer.FacebookLink.Value>
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                }
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2 text-small text-center">
+                <hr>
+                @*TODO:footerButtonText*@
+                <button type="button" class="btn btn-primary btn-lg">Up</button>
+                @*TODO:footerSiteOwnerName*@
+                @if (!string.IsNullOrEmpty(site.Footer.FooterSiteOwnerName.Value))
+                {
+                    <p class="no-margin">© @site.Footer.FooterSiteOwnerName.Value</p>
+                }
+
+            </div>
+        </div>
+    </div>
+</footer>
