@@ -1,3 +1,4 @@
+using nidam_corp.Models.Data;
 using Piranha.AttributeBuilder;
 using Piranha.Extend.Fields;
 using Piranha.Models;
@@ -16,5 +17,12 @@ namespace nidam_corp.Models
         }
 
         [Region] public SiteFooter Footer { get; set; }
+
+        public class SiteAppearance
+        {
+            [Field] public SelectField<Theme> SelectedTheme { get; set; }
+        }
+
+        [Region] public SiteAppearance Appearance { get; set; }
     }
 }
