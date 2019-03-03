@@ -2,7 +2,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
+using Microsoft.WindowsAzure.Storage.Auth;
 using nidam_corp.Models.Data;
 using Piranha;
 using Piranha.AspNetCore.Identity.SQLite;
@@ -13,20 +16,56 @@ namespace nidam_corp
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+        public IOptions<AppSettings> settings;
+
+        public Startup(IHostingEnvironment env)
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json")
+                .AddEnvironmentVariables();
+            Configuration = builder.Build();
+        }
+
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(config =>
             {
                 config.ModelBinderProviders.Insert(0, new Piranha.Manager.Binders.AbstractModelBinderProvider());
             });
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
             services.AddPiranhaApplication();
-            services.AddPiranhaFileStorage();
             services.AddPiranhaImageSharp();
-            services.AddPiranhaEF(options => options.UseSqlite("Filename=./piranha.db"));
-            services.AddPiranhaIdentityWithSeed<IdentitySQLiteDb>(options =>
-                options.UseSqlite("Filename=./piranha.db"));
+            if (settings.Value.UseLocalDB)
+            {
+                services.AddPiranhaEF(options =>
+                    options.UseSqlite("Filename=./piranha.db"));
+                services.AddPiranhaIdentityWithSeed<IdentitySQLiteDb>(options =>
+                    options.UseSqlite("Filename=./piranha.db"));
+            }
+            else
+            {
+                services.AddPiranhaEF(opts => { opts.UseSqlServer(Configuration.GetConnectionString("default")); });
+                services.AddPiranhaIdentityWithSeed<IdentitySQLiteDb>(opts =>
+                {
+                    opts.UseSqlServer(Configuration.GetConnectionString("default"));
+                });
+            }
+
             services.AddPiranhaManager();
             services.AddPiranhaSimpleCache();
+            if (settings.Value.UseAzureStorage)
+            {
+                var az = settings.Value.AzureStorage;
+                var creds = new StorageCredentials(az.StorageName, az.StorageKey);
+                services.AddPiranhaBlobStorage(creds, az.ContainerName);
+            }
+            else
+            {
+                services.AddPiranhaFileStorage();
+            }
+
 
             return services.BuildServiceProvider();
         }

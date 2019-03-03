@@ -1,13 +1,13 @@
 {
   "name": "nidam_corp",
   "version": "4.2.0",
-  "description": "nidam-corp sites",
+  "description": "nidam-sites sites",
   "main": "index.js",
   "author": "Nikolai Emil Damm",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/niem94/nidam-corp"
+    "url": "https://github.com/niem94/nidam-sites"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.7.2",

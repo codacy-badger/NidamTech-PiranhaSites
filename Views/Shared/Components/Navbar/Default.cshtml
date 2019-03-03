@@ -1,12 +1,16 @@
+@using nidam_corp.Models
+@inject Piranha.IApi Api;
 @{
     var sitemap = WebApp.Site.Sitemap;
+    var siteAppearance = Api.Sites.GetContentById<DefaultSite>(WebApp.Site.Id).Appearance;
+    var logoUrl = siteAppearance.Logo;
+    var darkMode = siteAppearance.DarkMode.Value;
 }
 @* TODO: make bootstrap theme, theme dependent *@
-<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+<nav class="navbar navbar-expand-sm @(darkMode ? "bg-dark navbar-dark" : "bg-light navbar-light") fixed-top">
     <div class="container">
         <a class="navbar-brand" href="/">
-            @* TODO: selectedLogo *@
-            <img src="~/img/sundhedmedalette-logo.png" alt="Logo">
+            <img src=@(!string.IsNullOrEmpty(logoUrl) ? logoUrl.Media.PublicUrl : "") alt="Logo">
         </a>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
@@ -24,4 +28,4 @@
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
-</nav> 
+</nav>
