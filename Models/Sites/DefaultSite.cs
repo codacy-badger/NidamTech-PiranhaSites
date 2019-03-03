@@ -1,6 +1,5 @@
-using nidam_corp.Models.Data;
+using nidam_corp.Models.Regions.SiteRegions;
 using Piranha.AttributeBuilder;
-using Piranha.Extend.Fields;
 using Piranha.Models;
 
 namespace nidam_corp.Models
@@ -8,21 +7,7 @@ namespace nidam_corp.Models
     [SiteType(Title = "Default Site")]
     public class DefaultSite : SiteContent<DefaultSite>
     {
-        public class SiteFooter
-        {
-            [Field] public StringField FooterText { get; set; }
-            [Field] public StringField TwitterLink { get; set; }
-            [Field] public StringField FacebookLink { get; set; }
-            [Field] public StringField FooterSiteOwnerName { get; set; }
-        }
-
-        [Region] public SiteFooter Footer { get; set; }
-
-        public class SiteAppearance
-        {
-            [Field] public SelectField<Theme> SelectedTheme { get; set; }
-        }
-
-        [Region] public SiteAppearance Appearance { get; set; }
+        [Region(Title = "Footer Content")] public SiteFooter Footer { get; set; }
+        [Region(Title = "Site Appearance")] public SiteAppearance Appearance { get; set; }
     }
 }

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using nidam_corp.Controllers;
+using nidam_corp.Models.Data;
 using Piranha;
 using Piranha.AspNetCore.Identity.SQLite;
 using Piranha.AttributeBuilder;
@@ -26,7 +26,7 @@ namespace nidam_corp
             services.AddPiranhaIdentityWithSeed<IdentitySQLiteDb>(options =>
                 options.UseSqlite("Filename=./piranha.db"));
             services.AddPiranhaManager();
-            services.AddPiranhaMemCache();
+            services.AddPiranhaSimpleCache();
 
             return services.BuildServiceProvider();
         }
@@ -48,11 +48,18 @@ namespace nidam_corp
             RegisterBlocks();
             UnregisterBlocks();
 
+            RegisterSelects();
+
             BuildSiteTypes(api);
             BuildPageTypes(api);
             BuildPostTypes(api);
 
             RegisterMiddleware(app);
+        }
+
+        private void RegisterSelects()
+        {
+            App.Fields.RegisterSelect<Theme>();
         }
 
 

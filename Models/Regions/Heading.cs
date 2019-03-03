@@ -7,7 +7,6 @@ namespace nidam_corp.Models.Regions
     {
         [Field(Title = "Primary image")] public ImageField PrimaryImage { get; set; }
 
-
         [Field] public NumberField SizeInPercentage { get; set; }
 
         [Field] public StringField Title { get; set; }
