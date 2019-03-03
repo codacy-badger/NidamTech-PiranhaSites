@@ -9,6 +9,7 @@ using Microsoft.WindowsAzure.Storage.Auth;
 using nidam_corp.Models.Data;
 using Piranha;
 using Piranha.AspNetCore.Identity.SQLite;
+using Piranha.AspNetCore.Identity.SQLServer;
 using Piranha.AttributeBuilder;
 using sundhedmedalette.Models.Blocks;
 
@@ -17,13 +18,14 @@ namespace nidam_corp
     public class Startup
     {
         public IConfiguration Configuration { get; }
-        public IOptions<AppSettings> settings;
+        public AppSettings settings;
 
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json")
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
@@ -34,10 +36,11 @@ namespace nidam_corp
             {
                 config.ModelBinderProviders.Insert(0, new Piranha.Manager.Binders.AbstractModelBinderProvider());
             });
-            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
             services.AddPiranhaApplication();
             services.AddPiranhaImageSharp();
-            if (settings.Value.UseLocalDB)
+            var appSettingsSection = Configuration.GetSection("AppSettings");
+            settings = appSettingsSection.Get<AppSettings>();
+            if (settings.UseLocalDB)
             {
                 services.AddPiranhaEF(options =>
                     options.UseSqlite("Filename=./piranha.db"));
@@ -46,26 +49,24 @@ namespace nidam_corp
             }
             else
             {
-                services.AddPiranhaEF(opts => { opts.UseSqlServer(Configuration.GetConnectionString("default")); });
-                services.AddPiranhaIdentityWithSeed<IdentitySQLiteDb>(opts =>
-                {
-                    opts.UseSqlServer(Configuration.GetConnectionString("default"));
-                });
+                services.AddPiranhaEF(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("default")));
+                services.AddPiranhaIdentityWithSeed<IdentitySQLServerDb>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("default")));
             }
 
             services.AddPiranhaManager();
             services.AddPiranhaSimpleCache();
-            if (settings.Value.UseAzureStorage)
+            if (settings.UseAzureStorage)
             {
-                var az = settings.Value.AzureStorage;
+                var az = settings.AzureStorage;
                 var creds = new StorageCredentials(az.StorageName, az.StorageKey);
-                services.AddPiranhaBlobStorage(creds, az.ContainerName);
+                services.AddPiranhaBlobStorage(creds);
             }
             else
             {
                 services.AddPiranhaFileStorage();
             }
-
 
             return services.BuildServiceProvider();
         }

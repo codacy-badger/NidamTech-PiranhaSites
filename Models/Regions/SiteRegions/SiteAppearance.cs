@@ -14,5 +14,7 @@ namespace nidam_corp.Models.Regions.SiteRegions
         public SelectField<Theme> SelectedTheme { get; set; }
 
         [Field(Title = "Logo")] public ImageField Logo { get; set; }
+        [Field(Title = "Link to Facebook", Options = FieldOption.HalfWidth)]
+        public StringField FacebookLink { get; set; }
     }
 }

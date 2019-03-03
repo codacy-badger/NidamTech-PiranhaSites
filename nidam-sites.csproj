@@ -17,6 +17,7 @@
     <PackageReference Include="Piranha" Version="5.4.0" />
     <PackageReference Include="Piranha.AspNetCore" Version="5.4.0" />
     <PackageReference Include="Piranha.AspNetCore.Identity.SQLite" Version="5.4.0" />
+    <PackageReference Include="Piranha.AspNetCore.Identity.SQLServer" Version="5.4.0" />
     <PackageReference Include="Piranha.AttributeBuilder" Version="5.4.0" />
     <PackageReference Include="Piranha.Azure.BlobStorage" Version="5.4.0" />
     <PackageReference Include="Piranha.BasicWeb.CSharp" Version="5.4.0" />
