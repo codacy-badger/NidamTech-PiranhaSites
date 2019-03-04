@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 using Microsoft.WindowsAzure.Storage.Auth;
 using nidam_corp.Models.Data;
 using Piranha;
@@ -18,7 +17,7 @@ namespace nidam_corp
     public class Startup
     {
         public IConfiguration Configuration { get; }
-        public AppSettings settings;
+        public AppSettings AppSettings;
 
         public Startup(IHostingEnvironment env)
         {
@@ -38,8 +37,8 @@ namespace nidam_corp
             services.AddPiranhaApplication();
             services.AddPiranhaImageSharp();
             var appSettingsSection = Configuration.GetSection("AppSettings");
-            settings = appSettingsSection.Get<AppSettings>();
-            if (settings.UseLocalDB)
+            AppSettings = appSettingsSection.Get<AppSettings>();
+            if (AppSettings.UseLocalDB)
             {
                 services.AddPiranhaEF(options =>
                     options.UseSqlite("Filename=./piranha.db"));
@@ -56,9 +55,9 @@ namespace nidam_corp
 
             services.AddPiranhaManager();
             services.AddPiranhaSimpleCache();
-            if (settings.UseAzureStorage)
+            if (AppSettings.UseAzureStorage)
             {
-                var az = settings.AzureStorage;
+                var az = AppSettings.AzureStorage;
                 var creds = new StorageCredentials(az.StorageName, az.StorageKey);
                 services.AddPiranhaBlobStorage(creds);
             }
