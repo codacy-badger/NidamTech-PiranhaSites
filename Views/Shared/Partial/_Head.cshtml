@@ -5,7 +5,7 @@
 @{
     var siteAppearance = Api.Sites.GetContentById<DefaultSite>(WebApp.Site.Id).Appearance;
     string selectedTheme;
-    if (siteAppearance.SelectedTheme == null)
+    if (string.IsNullOrEmpty(siteAppearance.SelectedTheme.EnumValue))
     {
         selectedTheme = "~/css/default-theme.min.css";
     }

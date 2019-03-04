@@ -42,8 +42,4 @@
       <_ContentIncludedByDefault Remove="wwwroot\img\sundhedmedalette-logo.png" />
       <_ContentIncludedByDefault Remove="wwwroot\uploads\9c3cb87c-9c48-4fea-8f8b-d1e6353f031c-bottle-bowl-breakfeast.jpg" />
   </ItemGroup>
-  <Target Name="PreCompile" BeforeTargets="Build">
-  <Exec Command="npm install" />
-  <Exec Command="gulp" />
-</Target>
 </Project>
