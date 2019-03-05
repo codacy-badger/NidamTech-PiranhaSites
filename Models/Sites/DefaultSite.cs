@@ -1,8 +1,8 @@
-using nidam_corp.Models.Regions.SiteRegions;
+using nidam_sites.Models.Regions.SiteRegions;
 using Piranha.AttributeBuilder;
 using Piranha.Models;
 
-namespace nidam_corp.Models
+namespace nidam_sites.Models
 {
     [SiteType(Title = "Default Site")]
     public class DefaultSite : SiteContent<DefaultSite>

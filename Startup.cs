@@ -5,14 +5,15 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.WindowsAzure.Storage.Auth;
-using nidam_corp.Models.Data;
 using Piranha;
 using Piranha.AspNetCore.Identity.SQLite;
 using Piranha.AspNetCore.Identity.SQLServer;
 using Piranha.AttributeBuilder;
-using sundhedmedalette.Models.Blocks;
+using nidam_sites.Models.Blocks;
+using nidam_sites.Models.Data;
+using Piranha.Extend.Blocks;
 
-namespace nidam_corp
+namespace nidam_sites
 {
     public class Startup
     {
@@ -160,6 +161,7 @@ namespace nidam_corp
 
         private void UnregisterBlocks()
         {
+            App.Blocks.UnRegister<HtmlColumnBlock>();
         }
     }
 }

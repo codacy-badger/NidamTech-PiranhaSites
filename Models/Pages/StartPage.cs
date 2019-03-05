@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Piranha.AttributeBuilder;
 using Piranha.Models;
 
-namespace nidam_corp.Models
+namespace nidam_sites.Models
 {
     [PageType(Title = "Start page")]
     [PageTypeRoute(Title = "Default", Route = "/start")]

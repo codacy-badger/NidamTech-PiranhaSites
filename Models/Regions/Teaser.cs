@@ -2,7 +2,7 @@ using Piranha.AttributeBuilder;
 using Piranha.Extend.Fields;
 using Piranha.Models;
 
-namespace nidam_corp.Models.Regions
+namespace nidam_sites.Models.Regions
 {
     /// <summary>
     /// Simple region for a teaser.

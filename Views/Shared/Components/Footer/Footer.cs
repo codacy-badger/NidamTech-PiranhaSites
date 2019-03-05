@@ -1,4 +1,4 @@
-namespace nidam_corp.Views.Shared.Components.Footer
+namespace nidam_sites.Views.Shared.Components.Footer
 {
     using Microsoft.AspNetCore.Mvc;
     using System.Threading.Tasks;

@@ -9,6 +9,7 @@
     <Folder Include="assets\scss\themes\nidam\modules" />
     <Folder Include="Properties" />
     <Folder Include="Models\Fields\FieldData\" />
+    <Folder Include="Views\Piranha\Blocks\MarkdownBlocks" />
     <Folder Include="wwwroot" />
   </ItemGroup>
 

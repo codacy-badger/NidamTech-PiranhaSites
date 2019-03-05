@@ -1,7 +1,7 @@
 using Piranha.AttributeBuilder;
 using Piranha.Extend.Fields;
 
-namespace nidam_corp.Models.Regions
+namespace nidam_sites.Models.Regions
 {
     public class Heading
     {

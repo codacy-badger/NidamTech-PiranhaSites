@@ -1,7 +1,7 @@
 using Piranha.AttributeBuilder;
 using Piranha.Models;
 
-namespace nidam_corp.Models
+namespace nidam_sites.Models
 {
     [PostType(Title = "Blog post")]
     public class BlogPost : Post<BlogPost>

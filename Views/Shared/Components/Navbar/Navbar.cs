@@ -1,4 +1,4 @@
-namespace nidam_corp.Views.Shared.Components.Navbar
+namespace nidam_sites.Views.Shared.Components.Navbar
 {
     using Microsoft.AspNetCore.Mvc;
     using System.Threading.Tasks;

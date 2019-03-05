@@ -1,7 +1,7 @@
 using Piranha.Extend;
 using Piranha.Extend.Fields;
 
-namespace sundhedmedalette.Models.Blocks
+namespace nidam_sites.Models.Blocks
 {
     [BlockType(Name = "HeroImage", Category = "Content", Icon = "fas fa-image")]
     public class HeroBlock : Block

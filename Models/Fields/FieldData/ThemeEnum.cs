@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace nidam_corp.Models.Data
+namespace nidam_sites.Models.Data
 {
     public enum Theme
     {

@@ -1,4 +1,4 @@
-namespace nidam_corp
+namespace nidam_sites
 {
     public class AppSettings
     {

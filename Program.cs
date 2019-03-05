@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace nidam_corp
+namespace nidam_sites
 {
     public class Program
     {
