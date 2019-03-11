@@ -1,12 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
     <MvcRazorExcludeRefAssembliesFromPublish>false</MvcRazorExcludeRefAssembliesFromPublish>
     <RootNamespace>nidam-corp</RootNamespace>    
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="assets\scss\themes\nidam\modules" />
     <Folder Include="Properties" />
     <Folder Include="Models\Fields\FieldData\" />
     <Folder Include="Views\Piranha\Blocks\MarkdownBlocks" />
@@ -14,9 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.2" />
     <PackageReference Include="Piranha" Version="5.4.0" />
     <PackageReference Include="Piranha.AspNetCore" Version="5.4.0" />
     <PackageReference Include="Piranha.AspNetCore.Identity.SQLite" Version="5.4.0" />
