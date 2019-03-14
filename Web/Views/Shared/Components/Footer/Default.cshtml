@@ -1,0 +1,44 @@
+@using Web.Models
+@inject Piranha.IApi Api;
+
+@{
+    var SiteFooter = Api.Sites.GetContentById<DefaultSite>(WebApp.Site.Id).Footer;
+    var SiteInfo = Api.Sites.GetContentById<DefaultSite>(WebApp.Site.Id).Info;
+}
+
+<footer class="footer-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2 text-center">
+                <span class="icon-handle-streamline-vector logo"></span>
+
+                <h2>@(!string.IsNullOrEmpty(SiteFooter.Title.Value) ? SiteFooter.Title.Value : "Title Missing")</h2>
+
+                @if (!string.IsNullOrEmpty(SiteFooter.TwitterLink.Value))
+                {
+                    <a href=@SiteFooter.TwitterLink.Value>
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                }
+
+                @if (!string.IsNullOrEmpty(SiteFooter.FacebookLink.Value))
+                {
+                    <a href=@SiteFooter.FacebookLink.Value>
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                }
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2 text-small text-center">
+                <hr>
+                <button type="button" class="btn btn-primary btn-lg">Up</button>
+                @if (!string.IsNullOrEmpty(SiteInfo.SiteOwnerName.Value))
+                {
+                    <p class="no-margin">© @SiteInfo.SiteOwnerName.Value</p>
+                }
+
+            </div>
+        </div>
+    </div>
+</footer>

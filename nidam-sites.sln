@@ -1,7 +1,9 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nidam-sites", "nidam-sites.csproj", "{A303CA42-1083-49F1-953F-4632879B996E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{A303CA42-1083-49F1-953F-4632879B996E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{3D0CC36B-1A6F-40EE-B048-A4281479A5A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +15,9 @@ Global
 		{A303CA42-1083-49F1-953F-4632879B996E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A303CA42-1083-49F1-953F-4632879B996E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A303CA42-1083-49F1-953F-4632879B996E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0CC36B-1A6F-40EE-B048-A4281479A5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0CC36B-1A6F-40EE-B048-A4281479A5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0CC36B-1A6F-40EE-B048-A4281479A5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0CC36B-1A6F-40EE-B048-A4281479A5A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
