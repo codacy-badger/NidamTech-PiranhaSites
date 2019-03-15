@@ -2,7 +2,7 @@ using Web.Models.Regions.SiteRegions;
 using Piranha.AttributeBuilder;
 using Piranha.Models;
 
-namespace Web.Models
+namespace Web.Models.Sites
 {
     [SiteType(Title = "Default Site")]
     public class DefaultSite : SiteContent<DefaultSite>

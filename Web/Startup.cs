@@ -11,8 +11,10 @@ using Piranha.AspNetCore.Identity.SQLServer;
 using Piranha.AttributeBuilder;
 using Piranha.Extend.Blocks;
 using Services.EmailService;
+using Web.Models.Pages;
 using Web.Models.Blocks;
 using Web.Models.Data;
+using Web.Models.Sites;
 
 namespace Web
 {
@@ -113,28 +115,28 @@ namespace Web
             app.UsePiranhaManager();
             app.UseMvc(routes =>
             {
-                routes.MapRoute(name: "areaRoute",
-                    template: "{area:exists}/{controller}/{action}/{id?}",
-                    defaults: new {controller = "Home", action = "Index"});
+                routes.MapRoute("areaRoute",
+                    "{area:exists}/{controller}/{action}/{id?}",
+                    new {controller = "Home", action = "Index"});
 
                 routes.MapRoute(
-                    name: "default",
-                    template: "{controller=home}/{action=index}/{id?}");
+                    "default",
+                    "{controller=home}/{action=index}/{id?}");
             });
         }
 
         private void BuildSiteTypes(IApi api)
         {
             var siteTypeBuilder = new SiteTypeBuilder(api)
-                .AddType(typeof(Models.DefaultSite));
+                .AddType(typeof(DefaultSite));
             siteTypeBuilder.Build();
         }
 
         private void BuildPageTypes(IApi api)
         {
             var pageTypeBuilder = new PageTypeBuilder(api)
-                .AddType(typeof(Models.StandardPage))
-                .AddType(typeof(Models.StartPage));
+                .AddType(typeof(StandardPage))
+                .AddType(typeof(StartPage));
             pageTypeBuilder.Build()
                 .DeleteOrphans();
         }

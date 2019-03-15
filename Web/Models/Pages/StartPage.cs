@@ -1,8 +1,7 @@
-using System.Collections.Generic;
 using Piranha.AttributeBuilder;
 using Piranha.Models;
 
-namespace Web.Models
+namespace Web.Models.Pages
 {
     [PageType(Title = "Start page")]
     [PageTypeRoute(Title = "Default", Route = "/start")]

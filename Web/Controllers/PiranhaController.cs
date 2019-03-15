@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
 using Piranha;
+using Web.Models.Pages;
 
 namespace Web.Controllers
 {
@@ -16,17 +17,17 @@ namespace Web.Controllers
         [Route("page")]
         public IActionResult Page(Guid id)
         {
-            var model = _api.Pages.GetById<Models.StandardPage>(id);
+            var model = _api.Pages.GetById<StandardPage>(id);
 
-            return View("Pages/" + model);
+            return View(model);
         }
 
         [Route("start")]
         public IActionResult Start(Guid id)
         {
-            var model = _api.Pages.GetById<Models.StartPage>(id);
+            var model = _api.Pages.GetById<StartPage>(id);
 
-            return View("Pages/" + model);
+            return View(model);
         }
     }
 }
