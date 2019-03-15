@@ -19,7 +19,6 @@ namespace Web
     public class Startup
     {
         public IConfiguration Configuration { get; }
-        public AppSettings AppSettings;
 
         public Startup(IHostingEnvironment env)
         {
@@ -41,8 +40,8 @@ namespace Web
             services.AddTransient<IEmailService, EmailService>();
             services.AddPiranhaApplication();
             services.AddPiranhaImageSharp();
-            AppSettings = Configuration.GetSection("AppSettings").Get<AppSettings>();
-            if (AppSettings.UseLocalDB)
+            var appSettings = Configuration.GetSection("AppSettings").Get<AppSettings>();
+            if (appSettings.UseLocalDB)
             {
                 services.AddPiranhaEF(options =>
                     options.UseSqlite("Filename=./piranha.db"));
@@ -59,9 +58,9 @@ namespace Web
 
             services.AddPiranhaManager();
             services.AddPiranhaSimpleCache();
-            if (AppSettings.UseAzureStorage)
+            if (appSettings.UseAzureStorage)
             {
-                var az = AppSettings.AzureStorage;
+                var az = appSettings.AzureStorage;
                 var creds = new StorageCredentials(az.StorageName, az.StorageKey);
                 services.AddPiranhaBlobStorage(creds);
             }
