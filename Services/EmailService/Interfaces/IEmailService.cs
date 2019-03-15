@@ -4,7 +4,7 @@ namespace Services.EmailService
 {
     public interface IEmailService
     {
-        void Send(EmailMessage emailMessage);
+        void SendEmail(EmailMessage emailMessage);
         List<EmailMessage> ReceiveEmail(int maxCount = 10);
     }
 }
