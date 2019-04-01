@@ -1,4 +1,6 @@
-namespace Services.EmailService
+using NidamTech.Services.EmailService.Interfaces;
+
+namespace NidamTech.Services.EmailService
 {
     public class EmailConfiguration : IEmailConfiguration
     {

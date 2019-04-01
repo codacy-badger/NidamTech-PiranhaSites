@@ -1,12 +1,12 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using MailKit.Net.Pop3;
 using MailKit.Net.Smtp;
 using MimeKit;
 using MimeKit.Text;
+using NidamTech.Services.EmailService.Interfaces;
 
-namespace Services.EmailService
+namespace NidamTech.Services.EmailService
 {
     public class EmailService : IEmailService
     {

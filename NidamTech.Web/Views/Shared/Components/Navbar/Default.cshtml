@@ -3,7 +3,7 @@
 @inject Piranha.IApi Api;
 @{
     var sitemap = WebApp.Site.Sitemap;
-    var siteAppearance = Api.Sites.GetContentById<DefaultSite>(WebApp.Site.Id).Appearance;
+    var siteAppearance = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Appearance;
     var logoUrl = siteAppearance.Logo;
     var darkMode = siteAppearance.DarkMode.Value;
 }

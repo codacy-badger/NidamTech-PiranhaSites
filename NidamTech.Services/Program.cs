@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Services
+namespace NidamTech.Services
 {
     class Program
     {

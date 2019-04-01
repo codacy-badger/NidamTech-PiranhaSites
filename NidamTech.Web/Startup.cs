@@ -5,12 +5,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.WindowsAzure.Storage.Auth;
+using NidamTech.Services.EmailService;
 using Piranha;
 using Piranha.AspNetCore.Identity.SQLite;
 using Piranha.AspNetCore.Identity.SQLServer;
 using Piranha.AttributeBuilder;
 using Piranha.Extend.Blocks;
-using Services.EmailService;
+using NidamTech.Services.EmailService.Interfaces;
 using Web.Models.Pages;
 using Web.Models.Blocks;
 using Web.Models.Data;
@@ -81,7 +82,7 @@ namespace Web
                 app.UseDeveloperExceptionPage();
             }
 
-            App.Init();
+            App.Init(api);
 
             CreateMenuGroups();
             AddMenuItems();

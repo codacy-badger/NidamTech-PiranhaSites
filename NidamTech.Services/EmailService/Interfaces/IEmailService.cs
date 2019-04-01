@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Services.EmailService
+namespace NidamTech.Services.EmailService.Interfaces
 {
     public interface IEmailService
     {

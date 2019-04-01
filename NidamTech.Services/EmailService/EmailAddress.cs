@@ -1,4 +1,4 @@
-namespace Services.EmailService
+namespace NidamTech.Services.EmailService
 {
     public class EmailAddress
     {

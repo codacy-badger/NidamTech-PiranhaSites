@@ -2,8 +2,8 @@
 @inject Piranha.IApi Api;
 
 @{
-    var SiteFooter = Api.Sites.GetContentById<DefaultSite>(WebApp.Site.Id).Footer;
-    var SiteInfo = Api.Sites.GetContentById<DefaultSite>(WebApp.Site.Id).Info;
+    var SiteFooter = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Footer;
+    var SiteInfo = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Info;
 }
 
 <footer class="footer-padding">

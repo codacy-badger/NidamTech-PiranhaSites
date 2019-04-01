@@ -17,17 +17,17 @@ namespace Web.Controllers
         [Route("page")]
         public IActionResult Page(Guid id)
         {
-            var model = _api.Pages.GetById<StandardPage>(id);
+            var model = _api.Pages.GetByIdAsync<StandardPage>(id);
 
-            return View(model);
+            return View(model.Result);
         }
 
         [Route("start")]
         public IActionResult Start(Guid id)
         {
-            var model = _api.Pages.GetById<StartPage>(id);
+            var model = _api.Pages.GetByIdAsync<StartPage>(id);
 
-            return View(model);
+            return View(model.Result);
         }
     }
 }
