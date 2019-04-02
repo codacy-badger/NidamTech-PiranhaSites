@@ -1,0 +1,3 @@
+[submodule "NidamTech.Services"]
+	path = NidamTech.Services
+	url = https://NidamTech@dev.azure.com/NidamTech/NidamTech/_git/NidamTech.Services
