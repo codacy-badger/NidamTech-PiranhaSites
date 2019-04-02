@@ -1,6 +1,8 @@
-const gulp = require('gulp');
-const bs1 = require('browser-sync').create("proxy1");
-const bs2 = require('browser-sync').create("proxy2");
+import gulp from "gulp";
+import {create} from "browser-sync";
+
+const bs1 = create("proxy1");
+const bs2 = create("proxy2");
 gulp.task('bs-reload', function (done) {
     bs1.reload();
     bs2.reload();

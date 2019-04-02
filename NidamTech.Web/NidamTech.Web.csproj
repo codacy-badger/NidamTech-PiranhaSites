@@ -39,6 +39,9 @@
       <_ContentIncludedByDefault Remove="wwwroot\css\base\style.css" />
       <_ContentIncludedByDefault Remove="wwwroot\img\sundhedmedalette-logo.png" />
       <_ContentIncludedByDefault Remove="wwwroot\uploads\9c3cb87c-9c48-4fea-8f8b-d1e6353f031c-bottle-bowl-breakfeast.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\nidam-theme.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\sundhedmedalette-theme.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\uploads\12f92449-519b-4557-8e79-e70c8514fe5b-test.png" />
   </ItemGroup>
 
   <ItemGroup>
