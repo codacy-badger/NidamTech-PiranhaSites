@@ -42,6 +42,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NidamTech.Services\NidamTech.Services.csproj" />
+    <ProjectReference Include="..\NidamTech-Services\NidamTech.EmailService\NidamTech.EmailService.csproj" />
   </ItemGroup>
 </Project>

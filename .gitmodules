@@ -1,0 +1,3 @@
+[submodule "NidamTech-Services"]
+	path = NidamTech-Services
+	url = git@ssh.dev.azure.com:v3/NidamTech/NidamTech/NidamTech-Services
