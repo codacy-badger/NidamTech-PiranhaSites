@@ -26,6 +26,10 @@
     <ItemGroup>
       <_ContentIncludedByDefault Remove="wwwroot\scripts\lib\bootstrap.bundle.min.js" />
       <_ContentIncludedByDefault Remove="wwwroot\scripts\lib\jquery.slim.min.js" />
+      <_ContentIncludedByDefault Remove="Views\Cms\Blocks\Text\MarkdownTextBlock.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Cms\Blocks\Text\QuoteBlock.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Cms\Blocks\Text\RichTextBlock.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Cms\Blocks\Text\TextBlock.cshtml" />
     </ItemGroup>
     <ItemGroup>
       <Folder Include="assets\src" />
@@ -33,7 +37,7 @@
       <Folder Include="Models\Blocks\Media" />
       <Folder Include="Models\Blocks\TextComponents" />
       <Folder Include="Models\Fields" />
-      <Folder Include="Views\Piranha\Blocks\TextComponents" />
+      <Folder Include="Views\Piranha\Blocks" />
       <Folder Include="wwwroot" />
     </ItemGroup>
     <ItemGroup>
