@@ -1,3 +1,16 @@
-<script src="js/lib/jquery.slim.min.js"></script>
-<script src="js/lib/bootstrap.bundle.min.js"></script>
-@* <script src="~/js/main.min.js"></script> *@
+@using Web.Models.Sites
+@inject Piranha.IApi Api;
+@{
+    var siteAppearance = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Appearance;
+    string selectedTheme;
+    if (string.IsNullOrEmpty(siteAppearance.SelectedTheme.EnumValue))
+    {
+        selectedTheme = "base.bundle.js";
+    }
+    else
+    {
+        selectedTheme = siteAppearance.SelectedTheme.EnumValue + "-theme.bundle.js";
+    }
+}
+<script src="base.bundle.js"></script>
+<script src=@selectedTheme></script>

@@ -4,9 +4,10 @@ namespace Web.Models.Data
 {
     public enum Theme
     {
-        [Display(Description = "nidam-theme")]
-        nidam,
-        [Display(Description = "sundhedmedalette-theme")]
+        [Display(Description = "Default Theme")]
+        default,
+        [Display(Description = "NidamTech Theme")]
+        nidamtech,
+        [Display(Description = "SMA Theme")]
         sundhedmedalette        
     }
-}
