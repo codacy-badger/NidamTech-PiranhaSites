@@ -28,6 +28,7 @@
       <_ContentIncludedByDefault Remove="wwwroot\scripts\lib\jquery.slim.min.js" />
     </ItemGroup>
     <ItemGroup>
+      <Folder Include="assets\src" />
       <Folder Include="wwwroot" />
     </ItemGroup>
     <ItemGroup>

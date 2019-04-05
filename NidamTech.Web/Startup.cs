@@ -28,7 +28,7 @@ namespace Web
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json")
+                .AddJsonFile("Properties/appSettings.json")
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
