@@ -22,13 +22,13 @@ namespace Web
 {
     public class Startup
     {
-        public IConfiguration Configuration { get; }
+        private IConfiguration Configuration { get; }
 
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json")
+                .AddJsonFile("Properties/appSettings.json")
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
@@ -103,8 +103,8 @@ namespace Web
 
         private void RegisterSelects()
         {
-            App.Fields.RegisterSelect<Theme>();
-            App.Fields.RegisterSelect<BootstrapBreakpoint>();
+            App.Fields.RegisterSelect<ThemeEnum>();
+            App.Fields.RegisterSelect<BootstrapBreakpointEnum>();
         }
 
 

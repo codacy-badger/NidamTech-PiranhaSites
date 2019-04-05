@@ -11,6 +11,6 @@ namespace Web.Models.Blocks
     [BlockItemType(Type = typeof(MarkdownTextBlock))]
     public class TwoColumnBlockGroup : BlockGroup
     {
-        public SelectField<BootstrapBreakpoint> BootstrapBreakpoint { get; set; }
+        public SelectField<BootstrapBreakpointEnum> BootstrapBreakpoint { get; set; }
     }
 }

@@ -2,12 +2,13 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Web.Models.Data
 {
-    public enum Theme
+    public enum ThemeEnum
     {
         [Display(Description = "Default Theme")]
-        default,
+        @default,
+
         [Display(Description = "NidamTech Theme")]
         nidamtech,
-        [Display(Description = "SMA Theme")]
-        sundhedmedalette        
+        [Display(Description = "SMA Theme")] sundhedmedalette
     }
+}

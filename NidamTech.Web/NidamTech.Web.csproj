@@ -28,6 +28,12 @@
       <_ContentIncludedByDefault Remove="wwwroot\scripts\lib\jquery.slim.min.js" />
     </ItemGroup>
     <ItemGroup>
+      <Folder Include="assets\src" />
+      <Folder Include="Models\Blocks\Layout" />
+      <Folder Include="Models\Blocks\Media" />
+      <Folder Include="Models\Blocks\TextComponents" />
+      <Folder Include="Models\Fields" />
+      <Folder Include="Views\Piranha\Blocks\TextComponents" />
       <Folder Include="wwwroot" />
     </ItemGroup>
     <ItemGroup>

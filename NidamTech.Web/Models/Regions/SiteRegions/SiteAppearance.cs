@@ -11,7 +11,7 @@ namespace Web.Models.Regions.SiteRegions
         public CheckBoxField DarkMode { get; set; }
 
         [Field(Title = "Selected Theme", Options = FieldOption.HalfWidth)]
-        public SelectField<Theme> SelectedTheme { get; set; }
+        public SelectField<ThemeEnum> SelectedTheme { get; set; }
 
         [Field(Title = "Logo")] public ImageField Logo { get; set; }
     }

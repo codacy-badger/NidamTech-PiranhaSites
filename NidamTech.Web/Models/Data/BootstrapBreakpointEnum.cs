@@ -1,6 +1,6 @@
 namespace Web.Models.Data
 {
-    public enum BootstrapBreakpoint
+    public enum BootstrapBreakpointEnum
     {
         xs,
         sm,
