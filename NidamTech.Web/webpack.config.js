@@ -9,12 +9,20 @@ module.exports = {
         jQuery: "jQuery"
     },
     module: {
-        rules: [{
-            test: /\.(scss)$/,
-            use: [{loader: 'style-loader',},
-                {loader: 'css-loader',},
-                {loader: 'postcss-loader', options: postcssconfig},
-                {loader: 'sass-loader'}]
-        },]
+        rules: [
+            {
+                test: /\.scss$/,
+                use: [
+                    {loader: 'style-loader',},
+                    {loader: 'css-loader',},
+                    {loader: 'postcss-loader', options: postcssconfig},
+                    {loader: 'sass-loader'}
+                ]
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: ['babel-loader', 'eslint-loader']
+            }]
     }
 };
