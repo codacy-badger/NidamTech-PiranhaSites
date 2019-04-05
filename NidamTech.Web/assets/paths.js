@@ -1,5 +1,5 @@
-const srcFolder = "assets/";
-const destFolder = "wwwroot/";
+const srcFolder = "./assets/";
+const destFolder = "./wwwroot/";
 const webpackFolder = srcFolder + "webpack/";
 module.exports = {
     "srcFolder": srcFolder,

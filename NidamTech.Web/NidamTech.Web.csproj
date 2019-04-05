@@ -1,50 +1,36 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-  <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
-    <MvcRazorExcludeRefAssembliesFromPublish>false</MvcRazorExcludeRefAssembliesFromPublish>
-    <RootNamespace>NidamTech-PiranhaSites</RootNamespace>    
-  </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Models\Fields\FieldData\" />
-    <Folder Include="wwwroot" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.3" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.3" />
-    <PackageReference Include="Piranha" Version="6.0.1" />
-    <PackageReference Include="Piranha.AspNetCore" Version="6.0.0" />
-    <PackageReference Include="Piranha.AspNetCore.Identity.SQLite" Version="6.0.0" />
-    <PackageReference Include="Piranha.AspNetCore.Identity.SQLServer" Version="6.0.0" />
-    <PackageReference Include="Piranha.AttributeBuilder" Version="6.0.0" />
-    <PackageReference Include="Piranha.Azure.BlobStorage" Version="6.0.0" />
-    <PackageReference Include="Piranha.BasicWeb.CSharp" Version="6.0.0" />
-    <PackageReference Include="Piranha.Data.EF" Version="6.0.1" />
-    <PackageReference Include="Piranha.Extensions.Sync" Version="6.0.0" />
-    <PackageReference Include="Piranha.ImageSharp" Version="6.0.0-rc1" />
-    <PackageReference Include="Piranha.Local.FileStorage" Version="6.0.0" />
-    <PackageReference Include="Piranha.Manager" Version="6.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="wwwroot\css\nidam\nidam-theme.min.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\js\main.min.js" />
-      <_ContentIncludedByDefault Remove="Areas\Manager\Views\Shared\Partial\_EditorSetup.cshtml" />
-      <_ContentIncludedByDefault Remove="wwwroot\css\base\style.min.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\css\themes\nidam-theme.min.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\css\themes\sundhedmedalette-theme.min.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\css\site.min.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\css\style.min.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\css\base\style.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\img\sundhedmedalette-logo.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\uploads\9c3cb87c-9c48-4fea-8f8b-d1e6353f031c-bottle-bowl-breakfeast.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\css\nidam-theme.min.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\css\sundhedmedalette-theme.min.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\uploads\12f92449-519b-4557-8e79-e70c8514fe5b-test.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\NidamTech-Services\NidamTech.EmailService\NidamTech.EmailService.csproj" />
-  </ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <MvcRazorExcludeRefAssembliesFromPublish>false</MvcRazorExcludeRefAssembliesFromPublish>
+        <RootNamespace>NidamTech-PiranhaSites</RootNamespace>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.3" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.3" />
+        <PackageReference Include="Piranha" Version="6.0.1" />
+        <PackageReference Include="Piranha.AspNetCore" Version="6.0.0" />
+        <PackageReference Include="Piranha.AspNetCore.Identity.SQLite" Version="6.0.0" />
+        <PackageReference Include="Piranha.AspNetCore.Identity.SQLServer" Version="6.0.0" />
+        <PackageReference Include="Piranha.AttributeBuilder" Version="6.0.0" />
+        <PackageReference Include="Piranha.Azure.BlobStorage" Version="6.0.0" />
+        <PackageReference Include="Piranha.BasicWeb.CSharp" Version="6.0.1" />
+        <PackageReference Include="Piranha.Data.EF" Version="6.0.1" />
+        <PackageReference Include="Piranha.Extensions.Sync" Version="6.0.0" />
+        <PackageReference Include="Piranha.ImageSharp" Version="6.0.0-rc1" />
+        <PackageReference Include="Piranha.Local.FileStorage" Version="6.0.0" />
+        <PackageReference Include="Piranha.Manager" Version="6.0.2" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\NidamTech-Services\NidamTech.EmailService\NidamTech.EmailService.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\scripts\lib\bootstrap.bundle.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\scripts\lib\jquery.slim.min.js" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="wwwroot" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="assets\paths.js" />
+    </ItemGroup>
 </Project>

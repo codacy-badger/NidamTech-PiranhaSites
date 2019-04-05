@@ -1,1 +1,1 @@
-import '../themes/nidam-theme/styles/style.scss'
+import '../themes/nidamtech-theme/styles/style.scss'

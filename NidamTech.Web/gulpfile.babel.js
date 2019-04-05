@@ -17,7 +17,7 @@ gulp.task('default', gulp.series('clean', gulp.parallel('compile-styles', 'compi
 }))
 
 gulp.task('watch', gulp.series('default', 'bs-serve', function () {
-  gulp.watch(paths.src.styles + '**/*.scss', gulp.series('compile-scss', 'bs-reload:stream'))
+  gulp.watch(paths.src.styles + '**/*.scss', gulp.series('compile-styles', 'bs-reload:stream'))
   gulp.watch(paths.src.scripts + '**/*.js', gulp.series('compile-scripts', 'bs-reload'))
   gulp.watch('**/*.cshtml', gulp.series('bs-reload'))
 }))
