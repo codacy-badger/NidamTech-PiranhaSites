@@ -1,9 +1,14 @@
+@using Web.Models.Regions.SiteRegions
 @using Web.Models.Sites
 @inject Piranha.IApi Api;
 @{
-    var siteAppearance = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Appearance;
+    SiteAppearance siteAppearance = null;
+    if (Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result != null)
+    {
+        siteAppearance = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Appearance;
+    }
     string selectedTheme;
-    if (string.IsNullOrEmpty(siteAppearance.SelectedTheme.EnumValue))
+    if (siteAppearance == null || string.IsNullOrEmpty(siteAppearance.SelectedTheme.EnumValue))
     {
         selectedTheme = "base.bundle.js";
     }

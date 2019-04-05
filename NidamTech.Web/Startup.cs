@@ -153,7 +153,7 @@ namespace Web
 
         private void RegisterBlocks()
         {
-            App.Blocks.Register<HeroImageBlock>();
+            App.Blocks.Register<HeroBlock>();
             App.Blocks.Register<MarkdownTextBlock>();
             App.Blocks.Register<TwoColumnBlockGroup>();
         }

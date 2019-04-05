@@ -1,9 +1,15 @@
+@using Web.Models.Regions.SiteRegions
 @using Web.Models.Sites
 @inject Piranha.IApi Api;
 
 @{
-    var SiteFooter = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Footer;
-    var SiteInfo = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Info;
+    SiteFooter SiteFooter = null;
+    SiteInfo SiteInfo = null;
+    if (Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result != null)
+    {
+        SiteFooter = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Footer;
+        SiteInfo = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Info;
+    }
 }
 
 <footer class="footer-padding">
@@ -12,16 +18,16 @@
             <div class="col-sm-8 offset-sm-2 text-center">
                 <span class="icon-handle-streamline-vector logo"></span>
 
-                <h2>@(!string.IsNullOrEmpty(SiteFooter.Title.Value) ? SiteFooter.Title.Value : "Title Missing")</h2>
+                <h2>@(SiteFooter != null && !string.IsNullOrEmpty(SiteFooter.Title.Value) ? SiteFooter.Title.Value : "Title Missing")</h2>
 
-                @if (!string.IsNullOrEmpty(SiteFooter.TwitterLink.Value))
+                @if (SiteFooter != null && !string.IsNullOrEmpty(SiteFooter.TwitterLink.Value))
                 {
                     <a href=@SiteFooter.TwitterLink.Value>
                         <i class="fab fa-twitter"></i>
                     </a>
                 }
 
-                @if (!string.IsNullOrEmpty(SiteFooter.FacebookLink.Value))
+                @if (SiteFooter != null && !string.IsNullOrEmpty(SiteFooter.FacebookLink.Value))
                 {
                     <a href=@SiteFooter.FacebookLink.Value>
                         <i class="fab fa-facebook-f"></i>
@@ -33,7 +39,7 @@
             <div class="col-sm-8 offset-sm-2 text-small text-center">
                 <hr>
                 <button type="button" class="btn btn-primary btn-lg">Up</button>
-                @if (!string.IsNullOrEmpty(SiteInfo.SiteOwnerName.Value))
+                @if (SiteInfo != null && !string.IsNullOrEmpty(SiteInfo.SiteOwnerName.Value))
                 {
                     <p class="no-margin">© @SiteInfo.SiteOwnerName.Value</p>
                 }

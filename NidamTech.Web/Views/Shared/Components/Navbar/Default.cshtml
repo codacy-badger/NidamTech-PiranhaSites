@@ -1,17 +1,19 @@
+@using Web.Models.Regions.SiteRegions
 @using Web.Models.Sites
 
 @inject Piranha.IApi Api;
 @{
     var sitemap = WebApp.Site.Sitemap;
-    var siteAppearance = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Appearance;
-    var logoUrl = siteAppearance.Logo;
-    var darkMode = siteAppearance.DarkMode.Value;
+    SiteAppearance siteAppearance = null;
+    if (Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result != null)
+    {
+        siteAppearance = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Appearance;
+    }
 }
-@* TODO: make bootstrap theme, theme dependent *@
-<nav class="navbar navbar-expand-sm @(darkMode ? "bg-dark navbar-dark" : "bg-light navbar-light") fixed-top">
+<nav class="navbar navbar-expand-sm @(siteAppearance != null && siteAppearance.DarkMode ? "bg-dark navbar-dark" : "bg-light navbar-light") fixed-top">
     <div class="container">
         <a class="navbar-brand" href="/">
-            <img src=@(!string.IsNullOrEmpty(logoUrl) ? logoUrl.Media.PublicUrl : "") alt="Logo">
+            <img src=@(siteAppearance != null && !string.IsNullOrEmpty(siteAppearance.Logo) ? siteAppearance.Logo.Media.PublicUrl : "") alt="Logo">
         </a>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
