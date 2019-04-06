@@ -1,8 +1,10 @@
 import postcssconfig from "./postcss.config"
+import path from 'path'
 
 module.exports = {
     mode: "none",
     output: {
+        path: path.resolve('./wwwroot/'),
         filename: '[name].bundle.js',
     },
     externals: {

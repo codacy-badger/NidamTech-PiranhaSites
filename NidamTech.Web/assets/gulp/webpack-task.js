@@ -17,4 +17,4 @@ gulp.task('webpack', function (done) {
         ))
         .pipe(gulp.dest(paths.dest))
     done();
-})
+});

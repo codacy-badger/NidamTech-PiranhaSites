@@ -1,6 +1,7 @@
 @import "partials/vendors";
-@import "partials/shared/*";
 @import "partials/vendors";
-@import "partials/modules/*";
-@import "partials/shared/*";
-@import "partials/blocks/*";
+@import "partials/modules/text-responsive";
+@import "partials/shared/footer";
+@import "partials/shared/navbar";
+@import "partials/shared/preloader";
+@import "partials/blocks/hero";
