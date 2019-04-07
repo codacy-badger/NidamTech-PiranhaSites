@@ -7,7 +7,7 @@ using Piranha.Models;
 
 namespace Web.Models.Blocks
 {
-    [BlockGroupType(Name = "Two Column", Category = "Layout", Icon = "fas fa-images")]
+    [BlockGroupType(Name = "Two Column", Category = "Content", Icon = "fas fa-images")]
     [BlockItemType(Type = typeof(MarkdownTextBlock))]
     public class TwoColumnBlockGroup : BlockGroup
     {

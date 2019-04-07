@@ -1,1 +1,0 @@
-import '../src/themes/sundhedmedalette-theme/styles/style.scss'

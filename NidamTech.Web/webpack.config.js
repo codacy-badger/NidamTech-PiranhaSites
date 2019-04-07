@@ -1,5 +1,6 @@
 import postcssconfig from "./postcss.config"
 import path from 'path'
+import webpack from 'webpack'
 
 module.exports = {
     mode: "none",
@@ -7,9 +8,14 @@ module.exports = {
         path: path.resolve('./wwwroot/'),
         filename: '[name].bundle.js',
     },
-    externals: {
-        jQuery: "jQuery"
-    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery',
+            Popper: ['popper.js', 'default']
+        })
+    ],
     module: {
         rules: [
             {
@@ -27,4 +33,5 @@ module.exports = {
                 use: ['babel-loader', 'eslint-loader']
             }]
     }
-};
+}
+;

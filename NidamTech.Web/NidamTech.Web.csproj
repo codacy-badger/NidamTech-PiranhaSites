@@ -32,10 +32,7 @@
       <_ContentIncludedByDefault Remove="Views\Cms\Blocks\Text\TextBlock.cshtml" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="assets\src" />
       <Folder Include="Models\Blocks\Layout" />
-      <Folder Include="Models\Blocks\Media" />
-      <Folder Include="Models\Blocks\TextComponents" />
       <Folder Include="Models\Fields" />
       <Folder Include="wwwroot" />
     </ItemGroup>
