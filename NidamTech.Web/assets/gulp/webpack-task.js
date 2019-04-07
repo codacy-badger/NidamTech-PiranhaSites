@@ -16,7 +16,6 @@ gulp.task('webpack', function () {
         .pipe(webpack(webpackconfig)
             .on('error', (err) => {
                 gutil.log('WEBPACK ERROR', err);
-                this.emit('end');
             }))
         .pipe(gulp.dest(paths.dest))
 });
