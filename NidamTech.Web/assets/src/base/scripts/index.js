@@ -1,1 +1,1 @@
-import "./shared/_preloader"
+import "./shared/preloader"
