@@ -7,11 +7,7 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.3" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.3" />
-<<<<<<< HEAD
-        <PackageReference Include="NidamTech.EmailService" Version="1.0.0" />
-=======
         <PackageReference Include="NidamTech.EmailService" Version="1.0.1" />
->>>>>>> develop
         <PackageReference Include="Piranha" Version="6.0.1" />
         <PackageReference Include="Piranha.AspNetCore" Version="6.0.0" />
         <PackageReference Include="Piranha.AspNetCore.Identity.SQLite" Version="6.0.0" />
