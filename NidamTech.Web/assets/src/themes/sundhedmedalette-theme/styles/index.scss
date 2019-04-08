@@ -2,9 +2,8 @@
 @import "partials/vendors";
 @import "partials/google-fonts";
 //modules
-@import "modules/colors";
+@import "./modules/*";
 //partials
-@import "partials/shared/navbar";
-@import "partials/regions/heading";
-@import "partials/blocks/hero";
-@import "partials/blocks/quote";
+@import "./partials/shared/*";
+@import "./partials/regions/*";
+@import "./partials/blocks/*";

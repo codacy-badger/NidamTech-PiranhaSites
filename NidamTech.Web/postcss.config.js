@@ -1,11 +1,9 @@
-import precss from "precss";
-import autoprefixer from "autoprefixer";
+import cssnext from 'postcss-cssnext'
 
 module.exports = {
     plugins: function () {
         return [
-            precss,
-            autoprefixer
+            cssnext
         ];
     }
 };

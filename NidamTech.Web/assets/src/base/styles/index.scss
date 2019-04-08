@@ -1,7 +1,4 @@
 @import "vendors";
-@import "modules/text-responsive";
-@import "shared/footer";
-@import "shared/navbar";
-@import "shared/dimmer";
-@import "shared/preloader";
-@import "blocks/hero";
+@import "./modules/*";
+@import "./shared/*";
+@import "./blocks/*";
