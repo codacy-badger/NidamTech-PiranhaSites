@@ -24,13 +24,18 @@ module.exports = {
                     {loader: 'style-loader',},
                     {loader: 'css-loader',},
                     {loader: 'postcss-loader', options: postcssconfig},
-                    {loader: 'sass-loader'}
+                    {loader: 'sass-loader'},
+                    { loader: 'webpack-import-glob-loader', }
                 ]
             },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: ['babel-loader', 'eslint-loader']
+                use: [
+                    { loader: 'babel-loader', },
+                    { loader: 'eslint-loader', },
+                    { loader: 'webpack-import-glob-loader', }
+                ]
             }]
     }
 };
