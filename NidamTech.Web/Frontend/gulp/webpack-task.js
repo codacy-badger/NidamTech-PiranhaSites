@@ -1,21 +1,20 @@
 import gulp from "gulp";
-import paths from "../paths";
-import webpack from "webpack-stream";
-import webpackconfig from '../../webpack.config.js';
-import named from 'vinyl-named';
 import gutil from 'gulp-util';
+import webpack from "webpack-stream";
+import named from 'vinyl-named';
+import webpackconfig from '../webpack.config.js';
 
 gulp.task('webpack', function () {
     return gulp.src([
-        paths.src + 'base.js',
-        paths.src + "default-theme.js",
-        paths.src + 'nidamtech-theme.js',
-        paths.src + 'sundhedmedalette-theme.js',
+        './src/base.js',
+        './src/default-theme.js',
+        './src/nidamtech-theme.js',
+        './src/sundhedmedalette-theme.js',
     ])
         .pipe(named())
         .pipe(webpack(webpackconfig)
             .on('error', (err) => {
                 gutil.log('WEBPACK ERROR', err);
             }))
-        .pipe(gulp.dest(paths.dest))
+        .pipe(gulp.dest('../wwwroot/'))
 });

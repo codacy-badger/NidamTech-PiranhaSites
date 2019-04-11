@@ -20,7 +20,7 @@ using Web.Models.Sites;
 
 namespace Web
 {
-    public class Startup
+    public class Startup : IStartup
     {
         private IConfiguration Configuration { get; }
 

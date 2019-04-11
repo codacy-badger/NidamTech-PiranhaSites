@@ -27,7 +27,7 @@ namespace Web.Controllers
         {
             var model = _api.Pages.GetByIdAsync<StartPage>(id);
 
-            return View(model.Result);
+            return View(model.Result.Title, model.Result);
         }
     }
 }

@@ -29,13 +29,4 @@
       <_ContentIncludedByDefault Remove="Views\Cms\Blocks\Text\RichTextBlock.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Cms\Blocks\Text\TextBlock.cshtml" />
     </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Models\Blocks\Layout" />
-      <Folder Include="Models\Fields" />
-      <Folder Include="wwwroot" />
-    </ItemGroup>
-    <ItemGroup>
-      <Content Include="assets\paths.js" />
-      <Content Remove="package-lock.json" />
-    </ItemGroup>
 </Project>
