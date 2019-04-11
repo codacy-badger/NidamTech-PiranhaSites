@@ -10,7 +10,7 @@
     string selectedTheme;
     if (siteAppearance == null || string.IsNullOrEmpty(siteAppearance.SelectedTheme.EnumValue))
     {
-        selectedTheme = "base.bundle.js";
+        selectedTheme = "default-theme.bundle.js";
     }
     else
     {
@@ -18,4 +18,4 @@
     }
 }
 <script src="base.bundle.js"></script>
-<script src=@selectedTheme></script>
+<script src=@selectedTheme defer></script>
