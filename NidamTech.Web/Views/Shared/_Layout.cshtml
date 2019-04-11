@@ -1,16 +1,11 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <vc:head></vc:head>
-</head>
+<vc:head></vc:head>
 <body>
-<header class="site-header @(ViewBag.HasImage == null || !ViewBag.HasImage ? "site-header-dark" : "")">
-    <vc:navbar></vc:navbar>
-</header>
+<vc:header></vc:header>
 @RenderBody()
 <vc:footer></vc:footer>
 <vc:preloader></vc:preloader>
 <vc:dimmer></vc:dimmer>
-<vc:scripts></vc:scripts>
 </body>
 </html>
