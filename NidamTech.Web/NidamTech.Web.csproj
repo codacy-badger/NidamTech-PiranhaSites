@@ -21,12 +21,4 @@
         <PackageReference Include="Piranha.Local.FileStorage" Version="6.0.0" />
         <PackageReference Include="Piranha.Manager" Version="6.0.2" />
     </ItemGroup>
-    <ItemGroup>
-      <_ContentIncludedByDefault Remove="wwwroot\scripts\lib\bootstrap.bundle.min.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\scripts\lib\jquery.slim.min.js" />
-      <_ContentIncludedByDefault Remove="Views\Cms\Blocks\Text\MarkdownTextBlock.cshtml" />
-      <_ContentIncludedByDefault Remove="Views\Cms\Blocks\Text\QuoteBlock.cshtml" />
-      <_ContentIncludedByDefault Remove="Views\Cms\Blocks\Text\RichTextBlock.cshtml" />
-      <_ContentIncludedByDefault Remove="Views\Cms\Blocks\Text\TextBlock.cshtml" />
-    </ItemGroup>
 </Project>
