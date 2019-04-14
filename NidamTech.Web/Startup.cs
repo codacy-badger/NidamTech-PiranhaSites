@@ -1,28 +1,17 @@
 ﻿using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.WindowsAzure.Storage.Auth;
-using NidamTech.EmailService;
-using NidamTech.EmailService.Interfaces;
-using NidamTech.Services.EmailService;
 using Piranha;
-using Piranha.AspNetCore.Identity.SQLite;
-using Piranha.AspNetCore.Identity.SQLServer;
-using Piranha.AttributeBuilder;
-using Piranha.Extend.Blocks;
-using Web.Models.Pages;
-using Web.Models.Blocks;
-using Web.Models.Data;
-using Web.Models.Sites;
+using Web.Dunno;
 
 namespace Web
 {
     public class Startup : IStartup
     {
         private IConfiguration Configuration { get; }
+        private readonly StartupHelper _startupHelper = new StartupHelper();
 
         public Startup(IHostingEnvironment env)
         {
@@ -35,46 +24,17 @@ namespace Web
 
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc(config =>
-            {
-                config.ModelBinderProviders.Insert(0, new Piranha.Manager.Binders.AbstractModelBinderProvider());
-            });
-            services.AddSingleton<IEmailConfiguration>(Configuration.GetSection("EmailConfiguration")
-                .Get<EmailConfiguration>());
-            services.AddTransient<IEmailService, EmailService>();
+            _startupHelper.AddMvcService(services);
+            _startupHelper.AddEmailService(Configuration, services);
             services.AddPiranhaApplication();
             services.AddPiranhaImageSharp();
-            var appSettings = Configuration.GetSection("AppSettings").Get<AppSettings>();
-            if (appSettings.UseLocalDB)
-            {
-                services.AddPiranhaEF(options =>
-                    options.UseSqlite("Filename=./piranha.db"));
-                services.AddPiranhaIdentityWithSeed<IdentitySQLiteDb>(options =>
-                    options.UseSqlite("Filename=./piranha.db"));
-            }
-            else
-            {
-                services.AddPiranhaEF(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("default")));
-                services.AddPiranhaIdentityWithSeed<IdentitySQLServerDb>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("default")));
-            }
-
+            _startupHelper.AddDatabaseConnection(Configuration, services);
             services.AddPiranhaManager();
             services.AddPiranhaSimpleCache();
-            if (appSettings.UseAzureStorage)
-            {
-                var az = appSettings.AzureStorage;
-                var creds = new StorageCredentials(az.StorageName, az.StorageKey);
-                services.AddPiranhaBlobStorage(creds);
-            }
-            else
-            {
-                services.AddPiranhaFileStorage();
-            }
-
+            _startupHelper.AddFileOrBlobStorage(Configuration, services);
             return services.BuildServiceProvider();
         }
+
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider services, IApi api)
         {
@@ -84,83 +44,15 @@ namespace Web
             }
 
             App.Init(api);
-
-            CreateMenuGroups();
-            AddMenuItems();
-
+            _startupHelper.CreateMenuGroups();
+            _startupHelper.AddMenuItems();
             App.CacheLevel = Piranha.Cache.CacheLevel.Basic;
-
-            RegisterBlocks();
-            UnregisterBlocks();
-
-            RegisterSelects();
-
-            BuildSiteTypes(api);
-            BuildPageTypes(api);
-
-            RegisterMiddleware(app);
-        }
-
-        private void RegisterSelects()
-        {
-            App.Fields.RegisterSelect<ThemeEnum>();
-            App.Fields.RegisterSelect<BootstrapBreakpointEnum>();
-        }
-
-
-        private void RegisterMiddleware(IApplicationBuilder app)
-        {
-            app.UseStaticFiles();
-            app.UseAuthentication();
-            app.UsePiranha();
-            app.UsePiranhaApplication();
-            app.UsePiranhaManager();
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute("areaRoute",
-                    "{area:exists}/{controller}/{action}/{id?}",
-                    new {controller = "Home", action = "Index"});
-
-                routes.MapRoute(
-                    "default",
-                    "{controller=home}/{action=index}/{id?}");
-            });
-        }
-
-        private void BuildSiteTypes(IApi api)
-        {
-            var siteTypeBuilder = new SiteTypeBuilder(api)
-                .AddType(typeof(DefaultSite));
-            siteTypeBuilder.Build();
-        }
-
-        private void BuildPageTypes(IApi api)
-        {
-            var pageTypeBuilder = new PageTypeBuilder(api)
-                .AddType(typeof(StandardPage))
-                .AddType(typeof(StartPage));
-            pageTypeBuilder.Build()
-                .DeleteOrphans();
-        }
-
-        private void CreateMenuGroups()
-        {
-        }
-
-        private void AddMenuItems()
-        {
-        }
-
-        private void RegisterBlocks()
-        {
-            App.Blocks.Register<HeroBlock>();
-            App.Blocks.Register<MarkdownTextBlock>();
-            App.Blocks.Register<TwoColumnBlockGroup>();
-        }
-
-        private void UnregisterBlocks()
-        {
-            App.Blocks.UnRegister<HtmlColumnBlock>();
+            _startupHelper.RegisterBlocks();
+            _startupHelper.UnregisterBlocks();
+            _startupHelper.RegisterSelects();
+            _startupHelper.BuildSiteTypes(api);
+            _startupHelper.BuildPageTypes(api);
+            _startupHelper.RegisterMiddleware(app);
         }
     }
 }

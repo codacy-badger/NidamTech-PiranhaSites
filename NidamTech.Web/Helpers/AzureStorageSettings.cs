@@ -1,6 +1,6 @@
 namespace Web
 {
-    public class AppSettings
+    public class AzureStorageSettings
     {
         public class AzStorage
         {
@@ -9,7 +9,6 @@ namespace Web
         }
 
         public AzStorage AzureStorage { get; set; }
-        public bool UseLocalDB { get; set; }
         public bool UseAzureStorage { get; set; }
     }
 }
