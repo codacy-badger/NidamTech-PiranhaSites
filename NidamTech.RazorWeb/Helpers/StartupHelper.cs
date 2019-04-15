@@ -3,12 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.WindowsAzure.Storage.Auth;
-using NidamTech.EmailService.Interfaces;
 using NidamTech.RazorWeb.Models.Blocks;
 using NidamTech.RazorWeb.Models.Data;
-using NidamTech.RazorWeb.Models.Pages;
 using NidamTech.RazorWeb.Models.Sites;
-using NidamTech.Services.EmailService;
 using Piranha;
 using Piranha.AspNetCore.Identity.SQLite;
 using Piranha.AspNetCore.Identity.SQLServer;
@@ -44,17 +41,12 @@ namespace NidamTech.RazorWeb.Helpers
             app.UseStaticFiles();
             app.UseAuthentication();
             app.UsePiranha();
-            app.UsePiranhaApplication();
             app.UsePiranhaManager();
             app.UseMvc(routes =>
             {
                 routes.MapRoute("areaRoute",
                     "{area:exists}/{controller}/{action}/{id?}",
                     new {controller = "Home", action = "Index"});
-
-                routes.MapRoute(
-                    "default",
-                    "{controller=home}/{action=index}/{id?}");
             });
         }
 
@@ -68,8 +60,8 @@ namespace NidamTech.RazorWeb.Helpers
         public void BuildPageTypes(IApi api)
         {
             var pageTypeBuilder = new PageTypeBuilder(api)
-                .AddType(typeof(StandardPage))
-                .AddType(typeof(StartPage));
+                .AddType(typeof(Models.StandardPage))
+                .AddType(typeof(Models.StartPage));
             pageTypeBuilder.Build()
                 .DeleteOrphans();
         }
@@ -103,9 +95,9 @@ namespace NidamTech.RazorWeb.Helpers
             if (databaseSettings.UseLocalDB)
             {
                 services.AddPiranhaEF(options =>
-                    options.UseSqlite("Filename=./piranha.db"));
+                    options.UseSqlite("Filename=./piranha.razorweb.db"));
                 services.AddPiranhaIdentityWithSeed<IdentitySQLiteDb>(options =>
-                    options.UseSqlite("Filename=./piranha.db"));
+                    options.UseSqlite("Filename=./piranha.razorweb.db"));
             }
             else
             {
@@ -118,9 +110,9 @@ namespace NidamTech.RazorWeb.Helpers
 
         public void AddEmailService(IConfiguration configuration, IServiceCollection services)
         {
-            services.AddSingleton<IEmailConfiguration>(configuration.GetSection("EmailSettings")
-                .Get<EmailConfiguration>());
-            services.AddTransient<IEmailService, EmailService.EmailService>();
+            //services.AddSingleton<IEmailConfiguration>(configuration.GetSection("EmailSettings")
+            //.Get<EmailConfiguration>());
+            //services.AddTransient<IEmailService, EmailService.EmailService>();
         }
 
         public void AddMvcService(IServiceCollection services)

@@ -1,5 +1,4 @@
 @using Piranha.Models
-@inject Piranha.IApi Api;
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,13 +9,13 @@
     {
         <partial name="Partial/_Meta.cshtml"/>
     }
-    <vc:scripts></vc:scripts>
+    <partial name="Partial/_Scripts.cshtml"/>
 </head>
+<partial name="Partial/_Header.cshtml"/>
 <body>
-<vc:header></vc:header>
 @RenderBody()
-<vc:footer></vc:footer>
-<vc:preloader></vc:preloader>
-<vc:dimmer></vc:dimmer>
+<partial name="Partial/_Footer.cshtml"/>
+<partial name="Partial/_Preloader.cshtml"/>
+<partial name="Partial/_Dimmer.cshtml"/>
 </body>
 </html>

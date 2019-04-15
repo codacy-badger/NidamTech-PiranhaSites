@@ -1,6 +1,6 @@
 using System;
 using System.Threading.Tasks;
-using NidamTech.RazorWeb.Models.Pages;
+using NidamTech.RazorWeb.Models;
 using Piranha;
 
 namespace NidamTech.RazorWeb.Pages

@@ -1,6 +1,6 @@
 using System;
 using System.Threading.Tasks;
-using NidamTech.RazorWeb.Models.Pages;
+using NidamTech.RazorWeb.Models;
 using Piranha;
 
 namespace NidamTech.RazorWeb.Pages
@@ -10,7 +10,7 @@ namespace NidamTech.RazorWeb.Pages
         private readonly IApi _api;
         public StandardPage Data { get; private set; }
 
-        public StandardPageModel(IApi api)
+        public StandardPageModel(IApi api) : base()
         {
             _api = api;
         }

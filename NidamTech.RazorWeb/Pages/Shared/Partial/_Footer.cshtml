@@ -1,14 +1,13 @@
 @using NidamTech.RazorWeb.Models.Regions.SiteRegions
 @using NidamTech.RazorWeb.Models.Sites
-@inject Piranha.IApi Api;
-
 @{
-    SiteFooter SiteFooter = null;
+    
+    SiteFooter siteFooter = null;
     SiteInfo SiteInfo = null;
-    if (Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result != null)
+    if (WebApp.Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result != null)
     {
-        SiteFooter = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Footer;
-        SiteInfo = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Info;
+        siteFooter = WebApp.Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Footer;
+        SiteInfo = WebApp.Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Info;
     }
 }
 
@@ -18,18 +17,18 @@
             <div class="col-sm-8 offset-sm-2 text-center">
                 <span class="icon-handle-streamline-vector logo"></span>
 
-                <h2>@(SiteFooter != null && !string.IsNullOrEmpty(SiteFooter.Title.Value) ? SiteFooter.Title.Value : "Title Missing")</h2>
+                <h2>@(siteFooter != null && !string.IsNullOrEmpty(siteFooter.Title.Value) ? siteFooter.Title.Value : "Title Missing")</h2>
 
-                @if (SiteFooter != null && !string.IsNullOrEmpty(SiteFooter.TwitterLink.Value))
+                @if (siteFooter != null && !string.IsNullOrEmpty(siteFooter.TwitterLink.Value))
                 {
-                    <a href=@SiteFooter.TwitterLink.Value>
+                    <a href=@siteFooter.TwitterLink.Value>
                         <i class="fab fa-twitter"></i>
                     </a>
                 }
 
-                @if (SiteFooter != null && !string.IsNullOrEmpty(SiteFooter.FacebookLink.Value))
+                @if (siteFooter != null && !string.IsNullOrEmpty(siteFooter.FacebookLink.Value))
                 {
-                    <a href=@SiteFooter.FacebookLink.Value>
+                    <a href=@siteFooter.FacebookLink.Value>
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 }

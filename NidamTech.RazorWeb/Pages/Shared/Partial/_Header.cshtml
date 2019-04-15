@@ -1,16 +1,15 @@
 @using NidamTech.RazorWeb.Models.Regions.SiteRegions
 @using NidamTech.RazorWeb.Models.Sites
-
-@inject Piranha.IApi Api;
 @{
     var sitemap = WebApp.Site.Sitemap;
     SiteAppearance siteAppearance = null;
-    if (Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result != null)
+    if (WebApp.Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result != null)
     {
-        siteAppearance = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Appearance;
+        siteAppearance = WebApp.Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Appearance;
     }
 }
 <header class="site-header @(ViewBag.HasImage == null || !ViewBag.HasImage ? "site-header-dark" : "")">
+
     <nav class="navbar navbar-expand-sm @(siteAppearance != null && siteAppearance.DarkMode ? "bg-dark navbar-dark" : "bg-light navbar-light") fixed-top">
         <div class="container">
             <a class="navbar-brand" href="/">

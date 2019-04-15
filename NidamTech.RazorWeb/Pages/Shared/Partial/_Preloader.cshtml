@@ -1,11 +1,11 @@
 @using NidamTech.RazorWeb.Models.Regions.SiteRegions
 @using NidamTech.RazorWeb.Models.Sites
-@inject Piranha.IApi Api;
+
 @{
     SiteAppearance siteAppearance = null;
-    if (Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result != null)
+    if (WebApp.Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result != null)
     {
-        siteAppearance = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Appearance;
+        siteAppearance = WebApp.Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Appearance;
     }
 }
 <div class="d-flex justify-content-center preloader-container">

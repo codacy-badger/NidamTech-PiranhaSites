@@ -1,38 +1,41 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using NidamTech.RazorWeb.Models.Pages;
+using NidamTech.RazorWeb.Helpers;
 using Piranha;
-using Piranha.AspNetCore.Identity.SQLite;
 
-
-namespace NidamTech.RazorWeb
+namespace RazorWeb
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        private IConfiguration Configuration { get; }
+        private readonly StartupHelper _startupHelper = new StartupHelper();
+
+        public Startup(IHostingEnvironment env)
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json")
+                .AddEnvironmentVariables();
+            Configuration = builder.Build();
+        }
+
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc(config =>
-            {
-                config.ModelBinderProviders.Insert(0, new Piranha.Manager.Binders.AbstractModelBinderProvider());
-            });
+            _startupHelper.AddMvcService(services);
             services.AddPiranhaApplication();
-            services.AddPiranhaFileStorage();
+            _startupHelper.AddFileOrBlobStorage(Configuration, services);
             services.AddPiranhaImageSharp();
-            services.AddPiranhaEF(options =>
-                options.UseSqlite("Filename=./piranha.razorweb.db"));
-            services.AddPiranhaIdentityWithSeed<IdentitySQLiteDb>(options =>
-                options.UseSqlite("Filename=./piranha.razorweb.db"));
+            _startupHelper.AddDatabaseConnection(Configuration, services);
             services.AddPiranhaManager();
             services.AddMemoryCache();
             services.AddPiranhaMemoryCache();
+            _startupHelper.AddEmailService(Configuration, services);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApi api)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider services, IApi api)
         {
             if (env.IsDevelopment())
             {
@@ -40,28 +43,15 @@ namespace NidamTech.RazorWeb
             }
 
             App.Init(api);
-
-            // Configure cache level
             App.CacheLevel = Piranha.Cache.CacheLevel.Basic;
-
-            // Build content types
-            var pageTypeBuilder = new Piranha.AttributeBuilder.PageTypeBuilder(api)
-                .AddType(typeof(StandardPage))
-                .AddType(typeof(StartPage));
-            pageTypeBuilder.Build()
-                .DeleteOrphans();
-
-            // Register middleware
-            app.UseStaticFiles();
-            app.UseAuthentication();
-            app.UsePiranha();
-            app.UsePiranhaManager();
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(name: "areaRoute",
-                    template: "{area:exists}/{controller}/{action}/{id?}",
-                    defaults: new {controller = "Home", action = "Index"});
-            });
+            _startupHelper.RegisterBlocks();
+            _startupHelper.UnregisterBlocks();
+            _startupHelper.RegisterSelects();
+            _startupHelper.CreateMenuGroups();
+            _startupHelper.AddMenuItems();
+            _startupHelper.BuildSiteTypes(api);
+            _startupHelper.BuildPageTypes(api);
+            _startupHelper.RegisterMiddleware(app);
         }
     }
 }

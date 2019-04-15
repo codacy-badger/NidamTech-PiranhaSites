@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Piranha;
 
-namespace NidamTech.RazorWeb.Interfaces
+namespace Web
 {
     public interface IStartup
     {
