@@ -1,14 +1,14 @@
 @page
 @model StartPageModel
 @{
-    ViewBag.Title = Model.Title;
-    ViewBag.HasImage = Model.Heading.PrimaryImage.HasValue;
+    ViewBag.Title = Model.Data.Title;
+    ViewBag.HasImage = Model.Data.Heading.PrimaryImage.HasValue;
 
     string PrimaryImage()
     {
-        if (Model.Heading.PrimaryImage.HasValue)
+        if (Model.Data.Heading.PrimaryImage.HasValue)
         {
-            return $"style=background-image:url({Url.Content(Model.Heading.PrimaryImage)});height:{Model.Heading.SizeInPercentage.Value}vh;";
+            return $"style=background-image:url({Url.Content(Model.Data.Heading.PrimaryImage)});height:{Model.Data.Heading.SizeInPercentage.Value}vh;";
         }
         return "";
     }
@@ -17,19 +17,19 @@
 <header class="jumbotron jumbotron-fluid heading" @PrimaryImage()>
     <div class="container">
         <h1 class="display-3 text-responsive">
-            @Model.Heading.Title
+            @Model.Data.Heading.Title
         </h1>
         <h3>
-            @Model.Heading.Subtitle
+            @Model.Data.Heading.Subtitle
         </h3>
     </div>
 </header>
- 
+
 <div class="main">
     <div class="container-flex">
         <div class="row justify-content-center">
             <div class="col-sm-10 page-body">
-                @Html.DisplayFor(m => m.Blocks)
+                @Html.DisplayFor(m => m.Data.Blocks)
             </div>
         </div>
     </div>
