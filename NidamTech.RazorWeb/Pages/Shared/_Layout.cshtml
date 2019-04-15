@@ -1,0 +1,22 @@
+@using Piranha.Models
+@inject Piranha.IApi Api;
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewBag.Title</title>
+    @if (Model is IMeta)
+    {
+        <partial name="Partial/_Meta.cshtml"/>
+    }
+    <vc:scripts></vc:scripts>
+</head>
+<body>
+<vc:header></vc:header>
+@RenderBody()
+<vc:footer></vc:footer>
+<vc:preloader></vc:preloader>
+<vc:dimmer></vc:dimmer>
+</body>
+</html>

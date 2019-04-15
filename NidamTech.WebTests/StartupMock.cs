@@ -2,8 +2,7 @@ using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using Piranha;
-using IStartup = Web.IStartup;
+
 
 namespace NidamTech.WebTests.Mock
 {
@@ -14,7 +13,7 @@ namespace NidamTech.WebTests.Mock
             throw new NotImplementedException();
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider services, IApi api)
+        public void Configure(IApplicationBuilder app)
         {
             throw new NotImplementedException();
         }

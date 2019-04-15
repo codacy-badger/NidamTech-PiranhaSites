@@ -1,0 +1,12 @@
+@using NidamTech.RazorWeb.Models.Regions.SiteRegions
+@using NidamTech.RazorWeb.Models.Sites
+
+@inject Piranha.IApi Api;
+@{
+    SiteAppearance siteAppearance = null;
+    if (Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result != null)
+    {
+        siteAppearance = Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Appearance;
+    }
+}
+<div class="dimmer active" style="background: @(siteAppearance != null && siteAppearance.DarkMode ? "black" : "white")"></div>

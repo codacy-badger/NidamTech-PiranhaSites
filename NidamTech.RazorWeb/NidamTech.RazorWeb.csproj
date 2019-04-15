@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <MvcRazorExcludeRefAssembliesFromPublish>false</MvcRazorExcludeRefAssembliesFromPublish>
+        <RootNamespace>NidamTech-PiranhaSites</RootNamespace>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+        <PackageReference Include="NidamTech.EmailService" Version="1.0.1" />
+        <PackageReference Include="Piranha" Version="6.0.1" />
+        <PackageReference Include="Piranha.AspNetCore" Version="6.0.0" />
+        <PackageReference Include="Piranha.AspNetCore.Identity.SQLite" Version="6.0.0" />
+        <PackageReference Include="Piranha.AspNetCore.Identity.SQLServer" Version="6.0.0" />
+        <PackageReference Include="Piranha.AttributeBuilder" Version="6.0.0" />
+        <PackageReference Include="Piranha.Azure.BlobStorage" Version="6.0.0" />
+        <PackageReference Include="Piranha.BasicWeb.CSharp" Version="6.0.1" />
+        <PackageReference Include="Piranha.Data.EF" Version="6.0.1" />
+        <PackageReference Include="Piranha.Extensions.Sync" Version="6.0.0" />
+        <PackageReference Include="Piranha.ImageSharp" Version="6.0.0-rc1" />
+        <PackageReference Include="Piranha.Local.FileStorage" Version="6.0.0" />
+        <PackageReference Include="Piranha.Manager" Version="6.0.2" />
+    </ItemGroup>
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Shared\Components\Dimmer\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Components\Footer\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Components\Head\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Components\Head\Partial\_Meta.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Components\Header\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Components\Navbar\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Components\Preloader\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Components\Scripts\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Shared\Components\Head\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Piranha\DisplayTemplates\HeroBlock.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Piranha\DisplayTemplates\ImageBlock.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Piranha\DisplayTemplates\MarkdownTextBlock.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Piranha\DisplayTemplates\QuoteBlock.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Piranha\DisplayTemplates\RichTextBlock.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Piranha\DisplayTemplates\SliderBlock.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Piranha\DisplayTemplates\TextBlock.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Piranha\DisplayTemplates\TwoColumnBlock.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Piranha\Page.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Piranha\Start.cshtml" />
+    </ItemGroup>
+</Project>
