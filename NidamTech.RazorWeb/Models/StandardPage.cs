@@ -18,7 +18,7 @@ namespace NidamTech.RazorWeb.Models
     /// Basic page with main content in markdown.
     /// </summary>
     [PageType(Title = "Standard Page")]
-    [PageTypeRoute(Title = "Narrow", Route = "/page")]
+    [PageTypeRoute(Title = "Narrow", Route = "/standardpage")]
     public class StandardPage : Page<StandardPage>
     {
     }

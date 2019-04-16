@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.WindowsAzure.Storage.Auth;
+using NidamTech.RazorWeb.Models;
 using NidamTech.RazorWeb.Models.Blocks;
 using NidamTech.RazorWeb.Models.Data;
 using NidamTech.RazorWeb.Models.Sites;
@@ -60,8 +61,8 @@ namespace NidamTech.RazorWeb.Helpers
         public void BuildPageTypes(IApi api)
         {
             var pageTypeBuilder = new PageTypeBuilder(api)
-                .AddType(typeof(Models.StandardPage))
-                .AddType(typeof(Models.StartPage));
+                .AddType(typeof(StandardPage))
+                .AddType(typeof(StartPage));
             pageTypeBuilder.Build()
                 .DeleteOrphans();
         }
@@ -89,7 +90,7 @@ namespace NidamTech.RazorWeb.Helpers
             }
         }
 
-        public void AddDatabase(IConfiguration configuration, IServiceCollection services)
+        public void AddPiranhaEF(IConfiguration configuration, IServiceCollection services)
         {
             var databaseSettings = configuration.GetSection("DatabaseSettings").Get<DatabaseSettings>();
             if (databaseSettings.UseLocalDB)

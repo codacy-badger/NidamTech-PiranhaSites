@@ -11,7 +11,7 @@ namespace NidamTech.RazorWeb.Pages
         private readonly IApi _api;
         public StandardPage Data { get; private set; }
 
-        public StandardPageModel(IApi api) : base()
+        public StandardPageModel(IApi api)
         {
             _api = api;
         }

@@ -5,7 +5,7 @@ using Piranha.Models;
 namespace NidamTech.RazorWeb.Models
 {
     [PageType(Title = "Start page")]
-    [PageTypeRoute(Title = "Default", Route = "/start")]
+    [PageTypeRoute(Title = "Default", Route = "/startpage")]
     public class StartPage : Page<StartPage>
     {
         [Region] public Heading Heading { get; set; }

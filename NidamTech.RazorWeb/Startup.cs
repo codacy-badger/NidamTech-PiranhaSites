@@ -28,7 +28,7 @@ namespace NidamTech.RazorWeb
             services.AddPiranhaApplication();
             _startupHelper.AddFileOrBlobStorage(Configuration, services);
             services.AddPiranhaImageSharp();
-            _startupHelper.AddDatabase(Configuration, services);
+            _startupHelper.AddPiranhaEF(Configuration, services);
             services.AddPiranhaManager();
             services.AddMemoryCache();
             services.AddPiranhaMemoryCache();
