@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using NidamTech.RazorWeb.Helpers;
 using Piranha;
 
-namespace RazorWeb
+namespace NidamTech.RazorWeb
 {
     public class Startup
     {

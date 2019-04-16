@@ -3,8 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
-
-namespace NidamTech.WebTests.Mock
+namespace NidamTech.WebTests
 {
     public class StartupMock : IStartup
     {

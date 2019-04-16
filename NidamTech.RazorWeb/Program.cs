@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace RazorWeb
+namespace NidamTech.RazorWeb
 {
     public class Program
     {
