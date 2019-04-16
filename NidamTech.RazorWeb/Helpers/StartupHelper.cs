@@ -89,7 +89,7 @@ namespace NidamTech.RazorWeb.Helpers
             }
         }
 
-        public void AddDatabaseConnection(IConfiguration configuration, IServiceCollection services)
+        public void AddDatabase(IConfiguration configuration, IServiceCollection services)
         {
             var databaseSettings = configuration.GetSection("DatabaseSettings").Get<DatabaseSettings>();
             if (databaseSettings.UseLocalDB)

@@ -1,4 +1,17 @@
 @using Piranha.Models
+@using NidamTech.RazorWeb.Models.Regions.SiteRegions
+@using NidamTech.RazorWeb.Models.Sites
+@{
+    string selectedTheme = "";
+    if (WebApp.Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result != null)
+    {
+        SiteAppearance siteAppearance = WebApp.Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Appearance;
+        if (!string.IsNullOrEmpty(siteAppearance.SelectedTheme.EnumValue))
+        {
+            selectedTheme = siteAppearance.SelectedTheme.EnumValue;
+        }
+    }
+}
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,10 +22,10 @@
     {
         <partial name="Partial/_Meta.cshtml"/>
     }
-    <partial name="Partial/_Scripts.cshtml"/>
+    <script src="main.js"></script>
 </head>
 <partial name="Partial/_Header.cshtml"/>
-<body>
+<body id=@selectedTheme>
 @RenderBody()
 <partial name="Partial/_Footer.cshtml"/>
 <partial name="Partial/_Preloader.cshtml"/>

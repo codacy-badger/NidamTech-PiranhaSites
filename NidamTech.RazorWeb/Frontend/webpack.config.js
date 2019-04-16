@@ -1,12 +1,11 @@
 import postcssconfig from "./postcss.config"
-import path from 'path'
 import webpack from 'webpack'
 
 module.exports = {
     mode: "none",
     output: {
-        path: path.resolve('./wwwroot/'),
-        filename: '[name].bundle.js',
+        filename: '[name].js?[hash]',
+        chunkFilename: 'chunks/[name].[chunkhash].js',
     },
     plugins: [
         new webpack.ProvidePlugin({
@@ -25,16 +24,16 @@ module.exports = {
                     {loader: 'css-loader',},
                     {loader: 'postcss-loader', options: postcssconfig},
                     {loader: 'sass-loader'},
-                    { loader: 'webpack-import-glob-loader', }
+                    {loader: 'webpack-import-glob-loader',}
                 ]
             },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: [
-                    { loader: 'babel-loader', },
-                    { loader: 'eslint-loader', },
-                    { loader: 'webpack-import-glob-loader', }
+                    {loader: 'babel-loader',},
+                    {loader: 'eslint-loader',},
+                    {loader: 'webpack-import-glob-loader',}
                 ]
             }]
     }
