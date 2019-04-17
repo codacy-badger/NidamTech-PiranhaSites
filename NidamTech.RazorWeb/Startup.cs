@@ -24,6 +24,7 @@ namespace NidamTech.RazorWeb
 
         public void ConfigureServices(IServiceCollection services)
         {
+            WebpackChunkNamer.Init();
             _startupHelper.AddMvcService(services);
             services.AddPiranhaApplication();
             _startupHelper.AddFileOrBlobStorage(Configuration, services);

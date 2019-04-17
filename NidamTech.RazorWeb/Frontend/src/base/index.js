@@ -1,3 +1,3 @@
 import './vendors.scss'
 
-import(/* webpackChunkName: "preloader" */"./shared/preloader.js")
+import(/* webpackChunkName: "preloader" */"./shared/loader.js")

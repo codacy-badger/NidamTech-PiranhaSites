@@ -1,13 +1,19 @@
 import gulp from "gulp";
-import gutil from 'gulp-util';
+import plumber from 'gulp-plumber';
 import webpack from 'webpack-stream'
-import webpackconfig from '../webpack.config.js';
+import webpackdevconfig from '../webpack.development.js';
+import webpackprodconfig from '../webpack.production.js';
 
-gulp.task('webpack', function () {
+gulp.task('webpack-development', function () {
     return gulp.src('./src/index.js')
-        .pipe(webpack(webpackconfig))
-        .on('error', (err) => {
-            gutil.log('WEBPACK ERROR', err);
-        })
+        .pipe(webpack(webpackdevconfig))
+        .pipe(plumber())
+        .pipe(gulp.dest('../wwwroot/'));
+});
+
+gulp.task('webpack-production', function () {
+    return gulp.src('./src/index.js')
+        .pipe(webpack(webpackprodconfig))
+        .pipe(plumber())
         .pipe(gulp.dest('../wwwroot/'));
 });

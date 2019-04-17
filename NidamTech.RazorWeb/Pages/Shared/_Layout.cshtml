@@ -20,15 +20,14 @@
     <title>@ViewBag.Title</title>
     @if (Model is IMeta)
     {
-        <partial name="Partial/_Meta.cshtml"/>
+        @await Html.PartialAsync("Partial/_Meta")
     }
-    <script src="main.js"></script>
+    @await Html.PartialAsync("Partial/_Script.cshtml", "main");
 </head>
-<partial name="Partial/_Header.cshtml"/>
+@await Html.PartialAsync("Partial/_Header")
 <body id=@selectedTheme>
 @RenderBody()
-<partial name="Partial/_Footer.cshtml"/>
-<partial name="Partial/_Preloader.cshtml"/>
-<partial name="Partial/_Dimmer.cshtml"/>
+@await Html.PartialAsync("Partial/_Footer")
+@await Html.PartialAsync("Partial/_Loader")
 </body>
 </html>

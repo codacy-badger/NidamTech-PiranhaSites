@@ -1,7 +1,7 @@
 import 'bootstrap'
 import '@fortawesome/fontawesome-free'
 
-import(/* webpackChunkName: "base" */'./base/index.js')
+import './base/index.js'
 
 if ($("body #nidamtech-theme") > 0) {
     import("./themes/nidamtech-theme/index.js")
