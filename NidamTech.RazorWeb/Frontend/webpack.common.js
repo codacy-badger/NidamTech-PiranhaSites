@@ -1,5 +1,4 @@
 import postcssconfig from "./postcss.config"
-import webpack from 'webpack'
 import fs from "fs"
 import path from "path"
 
@@ -9,12 +8,6 @@ module.exports = {
             'chunks/[name].[chunkhash].js',
     },
     plugins: [
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery',
-            Popper: ['popper.js', 'default']
-        }),
         function () {
             this.plugin("done", function (stats) {
                 fs.writeFileSync(

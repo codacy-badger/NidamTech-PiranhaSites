@@ -4,9 +4,9 @@ import "./variables/colors.scss"
 import "./shared/*.scss";
 import "./regions/*.scss";
 
-if ($('blockquote') > 0) {
+if (document.querySelector('blockquote') > 0) {
     import("./blocks/quote.scss");
 }
-if ($('.hero') > 0) {
+if (document.querySelector('.hero') > 0) {
     import("./blocks/hero.scss");
 }

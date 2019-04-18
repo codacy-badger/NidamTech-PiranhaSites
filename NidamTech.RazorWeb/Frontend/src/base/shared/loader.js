@@ -1,5 +1,5 @@
 import "./loader.scss"
 
-$(window).on('load', function () {
-    $(".loader, .dimmer").removeClass('active');
-});
+window.onload = () => {
+    document.querySelectorAll(".loader, .dimmer").removeClass('active');
+};
