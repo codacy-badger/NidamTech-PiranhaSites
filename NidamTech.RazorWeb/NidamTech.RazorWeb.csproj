@@ -25,4 +25,4 @@
         <PackageReference Include="Piranha.Local.FileStorage" Version="6.1.0" />
         <PackageReference Include="Piranha.Manager" Version="6.1.0" />
     </ItemGroup>
-</Project>
+</Project> 
