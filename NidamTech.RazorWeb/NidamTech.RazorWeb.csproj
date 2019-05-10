@@ -29,7 +29,4 @@
    <!-- <Target Name="PrePublishTarget" AfterTargets="Publish">
         <Exec Command="dotnet ef database update" />
     </Target>-->
-    <Target Name="PreBuildTarget" BeforeTargets="Build">
-       <Exec Command="gulp" />
-   </Target>
 </Project> 
