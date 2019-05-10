@@ -1,6 +1,5 @@
 {
-  "private": true,
-  "scripts": {
-    "postinstall": "cd ./NidamTech.RazorWeb && npm install"
+  "start": { 
+    "postinstall": "cd NidamTech.RazorWeb && npm install",
   }
 }
