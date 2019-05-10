@@ -26,7 +26,7 @@
         <PackageReference Include="Piranha.Manager" Version="6.1.0" />
     </ItemGroup>
     
-    <Target Name="PrePublishTarget" AfterTargets="Publish">
+   <!-- <Target Name="PrePublishTarget" AfterTargets="Publish">
         <Exec Command="dotnet ef database update" />
-    </Target>
+    </Target>-->
 </Project> 
