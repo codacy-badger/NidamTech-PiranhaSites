@@ -1,0 +1,36 @@
+@page
+@model StartPageModel
+@{
+    ViewBag.Title = Model.Data.Title;
+    ViewBag.HasImage = Model.Data.Heading.PrimaryImage.HasValue;
+
+    string PrimaryImage()
+    {
+        if (Model.Data.Heading.PrimaryImage.HasValue)
+        {
+            return $"style=background-image:url({Url.Content(Model.Data.Heading.PrimaryImage)});height:{Model.Data.Heading.SizeInPercentage.Value}vh;";
+        }
+        return "";
+    }
+
+}
+<header class="jumbotron jumbotron-fluid heading" @PrimaryImage()>
+    <div class="container">
+        <h1 class="display-3 text-responsive">
+            @Model.Data.Heading.Title
+        </h1>
+        <h3>
+            @Model.Data.Heading.Subtitle
+        </h3>
+    </div>
+</header>
+
+<div class="main">
+    <div class="container-flex">
+        <div class="row justify-content-center">
+            <div class="col-sm-10 page-body">
+                @Html.DisplayFor(m => m.Data.Blocks)
+            </div>
+        </div>
+    </div>
+</div>

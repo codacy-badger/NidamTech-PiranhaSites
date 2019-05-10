@@ -478,3 +478,4 @@ ASALocalRun/
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
 .vscode/
+/NidamTech.RazorWeb/Frontend/webpackstats.json
