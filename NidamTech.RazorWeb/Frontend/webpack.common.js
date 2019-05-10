@@ -11,7 +11,7 @@ module.exports = {
         function () {
             this.plugin("done", function (stats) {
                 fs.writeFileSync(
-                    path.join("", "webpackstats.json"),
+                    path.join("./Frontend", "webpackstats.json"),
                     JSON.stringify(stats.toJson()));
             });
         },
