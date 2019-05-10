@@ -1,5 +1,5 @@
 {
-  "start": { 
-    "postinstall": "cd NidamTech.RazorWeb && npm install"
+  "scripts": {
+    "postinstall": "npm install --prefix NidamTech.RazorWeb"
   }
 }
