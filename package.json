@@ -1,5 +1,5 @@
 {
   "start": { 
-    "postinstall": "cd NidamTech.RazorWeb && npm install",
+    "postinstall": "cd NidamTech.RazorWeb && npm install"
   }
 }
