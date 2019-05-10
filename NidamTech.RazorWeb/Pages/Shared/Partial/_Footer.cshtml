@@ -3,11 +3,11 @@
 @{
     
     SiteFooter siteFooter = null;
-    SiteInfo SiteInfo = null;
+    SiteInfo siteInfo = null;
     if (WebApp.Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result != null)
     {
         siteFooter = WebApp.Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Footer;
-        SiteInfo = WebApp.Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Info;
+        siteInfo = WebApp.Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Info;
     }
 }
 
@@ -38,9 +38,9 @@
             <div class="col-sm-8 offset-sm-2 text-small text-center">
                 <hr>
                 <button type="button" class="btn btn-primary btn-lg">Up</button>
-                @if (SiteInfo != null && !string.IsNullOrEmpty(SiteInfo.SiteOwnerName.Value))
+                @if (siteInfo != null && !string.IsNullOrEmpty(siteInfo.SiteOwnerName.Value))
                 {
-                    <p class="no-margin">© @SiteInfo.SiteOwnerName.Value</p>
+                    <p class="no-margin">© @siteInfo.SiteOwnerName.Value</p>
                 }
 
             </div>
