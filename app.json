@@ -1,0 +1,30 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/timanovsky/subdir-heroku-buildpack"
+    },
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jincod/dotnetcore-buildpack.git"
+    }
+  ],
+  "env": {
+    "PROJECT_PATH": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "NidamTech-PiranhaSites",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
