@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -12,6 +13,7 @@ using Piranha.AspNetCore.Identity.SQLite;
 using Piranha.AspNetCore.Identity.SQLServer;
 using Piranha.AttributeBuilder;
 using Piranha.Extend.Blocks;
+using SixLabors.ImageSharp;
 
 
 namespace NidamTech.RazorWeb.Helpers
@@ -102,10 +104,11 @@ namespace NidamTech.RazorWeb.Helpers
             }
             else
             {
+                var pgConnString = Environment.GetEnvironmentVariable("DATABASE_URL");
                 services.AddPiranhaEF(options =>
-                    options.UseSqlServer(configuration.GetConnectionString("DefaultDatabase")));
+                    options.UseNpgsql(pgConnString));
                 services.AddPiranhaIdentityWithSeed<IdentitySQLServerDb>(options =>
-                    options.UseSqlServer(configuration.GetConnectionString("DefaultDatabase")));
+                    options.UseNpgsql(pgConnString));
             }
         }
 

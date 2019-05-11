@@ -14,6 +14,8 @@
     </ItemGroup>
     
     <ItemGroup>
+        <PackageReference Include="Npgsql" Version="4.0.6" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.0" />
         <PackageReference Include="Piranha" Version="6.1.0" />
         <PackageReference Include="Piranha.AspNetCore" Version="6.1.0" />
         <PackageReference Include="Piranha.AspNetCore.Identity.SQLite" Version="6.1.0" />
