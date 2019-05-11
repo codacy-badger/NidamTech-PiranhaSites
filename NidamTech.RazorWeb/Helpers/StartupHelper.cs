@@ -1,9 +1,7 @@
-using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.WindowsAzure.Storage.Auth;
 using NidamTech.RazorWeb.Models;
 using NidamTech.RazorWeb.Models.Blocks;
 using NidamTech.RazorWeb.Models.Data;
@@ -13,7 +11,6 @@ using Piranha.AspNetCore.Identity.SQLite;
 using Piranha.AspNetCore.Identity.SQLServer;
 using Piranha.AttributeBuilder;
 using Piranha.Extend.Blocks;
-using SixLabors.ImageSharp;
 
 
 namespace NidamTech.RazorWeb.Helpers
@@ -79,36 +76,35 @@ namespace NidamTech.RazorWeb.Helpers
 
         public void AddFileOrBlobStorage(IConfiguration configuration, IServiceCollection services)
         {
-            var azureStorageSettings = configuration.GetSection("AzureStorageSettings").Get<AzureStorageSettings>();
-            if (azureStorageSettings.UseAzureStorage)
-            {
-                var azureStorage = azureStorageSettings.AzureStorage;
-                var credentials = new StorageCredentials(azureStorage.StorageName, azureStorage.StorageKey);
-                services.AddPiranhaBlobStorage(credentials);
-            }
-            else
-            {
+            //var azureStorageSettings = configuration.GetSection("AzureStorageSettings").Get<AzureStorageSettings>();
+            //if (azureStorageSettings.UseAzureStorage)
+            //{
+               // var azureStorage = azureStorageSettings.AzureStorage;
+               //var credentials = new StorageCredentials(azureStorage.StorageName, azureStorage.StorageKey);
+               // services.AddPiranhaBlobStorage(credentials);
+           // }
+           // else
+           // {
                 services.AddPiranhaFileStorage();
-            }
+            //}
         }
 
         public void AddPiranhaEF(IConfiguration configuration, IServiceCollection services)
         {
-            var databaseSettings = configuration.GetSection("DatabaseSettings").Get<DatabaseSettings>();
-            if (databaseSettings.UseLocalDB)
+            var pgConnString = configuration.GetSection("DATABASE_URL").Value;
+            if (pgConnString != null)
+            {
+                services.AddPiranhaEF(options =>
+                    options.UseNpgsql(pgConnString));
+                services.AddPiranhaIdentityWithSeed<IdentitySQLServerDb>(options =>
+                    options.UseNpgsql(pgConnString));
+            }
+            else
             {
                 services.AddPiranhaEF(options =>
                     options.UseSqlite("Filename=./piranha.razorweb.db"));
                 services.AddPiranhaIdentityWithSeed<IdentitySQLiteDb>(options =>
                     options.UseSqlite("Filename=./piranha.razorweb.db"));
-            }
-            else
-            {
-                var pgConnString = Environment.GetEnvironmentVariable("DATABASE_URL");
-                services.AddPiranhaEF(options =>
-                    options.UseNpgsql(pgConnString));
-                services.AddPiranhaIdentityWithSeed<IdentitySQLServerDb>(options =>
-                    options.UseNpgsql(pgConnString));
             }
         }
 
