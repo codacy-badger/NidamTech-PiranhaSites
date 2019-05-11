@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -91,7 +92,7 @@ namespace NidamTech.RazorWeb.Helpers
 
         public void AddPiranhaEF(IConfiguration configuration, IServiceCollection services)
         {
-            var pgConnString = configuration.GetSection("DATABASE_URL").Value;
+            var pgConnString = configuration["DATABASE_URL"];
             if (pgConnString != null)
             {
                 services.AddPiranhaEF(options =>
