@@ -21,7 +21,7 @@ namespace NidamTech.RazorWeb
             Configuration = builder.Build();
         }
 
-        public void ConfigureServices(IServiceCollection services, IHostingEnvironment env)
+        public void ConfigureServices(IServiceCollection services)
         {
             WebpackChunkNamer.Init();
             _startupHelper.AddMvcService(services);

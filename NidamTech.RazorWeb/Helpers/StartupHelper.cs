@@ -81,13 +81,13 @@ namespace NidamTech.RazorWeb.Helpers
             //var azureStorageSettings = configuration.GetSection("AzureStorageSettings").Get<AzureStorageSettings>();
             //if (azureStorageSettings.UseAzureStorage)
             //{
-               // var azureStorage = azureStorageSettings.AzureStorage;
-               //var credentials = new StorageCredentials(azureStorage.StorageName, azureStorage.StorageKey);
-               // services.AddPiranhaBlobStorage(credentials);
-           // }
-           // else
-           // {
-                services.AddPiranhaFileStorage();
+            // var azureStorage = azureStorageSettings.AzureStorage;
+            //var credentials = new StorageCredentials(azureStorage.StorageName, azureStorage.StorageKey);
+            // services.AddPiranhaBlobStorage(credentials);
+            // }
+            // else
+            // {
+            services.AddPiranhaFileStorage();
             //}
         }
 
@@ -99,8 +99,13 @@ namespace NidamTech.RazorWeb.Helpers
                 var pgConnString = CreatePostgressConnString(databaseUrl);
                 services.AddPiranhaEF(options =>
                     options.UseNpgsql(pgConnString));
-                services.AddPiranhaIdentityWithSeed<IdentitySQLServerDb>(options =>
-                    options.UseNpgsql(pgConnString));
+                services.AddPiranhaSimpleSecurity(
+                    new Piranha.AspNetCore.SimpleUser(Piranha.Manager.Permission.All())
+                    {
+                        UserName = "admin",
+                        Password = "admin"
+                    }
+                );
             }
             else
             {
