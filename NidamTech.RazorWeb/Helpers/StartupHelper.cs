@@ -92,7 +92,7 @@ namespace NidamTech.RazorWeb.Helpers
 
         public void AddPiranhaEF(IConfiguration configuration, IServiceCollection services)
         {
-            var pgConnString = configuration["DATABASE_URL"];
+            var pgConnString = Environment.GetEnvironmentVariable("DATABASE_URL");
             if (pgConnString != null)
             {
                 services.AddPiranhaEF(options =>
