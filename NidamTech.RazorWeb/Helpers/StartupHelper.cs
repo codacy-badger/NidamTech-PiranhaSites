@@ -10,7 +10,6 @@ using NidamTech.RazorWeb.Models.Sites;
 using Npgsql;
 using Piranha;
 using Piranha.AspNetCore.Identity.SQLite;
-using Piranha.AspNetCore.Identity.SQLServer;
 using Piranha.AttributeBuilder;
 using Piranha.Extend.Blocks;
 
