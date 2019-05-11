@@ -7,6 +7,7 @@ using NidamTech.RazorWeb.Models;
 using NidamTech.RazorWeb.Models.Blocks;
 using NidamTech.RazorWeb.Models.Data;
 using NidamTech.RazorWeb.Models.Sites;
+using Npgsql;
 using Piranha;
 using Piranha.AspNetCore.Identity.SQLite;
 using Piranha.AspNetCore.Identity.SQLServer;
@@ -92,9 +93,10 @@ namespace NidamTech.RazorWeb.Helpers
 
         public void AddPiranhaEF(IConfiguration configuration, IServiceCollection services)
         {
-            var pgConnString = Environment.GetEnvironmentVariable("DATABASE_URL");
-            if (pgConnString != null)
+            var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
+            if (databaseUrl != null)
             {
+                var pgConnString = CreatePostgressConnString(databaseUrl);
                 services.AddPiranhaEF(options =>
                     options.UseNpgsql(pgConnString));
                 services.AddPiranhaIdentityWithSeed<IdentitySQLServerDb>(options =>
@@ -107,6 +109,21 @@ namespace NidamTech.RazorWeb.Helpers
                 services.AddPiranhaIdentityWithSeed<IdentitySQLiteDb>(options =>
                     options.UseSqlite("Filename=./piranha.razorweb.db"));
             }
+        }
+
+        private string CreatePostgressConnString(string databaseUrl)
+        {
+            var databaseUri = new Uri(databaseUrl);
+            var userInfo = databaseUri.UserInfo.Split(':');
+            var builder = new NpgsqlConnectionStringBuilder
+            {
+                Host = databaseUri.Host,
+                Port = databaseUri.Port,
+                Username = userInfo[0],
+                Password = userInfo[1],
+                Database = databaseUri.LocalPath.TrimStart('/')
+            };
+            return builder.ToString();
         }
 
         public void AddEmailService(IConfiguration configuration, IServiceCollection services)
