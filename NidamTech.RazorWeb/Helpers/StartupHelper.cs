@@ -99,13 +99,8 @@ namespace NidamTech.RazorWeb.Helpers
                 var pgConnString = CreatePostgressConnString(databaseUrl);
                 services.AddPiranhaEF(options =>
                     options.UseNpgsql(pgConnString));
-                services.AddPiranhaSimpleSecurity(
-                    new Piranha.AspNetCore.SimpleUser(Piranha.Manager.Permission.All())
-                    {
-                        UserName = "admin",
-                        Password = "admin"
-                    }
-                );
+                services.AddPiranhaIdentityWithSeed<IdentitySQLiteDb>(
+                    options => options.UseNpgsql(pgConnString));
             }
             else
             {
