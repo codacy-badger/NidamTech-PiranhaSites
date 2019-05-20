@@ -5,6 +5,7 @@ module.exports = merge(common, {
     mode: 'development',
     output: {
         filename: '[name].js',
-    },
+        chunkFilename: 'chunks/[name].js'
+    }, 
     devtool: 'inline-source-map'
 });

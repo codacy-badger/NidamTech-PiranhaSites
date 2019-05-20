@@ -15,6 +15,7 @@ namespace NidamTech.RazorWeb
 
         public Startup(IHostingEnvironment env)
         {
+            new WebpackChunkNamer(env);
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddEnvironmentVariables();
@@ -23,7 +24,6 @@ namespace NidamTech.RazorWeb
 
         public void ConfigureServices(IServiceCollection services)
         {
-            WebpackChunkNamer.Init();
             _startupHelper.AddMvcService(services);
             services.AddPiranha();
             services.AddPiranhaApplication();

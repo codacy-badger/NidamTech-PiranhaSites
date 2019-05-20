@@ -1,28 +1,33 @@
 import postcssconfig from "./postcss.config"
-import fs from "fs"
-import path from "path"
+import StatsPlugin from 'stats-webpack-plugin'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 
 module.exports = {
-    output: {
-        chunkFilename:
-            'chunks/[name].[chunkhash].js',
-    },
     plugins: [
-        function () {
-            this.plugin("done", function (stats) {
-                fs.writeFileSync(
-                    path.join("./Frontend", "webpackstats.json"),
-                    JSON.stringify(stats.toJson()));
-            });
-        },
+        new MiniCssExtractPlugin({
+            // Options similar to the same options in webpackOptions.output
+            // both options are optional
+            filename: '[name].css',
+            chunkFilename: '[id].css',
+        }),
+        new StatsPlugin('stats-full.json', {
+            all: true
+        }),
+        new StatsPlugin('stats-assets.json', {
+            all: false,
+            assets: true
+        })
     ],
+    node: {
+        fs: 'empty'
+    },
     module:
         {
             rules: [
                 {
                     test: /\.scss$/,
                     use: [
-                        {loader: 'style-loader',},
+                        {loader: MiniCssExtractPlugin.loader,},
                         {loader: 'css-loader',},
                         {loader: 'postcss-loader', options: postcssconfig},
                         {loader: 'sass-loader'},
