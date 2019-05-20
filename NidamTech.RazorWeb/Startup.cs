@@ -11,11 +11,11 @@ namespace NidamTech.RazorWeb
     public class Startup
     {
         private IConfiguration Configuration { get; }
-        private readonly StartupHelper _startupHelper = new StartupHelper();
 
         public Startup(IHostingEnvironment env)
         {
-            new WebpackChunkNamer(env);
+            WebpackChunkNamer webpackChunkNamer = new WebpackChunkNamer(env);
+            webpackChunkNamer.Init();
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddEnvironmentVariables();
@@ -24,16 +24,16 @@ namespace NidamTech.RazorWeb
 
         public void ConfigureServices(IServiceCollection services)
         {
-            _startupHelper.AddMvcService(services);
+            StartupHelper.AddMvcService(services);
             services.AddPiranha();
             services.AddPiranhaApplication();
-            _startupHelper.AddFileOrBlobStorage(Configuration, services);
+            StartupHelper.AddFileOrBlobStorage(Configuration, services);
             services.AddPiranhaImageSharp();
-            _startupHelper.AddPiranhaEF(Configuration, services);
+            StartupHelper.AddPiranhaEF(Configuration, services);
             services.AddPiranhaManager();
             services.AddMemoryCache();
             services.AddPiranhaMemoryCache();
-            _startupHelper.AddEmailService(Configuration, services);
+            StartupHelper.AddEmailService(Configuration, services);
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider services, IApi api)
@@ -45,14 +45,14 @@ namespace NidamTech.RazorWeb
 
             App.Init(api);
             App.CacheLevel = Piranha.Cache.CacheLevel.Basic;
-            _startupHelper.RegisterBlocks();
-            _startupHelper.UnregisterBlocks();
-            _startupHelper.RegisterSelects();
-            _startupHelper.CreateMenuGroups();
-            _startupHelper.AddMenuItems();
-            _startupHelper.BuildSiteTypes(api);
-            _startupHelper.BuildPageTypes(api);
-            _startupHelper.RegisterMiddleware(app);
+            StartupHelper.RegisterBlocks();
+            StartupHelper.UnregisterBlocks();
+            StartupHelper.RegisterSelects();
+            StartupHelper.CreateMenuGroups();
+            StartupHelper.AddMenuItems();
+            StartupHelper.BuildSiteTypes(api);
+            StartupHelper.BuildPageTypes(api);
+            StartupHelper.RegisterMiddleware(app);
         }
     }
 }

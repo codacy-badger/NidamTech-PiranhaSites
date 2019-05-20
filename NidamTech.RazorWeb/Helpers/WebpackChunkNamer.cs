@@ -10,12 +10,11 @@ namespace NidamTech.RazorWeb.Helpers
     public class WebpackChunkNamer
     {
         private static Dictionary<string, string> Tags { get; } = new Dictionary<string, string>();
-        private IHostingEnvironment HostingEnvironment;
+        private readonly IHostingEnvironment HostingEnvironment;
 
         public WebpackChunkNamer(IHostingEnvironment hostingEnvironment)
         {
             HostingEnvironment = hostingEnvironment;
-            Init();
         }
 
         public void Init()
