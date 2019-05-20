@@ -22,12 +22,13 @@
     {
         @await Html.PartialAsync("Partial/_Meta")
     }
-    @await Html.PartialAsync("Partial/_Script.cshtml", "main")
+    @await Html.PartialAsync("Partial/_Script.cshtml", "styles")
 </head>
 @await Html.PartialAsync("Partial/_Header")
 <body id=@selectedTheme>
 @RenderBody()
 @await Html.PartialAsync("Partial/_Footer")
 @await Html.PartialAsync("Partial/_Loader")
+@await Html.PartialAsync("Partial/_Script.cshtml", "scripts")
 </body>
 </html>

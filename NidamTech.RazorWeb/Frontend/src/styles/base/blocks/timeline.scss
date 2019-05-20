@@ -3,7 +3,7 @@
   max-width: 1200px;
   margin: 0 auto;
   /* The actual timeline (the vertical ruler) */
-  &&::after {
+  &::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -55,8 +55,7 @@
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
+    border: medium solid;
     border-color: transparent transparent transparent white;
   }
 
@@ -69,7 +68,7 @@
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid white;
+    border: solid;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
@@ -103,7 +102,7 @@
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
-    border: medium solid white;
+    border: solid;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }

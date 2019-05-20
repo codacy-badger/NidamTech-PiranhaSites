@@ -2,16 +2,25 @@
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using System.IO;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Hosting.Internal;
 
 namespace NidamTech.RazorWeb.Helpers
 {
-    public static class WebpackChunkNamer
+    public class WebpackChunkNamer
     {
         private static Dictionary<string, string> Tags { get; } = new Dictionary<string, string>();
+        private IHostingEnvironment HostingEnvironment;
 
-        public static void Init()
+        public WebpackChunkNamer(IHostingEnvironment hostingEnvironment)
         {
-            var path = Directory.GetCurrentDirectory() + "/Frontend/webpackstats.json";
+            HostingEnvironment = hostingEnvironment;
+            Init();
+        }
+
+        public void Init()
+        {
+            var path = HostingEnvironment.WebRootPath + "/stats-assets.json";
             using (var fs = File.OpenRead(path))
             using (var sr = new StreamReader(fs))
             using (var reader = new JsonTextReader(sr))
