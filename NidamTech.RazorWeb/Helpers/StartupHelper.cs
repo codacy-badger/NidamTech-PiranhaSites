@@ -18,26 +18,26 @@ namespace NidamTech.RazorWeb.Helpers
 {
     public class StartupHelper
     {
-        public void RegisterBlocks()
+        public static void RegisterBlocks()
         {
             App.Blocks.Register<HeroBlock>();
             App.Blocks.Register<MarkdownTextBlock>();
             App.Blocks.Register<TwoColumnBlockGroup>();
         }
 
-        public void UnregisterBlocks()
+        public static void UnregisterBlocks()
         {
             App.Blocks.UnRegister<HtmlColumnBlock>();
         }
 
-        public void RegisterSelects()
+        public static void RegisterSelects()
         {
             App.Fields.RegisterSelect<ThemeEnum>();
             App.Fields.RegisterSelect<BootstrapBreakpointEnum>();
         }
 
 
-        public void RegisterMiddleware(IApplicationBuilder app)
+        public static void RegisterMiddleware(IApplicationBuilder app)
         {
             app.UseStaticFiles();
             app.UseAuthentication();
@@ -51,14 +51,14 @@ namespace NidamTech.RazorWeb.Helpers
             });
         }
 
-        public void BuildSiteTypes(IApi api)
+        public static void BuildSiteTypes(IApi api)
         {
             var siteTypeBuilder = new SiteTypeBuilder(api)
                 .AddType(typeof(DefaultSite));
             siteTypeBuilder.Build();
         }
 
-        public void BuildPageTypes(IApi api)
+        public static void BuildPageTypes(IApi api)
         {
             var pageTypeBuilder = new PageTypeBuilder(api)
                 .AddType(typeof(StandardPage))
@@ -67,15 +67,15 @@ namespace NidamTech.RazorWeb.Helpers
                 .DeleteOrphans();
         }
 
-        public void CreateMenuGroups()
+        public static void CreateMenuGroups()
         {
         }
 
-        public void AddMenuItems()
+        public static void AddMenuItems()
         {
         }
 
-        public void AddFileOrBlobStorage(IConfiguration configuration, IServiceCollection services)
+        public static void AddFileOrBlobStorage(IConfiguration configuration, IServiceCollection services)
         {
             //var azureStorageSettings = configuration.GetSection("AzureStorageSettings").Get<AzureStorageSettings>();
             //if (azureStorageSettings.UseAzureStorage)
@@ -90,7 +90,7 @@ namespace NidamTech.RazorWeb.Helpers
             //}
         }
 
-        public void AddPiranhaEF(IConfiguration configuration, IServiceCollection services)
+        public static void AddPiranhaEF(IConfiguration configuration, IServiceCollection services)
         {
             var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
             if (databaseUrl != null)
@@ -110,7 +110,7 @@ namespace NidamTech.RazorWeb.Helpers
             }
         }
 
-        private string CreatePostgressConnString(string databaseUrl)
+        private static string CreatePostgressConnString(string databaseUrl)
         {
             var databaseUri = new Uri(databaseUrl);
             var userInfo = databaseUri.UserInfo.Split(':');
@@ -125,14 +125,14 @@ namespace NidamTech.RazorWeb.Helpers
             return builder.ToString();
         }
 
-        public void AddEmailService(IConfiguration configuration, IServiceCollection services)
+        public static void AddEmailService(IConfiguration configuration, IServiceCollection services)
         {
             //services.AddSingleton<IEmailConfiguration>(configuration.GetSection("EmailSettings")
             //.Get<EmailConfiguration>());
             //services.AddTransient<IEmailService, EmailService.EmailService>();
         }
 
-        public void AddMvcService(IServiceCollection services)
+        public static void AddMvcService(IServiceCollection services)
         {
             services.AddMvc(config =>
             {
