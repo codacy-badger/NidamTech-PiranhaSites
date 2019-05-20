@@ -27,13 +27,13 @@ namespace NidamTech.RazorWeb
             StartupHelper.AddMvcService(services);
             services.AddPiranha();
             services.AddPiranhaApplication();
-            StartupHelper.AddFileOrBlobStorage(Configuration, services);
+            StartupHelper.AddFileOrBlobStorage(services);
             services.AddPiranhaImageSharp();
-            StartupHelper.AddPiranhaEF(Configuration, services);
+            StartupHelper.AddDatabase(Configuration, services);
             services.AddPiranhaManager();
             services.AddMemoryCache();
             services.AddPiranhaMemoryCache();
-            StartupHelper.AddEmailService(Configuration, services);
+            StartupHelper.AddEmailService(services);
         }
 
         public static void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider services, IApi api)

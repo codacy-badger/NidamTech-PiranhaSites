@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NidamTech.EmailService.Interfaces;
 using NidamTech.RazorWeb.Models;
 using NidamTech.RazorWeb.Models.Blocks;
 using NidamTech.RazorWeb.Models.Data;
@@ -77,22 +78,21 @@ namespace NidamTech.RazorWeb.Helpers
             throw new NotSupportedException();
         }
 
-        public static void AddFileOrBlobStorage(IConfiguration configuration, IServiceCollection services)
+        public static void AddFileOrBlobStorage(IServiceCollection services)
         {
-            //var azureStorageSettings = configuration.GetSection("AzureStorageSettings").Get<AzureStorageSettings>();
-            //if (azureStorageSettings.UseAzureStorage)
-            //{
-            // var azureStorage = azureStorageSettings.AzureStorage;
-            //var credentials = new StorageCredentials(azureStorage.StorageName, azureStorage.StorageKey);
-            // services.AddPiranhaBlobStorage(credentials);
-            // }
-            // else
-            // {
-            services.AddPiranhaFileStorage();
-            //}
+            var blobStorage = Environment.GetEnvironmentVariable("BLOBSTORAGE");
+            if (blobStorage != null)
+            {
+                const string credentials = "";
+                services.AddPiranhaBlobStorage(credentials);
+            }
+            else
+            {
+                services.AddPiranhaFileStorage();
+            }
         }
 
-        public static void AddPiranhaEF(IConfiguration configuration, IServiceCollection services)
+        public static void AddDatabase(IConfiguration configuration, IServiceCollection services)
         {
             var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
             if (databaseUrl != null)
@@ -127,11 +127,10 @@ namespace NidamTech.RazorWeb.Helpers
             return builder.ToString();
         }
 
-        public static void AddEmailService(IConfiguration configuration, IServiceCollection services)
+        public static void AddEmailService(IServiceCollection services)
         {
-            //services.AddSingleton<IEmailConfiguration>(configuration.GetSection("EmailSettings")
-            //.Get<EmailConfiguration>());
-            //services.AddTransient<IEmailService, EmailService.EmailService>();
+            services.AddSingleton<IEmailConfiguration>();
+            services.AddTransient<IEmailService, EmailService.EmailService>();
         }
 
         public static void AddMvcService(IServiceCollection services)
