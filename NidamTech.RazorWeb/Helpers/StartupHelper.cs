@@ -16,7 +16,7 @@ using Piranha.Extend.Blocks;
 
 namespace NidamTech.RazorWeb.Helpers
 {
-    public class StartupHelper
+    public static class StartupHelper
     {
         public static void RegisterBlocks()
         {
@@ -69,10 +69,12 @@ namespace NidamTech.RazorWeb.Helpers
 
         public static void CreateMenuGroups()
         {
+            throw new NotSupportedException();
         }
 
         public static void AddMenuItems()
         {
+            throw new NotSupportedException();
         }
 
         public static void AddFileOrBlobStorage(IConfiguration configuration, IServiceCollection services)
