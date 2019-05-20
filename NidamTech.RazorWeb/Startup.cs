@@ -36,7 +36,7 @@ namespace NidamTech.RazorWeb
             StartupHelper.AddEmailService(Configuration, services);
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider services, IApi api)
+        public static void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider services, IApi api)
         {
             if (env.IsDevelopment())
             {
