@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NidamTech.RazorWeb", "NidamTech.RazorWeb\NidamTech.RazorWeb.csproj", "{22DFE3AE-4D98-494D-88B5-FC4329E96268}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NidamTech.PiranhaSites.Web", "NidamTech.PiranhaSites.Web\NidamTech.PiranhaSites.Web.csproj", "{22DFE3AE-4D98-494D-88B5-FC4329E96268}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NidamTech.PiranhSites.Tests", "NidamTech.PiranhSites.Tests\NidamTech.PiranhSites.Tests.csproj", "{7EDA1137-F184-41CE-B287-AB796B7D267F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{22DFE3AE-4D98-494D-88B5-FC4329E96268}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22DFE3AE-4D98-494D-88B5-FC4329E96268}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22DFE3AE-4D98-494D-88B5-FC4329E96268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EDA1137-F184-41CE-B287-AB796B7D267F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EDA1137-F184-41CE-B287-AB796B7D267F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EDA1137-F184-41CE-B287-AB796B7D267F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EDA1137-F184-41CE-B287-AB796B7D267F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DCFFA4EE-A8D2-45FF-AD4F-171ABCD0DE0E} = {9B1CF9A4-0F38-4FBF-9E2B-58C9D9B54CCC}

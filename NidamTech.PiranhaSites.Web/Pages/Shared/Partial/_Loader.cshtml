@@ -1,0 +1,15 @@
+@using global::NidamTech.PiranhaSites.Web.Models.Regions.SiteRegions
+@using global::NidamTech.PiranhaSites.Web.Models.Sites
+
+@{
+    SiteAppearance siteAppearance = null;
+    if (WebApp.Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result != null)
+    {
+        siteAppearance = WebApp.Api.Sites.GetContentByIdAsync<DefaultSite>(WebApp.Site.Id).Result.Appearance;
+    }
+}
+<div class="d-flex justify-content-center dimmer active">
+    <div class="spinner-border @(siteAppearance != null && siteAppearance.DarkMode ? "text-light" : "text-dark") loader active" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
