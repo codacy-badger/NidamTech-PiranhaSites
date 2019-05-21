@@ -1,2 +1,2 @@
 # NidamTech-PiranhaSites
-My websites
+[![CodeFactor](https://www.codefactor.io/repository/github/nidamtech/nidamtech-piranhasites/badge)](https://www.codefactor.io/repository/github/nidamtech/nidamtech-piranhasites)
